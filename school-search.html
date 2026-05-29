@@ -37,13 +37,23 @@
     .page-header h1 { font-size: 18px; font-weight: 700; }
     .result-count { font-size: 13px; opacity: 0.9; }
 
+    /* Widget root — bounded height for WordPress embed */
+    .widget-root {
+      display: flex;
+      flex-direction: column;
+      max-height: 640px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      background: #f5f5f5;
+    }
+
     /* Layout */
     .layout {
       display: flex;
-      max-width: 1200px;
-      margin: 0 auto;
-      gap: 0;
-      align-items: flex-start;
+      flex: 1;
+      min-height: 0;
+      overflow: hidden;
     }
 
     /* Sidebar */
@@ -52,11 +62,8 @@
       flex-shrink: 0;
       background: white;
       border-right: 1px solid var(--card-border);
-      min-height: calc(100vh - 50px);
-      position: sticky;
-      top: 0;
-      max-height: 100vh;
       overflow-y: auto;
+      align-self: flex-start;
     }
 
     .filter-panel { padding: 16px; }
@@ -149,6 +156,7 @@
       flex: 1;
       padding: 16px;
       min-width: 0;
+      overflow-y: auto;
     }
 
     .sort-bar {
@@ -277,21 +285,20 @@
     /* Mobile filter toggle (hidden on desktop) */
     .mobile-filter-toggle { display: none; }
 
-    /* Tablet: 600–900px */
-    @media (max-width: 900px) {
+    /* Tablet: narrow embed (≤560px) — stack filters above results */
+    @media (max-width: 560px) {
       .layout { flex-direction: column; }
       .sidebar {
         width: 100%;
-        position: static;
-        max-height: none;
+        align-self: auto;
         border-right: none;
         border-bottom: 1px solid var(--card-border);
       }
       .filter-panel { padding: 12px 16px; }
     }
 
-    /* Mobile: <600px */
-    @media (max-width: 600px) {
+    /* Mobile: <420px — hide sidebar, show toggle */
+    @media (max-width: 420px) {
       .sidebar { display: none; }
       .sidebar.open { display: block; }
       .mobile-filter-toggle {
@@ -313,6 +320,7 @@
   </style>
 </head>
 <body x-data="schoolSearch()">
+<div class="widget-root">
 
   <header class="page-header">
     <h1>日本语学校搜索</h1>
@@ -522,6 +530,7 @@
       </template>
     </main>
   </div>
+</div><!-- .widget-root -->
 
   <script>
   // DATA PLACEHOLDER — replaced in Step 3
