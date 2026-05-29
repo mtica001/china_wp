@@ -46,6 +46,8 @@
       border: 1px solid var(--card-border);
       border-radius: 8px;
       background: #f5f5f5;
+      container-type: inline-size;
+      container-name: schoolwidget;
     }
 
     /* Layout */
@@ -285,8 +287,8 @@
     /* Mobile filter toggle (hidden on desktop) */
     .mobile-filter-toggle { display: none; }
 
-    /* Tablet: narrow embed (≤560px) — stack filters above results */
-    @media (max-width: 560px) {
+    /* Tablet: narrow embed (≤560px container) — stack filters above results */
+    @container schoolwidget (max-width: 560px) {
       .layout { flex-direction: column; }
       .sidebar {
         width: 100%;
@@ -297,8 +299,8 @@
       .filter-panel { padding: 12px 16px; }
     }
 
-    /* Mobile: <420px — hide sidebar, show toggle */
-    @media (max-width: 420px) {
+    /* Mobile: <420px container — hide sidebar, show toggle */
+    @container schoolwidget (max-width: 420px) {
       .sidebar { display: none; }
       .sidebar.open { display: block; }
       .mobile-filter-toggle {
