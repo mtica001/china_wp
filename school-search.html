@@ -59,7 +59,7 @@
     }
 
     /* Sidebar */
-    .sidebar {
+    .ss-sidebar {
       width: var(--sidebar-width);
       flex-shrink: 0;
       background: white;
@@ -290,7 +290,7 @@
     /* Tablet: narrow embed (≤560px container) — stack filters above results */
     @container schoolwidget (max-width: 560px) {
       .layout { flex-direction: column; }
-      .sidebar {
+      .ss-sidebar {
         width: 100%;
         align-self: auto;
         border-right: none;
@@ -301,8 +301,8 @@
 
     /* Mobile: <420px container — hide sidebar, show toggle */
     @container schoolwidget (max-width: 420px) {
-      .sidebar { display: none; }
-      .sidebar.open { display: block; }
+      .ss-sidebar { display: none; }
+      .ss-sidebar.open { display: block; }
       .mobile-filter-toggle {
         display: flex;
         justify-content: space-between;
@@ -335,7 +335,7 @@
     <span>▼</span>
   </button>
   <div class="layout">
-    <aside class="sidebar" x-ref="sidebar">
+    <div class="ss-sidebar" x-ref="sidebar">
 <div class="filter-panel">
   <div class="filter-header">
     <span class="filter-title">筛选条件</span>
@@ -418,7 +418,7 @@
     </div>
   </div>
 </div>
-    </aside>
+    </div>
     <main class="results">
 
       <!-- Sort bar -->
