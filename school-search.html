@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer-when-downgrade">
   <title>日本语学校搜索</title>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
@@ -559,6 +561,17 @@
 
     init() {
       this.schools = SCHOOLS.map(s => ({ ...s, tags: deriveTags(s) }));
+
+      // Normalize half-width katakana to full-width in nationality display
+      const hwToFw = str => str.replace(/[｡-ﾟ]/g, c =>
+        String.fromCharCode(c.charCodeAt(0) - 0xFF61 + 0x30A1));
+      this.schools = this.schools.map(s => ({
+        ...s,
+        nationalities: (s.nationalities || []).map(n => ({
+          ...n,
+          country: hwToFw(n.country)
+        }))
+      }));
     },
 
     // Cascading prefecture options
