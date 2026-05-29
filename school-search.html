@@ -44,8 +44,27 @@
   }
 
   function deriveTags(s) {
-    return [];  // implemented in Task 3
-  }
+  const tags = [];
+  const p = s.placement || {};
+  const j = s.jlpt || {};
+
+  // Goal tags (blue)
+  if ((p['大学院'] || 0) > 0)               tags.push({ key: 'grad',     label: '升大学院',   type: 'goal' });
+  if ((p['大学'] || 0) > 0)                 tags.push({ key: 'univ',     label: '升大学',     type: 'goal' });
+  if ((p['専修学校(専門課程)'] || 0) > 0)   tags.push({ key: 'senmon',   label: '升专门学校', type: 'goal' });
+  if ((p['その他'] || 0) > 0)               tags.push({ key: 'work',     label: '就职',       type: 'goal' });
+  if ((j.N1 && j.N1.examined > 0) ||
+      (j.N2 && j.N2.examined > 0))          tags.push({ key: 'jlpt',     label: 'JLPT対策',   type: 'goal' });
+
+  // Service tags (green)
+  const topNation = (s.nationalities || [])[0];
+  if (topNation && topNation.country === '中国') tags.push({ key: 'chinese', label: '中文对应', type: 'service' });
+  if (s.has_accommodation)                       tags.push({ key: 'dorm',    label: '有宿舍',   type: 'service' });
+  if ((s.start_months || []).includes('4'))      tags.push({ key: 'apr',     label: '4月入学',  type: 'service' });
+  if ((s.start_months || []).includes('10'))     tags.push({ key: 'oct',     label: '10月入学', type: 'service' });
+
+  return tags;
+}
   </script>
 </body>
 </html>
