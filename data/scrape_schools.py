@@ -177,8 +177,11 @@ def find_marked_value(soup, marker):
 def parse_school(html, school_id, name_hint, location_hint):
     soup = BeautifulSoup(html, 'html.parser')
 
-    pref_match = re.match(r'^(.+?[都道府県])', location_hint)
+    pref_match = re.match(r'^(.+?(?:都|道|府|県))', location_hint)
     prefecture = pref_match.group(1) if pref_match else location_hint
+    # Normalize bare 京都 → 京都府
+    if prefecture == '京都':
+        prefecture = '京都府'
 
     data = {
         "id": school_id,
@@ -378,11 +381,14 @@ def main():
             results.append(school)
         except Exception as e:
             print(f"  ERROR: {e}", flush=True)
-            pref_m = re.match(r'^(.+?[都道府県])', loc)
+            pref_m = re.match(r'^(.+?(?:都|道|府|県))', loc)
+            prefecture = pref_m.group(1) if pref_m else loc
+            if prefecture == '京都':
+                prefecture = '京都府'
             results.append({
                 "id": sid, "name": name, "city": loc,
-                "prefecture": pref_m.group(1) if pref_m else loc,
-                "region": REGION_MAP.get(pref_m.group(1) if pref_m else loc, "その他"),
+                "prefecture": prefecture,
+                "region": REGION_MAP.get(prefecture, "その他"),
                 "error": str(e),
                 "nisshinkyo_url": f"https://www.nisshinkyo.org/search/college.php?id={sid}"
             })
