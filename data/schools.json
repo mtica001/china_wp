@@ -24,8 +24,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 67000,
     "courses": [
       {
         "name": "日本語科進学1年コース",
@@ -163,8 +163,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、在日身元保証人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 30000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -582,8 +582,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等ﾚﾍﾞﾙの者",
     "selection_method": "書類審査、個人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 16000,
     "courses": [
       {
         "name": "一般コース",
@@ -701,8 +701,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、本人面接、保証人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 60000,
     "courses": [
       {
         "name": "総合1年6か月コース",
@@ -1097,8 +1097,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、現地入学希望者面接、保証人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 43000,
     "courses": [
       {
         "name": "一般コース",
@@ -1251,8 +1251,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 50000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -1426,7 +1426,7 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接",
-    "has_accommodation": false,
+    "has_accommodation": true,
     "accommodation_fee": null,
     "courses": [
       {
@@ -1600,8 +1600,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等ﾚﾍﾞﾙの者",
     "selection_method": "書類審査、本人及び保護者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 26000,
     "courses": [
       {
         "name": "一般1年9か月コース",
@@ -1799,8 +1799,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、入学選考試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 42000,
     "courses": [
       {
         "name": "進学コース（2年）",
@@ -1938,8 +1938,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、経費支弁者面接、筆記・面接試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 30000,
     "courses": [
       {
         "name": "大学進学1年半コース",
@@ -2118,7 +2118,7 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接",
-    "has_accommodation": false,
+    "has_accommodation": true,
     "accommodation_fee": null,
     "courses": [
       {
@@ -2400,8 +2400,8 @@
     "current_enrollment": null,
     "admission_requirement": "学校教育12年以上の課程修了者又はこれに準ずる課程修了者",
     "selection_method": "書類審査、本人面接、筆記試験、保護者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 45000,
     "courses": [
       {
         "name": "日本語学科",
@@ -2530,8 +2530,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人、経費支弁者面接、選考試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 65000,
     "courses": [
       {
         "name": "日本語総合2年コース",
@@ -2913,8 +2913,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、筆記試験、本人面接、保護者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 28000,
     "courses": [
       {
         "name": "1年半コース",
@@ -3048,8 +3048,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上で、日本語学習に意欲を持つ者",
     "selection_method": "書類審査、面接及び、筆記試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 45000,
     "courses": [
       {
         "name": "1年コース",
@@ -3527,8 +3527,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者、日本語能力試験N5合格者、またはこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、日本語能力試験N5レベルの試験、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 23833,
     "courses": [
       {
         "name": "進学2年コース",
@@ -3680,8 +3680,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者、その他",
     "selection_method": "書類審査、本人面接及び試験、その他",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 22000,
     "courses": [
       {
         "name": "ベーシックコース",
@@ -3814,8 +3814,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上またはこれと同等レベルの者。及び日本語能力試験N5級以上、または200時間以上の日本語学習者。",
     "selection_method": "書類審査、本人面接、日本語筆記試験。",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 22000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -3933,8 +3933,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "面接、試験、書類審査、保証人及び経費支弁者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 25000,
     "courses": [
       {
         "name": "進学Ⅱコース",
@@ -4056,8 +4056,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上、日本語の基礎をすでに学習した者、その他",
     "selection_method": "書類審査、本人面接、小論文試験、その他",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 46500,
     "courses": [
       {
         "name": "日本語一般コース",
@@ -4554,7 +4554,7 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査",
-    "has_accommodation": false,
+    "has_accommodation": true,
     "accommodation_fee": null,
     "courses": [
       {
@@ -4782,8 +4782,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、能力適性試験、本人面接、保証人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 74000,
     "courses": [
       {
         "name": "進学課程2年コース",
@@ -4965,8 +4965,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上、日本語学習150時間以上、他",
     "selection_method": "書類審査、本人面接、保証人面接、他",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 65000,
     "courses": [
       {
         "name": "日本語科2年コース",
@@ -5084,8 +5084,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、支弁者面接、学校推薦、筆記試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 63000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -5253,8 +5253,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 20000,
     "courses": [
       {
         "name": "大学進学1年3ヶ月コース",
@@ -5562,8 +5562,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、筆記試験、本人面接、保証人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 25000,
     "courses": [
       {
         "name": "日本語進学2年コース",
@@ -5685,8 +5685,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、能力性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 30000,
     "courses": [
       {
         "name": "進学コースＡ 1年コース",
@@ -5810,8 +5810,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 40000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -5929,8 +5929,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上,及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 40000,
     "courses": [
       {
         "name": "進学1年半コース",
@@ -6067,8 +6067,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、本人・経費支弁者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 59000,
     "courses": [
       {
         "name": "日本語教育学科",
@@ -6220,8 +6220,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上あるいは修了見込の者",
     "selection_method": "書類審査、面接、試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 65000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -6368,8 +6368,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年以上の学校教育課程を修了した者。または同等の資格を有する者。",
     "selection_method": "書類審査、筆記試験、本人、支弁者面接、その他",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 50000,
     "courses": [
       {
         "name": "進学1年コース",
@@ -6565,7 +6565,7 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及び同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接",
-    "has_accommodation": false,
+    "has_accommodation": true,
     "accommodation_fee": null,
     "courses": [
       {
@@ -6707,8 +6707,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上、日本語学習暦150時間以上あるいは日本語能力試験N5レベル合格",
     "selection_method": "書類審査、本人面接、経費支弁者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 27500,
     "courses": [
       {
         "name": "本科特別進学1年コース",
@@ -6958,8 +6958,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、入学選考試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 33000,
     "courses": [
       {
         "name": "一般1年6か月コース",
@@ -7097,8 +7097,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 40000,
     "courses": [
       {
         "name": "2年コース",
@@ -7299,8 +7299,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、経費支弁者面接、本人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 45000,
     "courses": [
       {
         "name": "大学進学1年9ヶ月コース",
@@ -7438,8 +7438,8 @@
     "current_enrollment": null,
     "admission_requirement": "諸外国において学校教育における12年の課程を修了した者又はこれに準ずる者",
     "selection_method": "書類選考（面接）",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 60000,
     "courses": [
       {
         "name": "春コースⅠ",
@@ -7797,8 +7797,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、個人面接、基礎学力試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 15000,
     "courses": [
       {
         "name": "進学コースA",
@@ -7927,8 +7927,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、入学選考試験、個人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 25000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -8050,8 +8050,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 70000,
     "courses": [
       {
         "name": "日本語基礎科",
@@ -8199,8 +8199,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、本人面接、能力適性試験、経費支弁者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 30000,
     "courses": [
       {
         "name": "進学コースⅠ",
@@ -8329,8 +8329,8 @@
     "current_enrollment": null,
     "admission_requirement": "外国において高等学校までを卒業した者",
     "selection_method": "書類審査、連絡者インタビュー、外国政府機関及び奨学生受入機関からの推薦",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 30000,
     "courses": [
       {
         "name": "大学院等進学課程1年コース",
@@ -8494,8 +8494,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者、日本語学習時間150時間以上",
     "selection_method": "書類審査、本人面接、保証人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 85000,
     "courses": [
       {
         "name": "一般2年コース",
@@ -8614,8 +8614,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接、能力適正試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 50000,
     "courses": [
       {
         "name": "インテンシブ2年コース",
@@ -8745,8 +8745,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 26000,
     "courses": [
       {
         "name": "進学課程1年コース",
@@ -8884,8 +8884,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 40000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -9257,8 +9257,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 82000,
     "courses": [
       {
         "name": "進学1年3ヶ月コース",
@@ -9785,8 +9785,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 28000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -9922,8 +9922,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "面接、書類選考、能力適性試験（プレスメントテスト)",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 49000,
     "courses": [
       {
         "name": "進学コース Ⅳ",
@@ -10105,8 +10105,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、個人面接、両親面接、入学選考試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 45000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -10301,8 +10301,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人と保護者の面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 23000,
     "courses": [
       {
         "name": "大学進学1年半コース",
@@ -10424,7 +10424,7 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上又はこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、能力適性試験",
-    "has_accommodation": false,
+    "has_accommodation": true,
     "accommodation_fee": null,
     "courses": [
       {
@@ -10591,8 +10591,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上、勉学の意欲があり、向上心のある者",
     "selection_method": "書類審査、本人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 80000,
     "courses": [
       {
         "name": "一般1年コース",
@@ -10915,8 +10915,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、入学選考試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 30000,
     "courses": [
       {
         "name": "進学コース Ⅰ",
@@ -11217,8 +11217,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、筆記試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 15000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -11371,8 +11371,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及び同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 40000,
     "courses": [
       {
         "name": "進学1年6ヶ月コース",
@@ -11497,8 +11497,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 18000,
     "courses": [
       {
         "name": "進学Aコース",
@@ -11668,8 +11668,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等のレベルの者",
     "selection_method": "書類審査、本人面接、選考試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 25000,
     "courses": [
       {
         "name": "日本語科2年コース",
@@ -11787,8 +11787,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等ﾚﾍﾞﾙの者",
     "selection_method": "入学選考試験、本人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 20000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -11922,8 +11922,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類選考、面接、筆記試験等",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 47000,
     "courses": [
       {
         "name": "進学4月コース",
@@ -12800,8 +12800,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、本人面接、保証人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 70000,
     "courses": [
       {
         "name": "進学課程2年コース",
@@ -12945,8 +12945,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者、本国での大学受験・国際バカロレア有資格者",
     "selection_method": "書類審査、本人面接、経費支弁者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 72000,
     "courses": [
       {
         "name": "総合日本語コース（4月開講）",
@@ -13111,8 +13111,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者，日本語能力試験N5合格者，日本語学習時間150時間以上",
     "selection_method": "書類審査、本人面接、その他",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 30000,
     "courses": [
       {
         "name": "2年進学コース",
@@ -13462,8 +13462,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及び同等レベルの者（ 12年未満入学可、準備教育課程コース)",
     "selection_method": "書類審査、本人面接、保証人面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 54000,
     "courses": [
       {
         "name": "準備教育課程Bコース",
@@ -13625,8 +13625,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、筆記試験、本人面接、保護者面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 60000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -13774,8 +13774,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上、同等以上",
     "selection_method": "書類審査、面接",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 54000,
     "courses": [
       {
         "name": "進学コース1年",
@@ -13889,8 +13889,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査・本人面接・保証人面接・能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 20000,
     "courses": [
       {
         "name": "2年進学コース",
@@ -14254,8 +14254,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接、関係機関等からの推薦",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 69000,
     "courses": [
       {
         "name": "一月期生",
@@ -14415,8 +14415,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等レベルの者",
     "selection_method": "書類審査、本人面接、保証人面接、基礎学力テスト",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 48000,
     "courses": [
       {
         "name": "進学2年コース",
@@ -14598,8 +14598,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上及びこれと同等ﾚﾍﾞﾙの者",
     "selection_method": "書類審査、本人面接、能力適性試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 20000,
     "courses": [
       {
         "name": "進学1年6か月コース",
@@ -14728,8 +14728,8 @@
     "current_enrollment": null,
     "admission_requirement": "12年課程修了以上",
     "selection_method": "書類審査、本人面接、筆記試験",
-    "has_accommodation": false,
-    "accommodation_fee": null,
+    "has_accommodation": true,
+    "accommodation_fee": 43000,
     "courses": [
       {
         "name": "進学課程2年コース",

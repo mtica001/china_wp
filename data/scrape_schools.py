@@ -239,9 +239,9 @@ def parse_school(html, school_id, name_hint, location_hint):
     data["admission_requirement"] = find_marked_value(soup, "■入学資格")
     data["selection_method"] = find_marked_value(soup, "■入学選抜方法")
 
-    # Accommodation: look for 寮 in any cell
-    dorm_raw = find_marked_value(soup, "■学生寮") or find_marked_value(soup, "■寮") or find_marked_value(soup, "■宿舎")
-    data["has_accommodation"] = bool(dorm_raw and dorm_raw not in ["なし", "無", "×", ""])
+    # Accommodation: the page labels this "■学生宿舎"; value is 有/無 in the next cell
+    dorm_raw = find_marked_value(soup, "■学生宿舎") or find_marked_value(soup, "■学生寮") or find_marked_value(soup, "■寮")
+    data["has_accommodation"] = bool(dorm_raw and dorm_raw.lstrip().startswith("有"))
     fee_m = re.search(r'([\d,]+)\s*円', dorm_raw)
     data["accommodation_fee"] = int(fee_m.group(1).replace(',', '')) if fee_m else None
 
