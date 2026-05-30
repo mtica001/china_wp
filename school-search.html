@@ -6,51 +6,110 @@
   <meta name="robots" content="noindex">
   <meta name="referrer" content="no-referrer-when-downgrade">
   <title>日本语学校搜索</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --accent: #c0392b;
-      --accent-light: #f8f0f0;
-      --goal-bg: #ebf3ff;
-      --goal-color: #1a6cc8;
-      --service-bg: #eafaf1;
-      --service-color: #1a7a40;
-      --card-border: #e0e0e0;
-      --card-shadow: 0 1px 4px rgba(0,0,0,0.08);
-      --sidebar-width: 260px;
-      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+      --ink:              #1c1c1e;
+      --bg:               #f0ece4;
+      --sidebar-bg:       #1c1c1e;
+      --sidebar-border:   rgba(255,255,255,0.07);
+      --accent:           #d4241e;
+      --accent-hover:     #b91c18;
+      --card-bg:          #ffffff;
+      --border:           #e2ddd5;
+      --border-light:     #ede8e0;
+      --text-main:        #1c1c1e;
+      --text-muted:       #7c786f;
+      --text-sidebar:     rgba(255,255,255,0.88);
+      --text-sidebar-dim: rgba(255,255,255,0.42);
+      --text-sidebar-lbl: rgba(255,255,255,0.52);
+      --goal-bg:          #eef3ff;
+      --goal-color:       #2563eb;
+      --goal-border:      rgba(37,99,235,0.22);
+      --service-bg:       #edfaf2;
+      --service-color:    #15803d;
+      --service-border:   rgba(21,128,61,0.22);
+      --radius:           12px;
+      --radius-sm:        7px;
+      --sidebar-w:        240px;
+      --font:       'DM Sans', 'Noto Sans SC', 'PingFang SC', system-ui, sans-serif;
+      --font-serif: 'Noto Serif SC', serif;
+      --font-mono:  'DM Mono', 'SF Mono', monospace;
     }
 
-    body { font-family: var(--font); font-size: 14px; color: #333; background: #f5f5f5; }
-
-    /* Header */
-    .page-header {
-      background: var(--accent);
-      color: white;
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    body {
+      font-family: var(--font);
+      font-size: 14px;
+      color: var(--text-main);
+      background: transparent;
+      -webkit-font-smoothing: antialiased;
     }
-    .page-header h1 { font-size: 18px; font-weight: 700; }
-    .result-count { font-size: 13px; opacity: 0.9; }
 
-    /* Widget root — bounded height for WordPress embed */
+    /* ── Widget root ─────────────────────────────────── */
     .widget-root {
       display: flex;
       flex-direction: column;
       max-height: 640px;
       overflow: hidden;
-      border: 1px solid var(--card-border);
-      border-radius: 8px;
-      background: #f5f5f5;
+      border-radius: 14px;
+      background: var(--bg);
+      box-shadow: 0 2px 40px rgba(0,0,0,0.13), 0 0 0 1px rgba(0,0,0,0.07);
       container-type: inline-size;
       container-name: schoolwidget;
     }
 
-    /* Layout */
+    /* ── Header ─────────────────────────────────────── */
+    .page-header {
+      background: var(--sidebar-bg);
+      color: white;
+      padding: 13px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .page-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent) 0%, transparent 55%);
+    }
+    .header-left { display: flex; align-items: center; gap: 10px; }
+    .header-logo {
+      width: 26px; height: 26px;
+      background: var(--accent);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 13px; font-weight: 700; color: white;
+      flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+      letter-spacing: 0.02em;
+    }
+    .result-count-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-sidebar-dim);
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 3px 10px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Layout ─────────────────────────────────────── */
     .layout {
       display: flex;
       flex: 1;
@@ -58,49 +117,88 @@
       overflow: hidden;
     }
 
-    /* Sidebar */
+    /* ── Sidebar ─────────────────────────────────────── */
     .ss-sidebar {
-      width: var(--sidebar-width);
+      width: var(--sidebar-w);
       flex-shrink: 0;
-      background: white;
-      border-right: 1px solid var(--card-border);
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--sidebar-border);
       overflow-y: auto;
-      align-self: flex-start;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.1) transparent;
     }
+    .ss-sidebar::-webkit-scrollbar { width: 3px; }
+    .ss-sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
 
     .filter-panel { padding: 16px; }
     .filter-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--sidebar-border);
     }
-    .filter-title { font-weight: 700; font-size: 14px; }
+    .filter-title {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-sidebar-lbl);
+    }
     .reset-btn {
-      font-size: 12px;
+      font-size: 11px;
+      font-family: var(--font);
+      font-weight: 500;
       color: var(--accent);
-      background: none;
-      border: 1px solid var(--accent);
-      border-radius: 4px;
-      padding: 2px 8px;
+      background: rgba(212,36,30,0.1);
+      border: 1px solid rgba(212,36,30,0.28);
+      border-radius: 5px;
+      padding: 3px 9px;
       cursor: pointer;
+      transition: background 0.15s;
     }
-    .reset-btn:hover { background: var(--accent-light); }
+    .reset-btn:hover { background: rgba(212,36,30,0.2); }
 
-    .filter-group { margin-bottom: 18px; }
-    .filter-label { display: block; font-size: 12px; font-weight: 600; color: #555; margin-bottom: 6px; }
+    .filter-group { margin-bottom: 16px; }
+    .filter-label {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-sidebar-lbl);
+      margin-bottom: 7px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
     .filter-select {
       width: 100%;
-      padding: 7px 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      padding: 8px 30px 8px 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-sm);
       font-size: 13px;
-      background: white;
+      font-family: var(--font);
+      background: rgba(255,255,255,0.06);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.3)'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      color: var(--text-sidebar);
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      transition: border-color 0.15s;
     }
+    .filter-select:focus { outline: none; border-color: rgba(212,36,30,0.5); }
+    .filter-select option { background: #2a2a2d; color: white; }
 
-    /* Dual range slider */
-    .range-display { font-size: 13px; color: #333; margin-bottom: 6px; }
-    .dual-range { position: relative; height: 28px; }
+    /* Range sliders */
+    .range-display {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-sidebar);
+      margin-bottom: 8px;
+      letter-spacing: 0.01em;
+    }
+    .dual-range { position: relative; height: 24px; margin: 2px 0; }
     .dual-range input[type=range] {
       position: absolute;
       width: 100%;
@@ -115,208 +213,350 @@
     .dual-range input[type=range]::-webkit-slider-thumb {
       pointer-events: all;
       -webkit-appearance: none;
-      width: 18px; height: 18px;
+      width: 15px; height: 15px;
       border-radius: 50%;
       background: var(--accent);
       cursor: pointer;
-      border: 2px solid white;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      border: 2px solid rgba(255,255,255,0.88);
+      box-shadow: 0 1px 6px rgba(212,36,30,0.55);
+      transition: transform 0.1s;
     }
+    .dual-range input[type=range]::-webkit-slider-thumb:active { transform: scale(1.25); }
     .dual-range input[type=range]::-webkit-slider-runnable-track {
-      background: #ddd;
+      background: rgba(255,255,255,0.12);
       height: 4px;
       border-radius: 2px;
     }
-    .filter-range { width: 100%; -webkit-appearance: none; appearance: none; height: 4px; background: #ddd; border-radius: 2px; outline: none; cursor: pointer; }
+    .filter-range {
+      width: 100%;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 4px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 2px;
+      outline: none;
+      cursor: pointer;
+    }
     .filter-range::-webkit-slider-thumb {
       -webkit-appearance: none;
-      width: 18px; height: 18px;
+      width: 15px; height: 15px;
       border-radius: 50%;
       background: var(--accent);
       cursor: pointer;
-      border: 2px solid white;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      border: 2px solid rgba(255,255,255,0.88);
+      box-shadow: 0 1px 6px rgba(212,36,30,0.55);
     }
 
-    /* Tag chips (filter panel) */
+    /* Tag chips — dark sidebar */
     .tag-group { display: flex; flex-wrap: wrap; gap: 5px; }
     .tag-chip {
-      font-size: 12px;
-      padding: 3px 10px;
-      border-radius: 12px;
+      font-size: 11px;
+      font-family: var(--font);
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 20px;
       cursor: pointer;
-      border: 1px solid transparent;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.6);
       transition: all 0.15s;
+      user-select: none;
     }
-    .tag-chip.goal { background: var(--goal-bg); color: var(--goal-color); border-color: #c5d8f5; }
-    .tag-chip.service { background: var(--service-bg); color: var(--service-color); border-color: #b8e8cc; }
-    .tag-chip.goal.active { background: var(--goal-color); color: white; }
-    .tag-chip.service.active { background: var(--service-color); color: white; }
+    .tag-chip:hover { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.9); }
+    .tag-chip.goal.active    { background: rgba(37,99,235,0.22);  border-color: rgba(37,99,235,0.5);  color: #93b4fd; }
+    .tag-chip.service.active { background: rgba(21,128,61,0.22);  border-color: rgba(21,128,61,0.5);  color: #6ee7a0; }
 
-    /* Main results */
+    /* ── Results ─────────────────────────────────────── */
     .results {
       flex: 1;
-      padding: 16px;
+      padding: 13px;
       min-width: 0;
       overflow-y: auto;
+      background: var(--bg);
     }
 
     .sort-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 14px;
+      margin-bottom: 11px;
       padding-bottom: 10px;
-      border-bottom: 2px solid var(--accent);
+      border-bottom: 1px solid var(--border);
     }
-    .result-summary { font-weight: 600; font-size: 13px; }
-    .sort-control { display: flex; align-items: center; gap: 6px; font-size: 13px; }
-    .sort-select { padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }
+    .result-summary {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .result-summary strong {
+      font-family: var(--font-mono);
+      font-weight: 500;
+      color: var(--text-main);
+    }
+    .sort-control { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+    .sort-select {
+      padding: 5px 22px 5px 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-family: var(--font);
+      background: white;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237c786f'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 7px center;
+      color: var(--text-main);
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    .sort-select:focus { outline: none; border-color: var(--accent); }
 
-    /* Cards */
-    .card-list { display: flex; flex-direction: column; gap: 10px; }
+    /* ── Cards ───────────────────────────────────────── */
+    .card-list { display: flex; flex-direction: column; gap: 8px; }
+
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
     .school-card {
-      background: white;
-      border: 1px solid var(--card-border);
-      border-radius: 8px;
-      padding: 14px 16px;
-      box-shadow: var(--card-shadow);
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 13px 15px;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.18s;
+      animation: cardIn 0.22s ease both;
     }
-    .school-card.no-tuition { background: #fafafa; }
+    .school-card:hover {
+      box-shadow: 0 5px 22px rgba(0,0,0,0.09);
+      transform: translateY(-1px);
+      border-color: #d8d3cb;
+    }
+    .school-card.no-tuition { background: #faf9f7; }
 
-    .card-top {
+    /* Card head */
+    .card-head {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 8px;
+      gap: 10px;
+      margin-bottom: 9px;
     }
     .card-name {
-      font-size: 16px;
-      font-weight: 700;
-      color: #1a1a1a;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.4;
+      flex: 1;
     }
-    .card-location { font-size: 12px; color: #666; white-space: nowrap; margin-left: 12px; flex-shrink: 0; }
-
-    .card-stats {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 6px;
-    }
-    .stat strong { color: #222; }
-
-    .card-tuition {
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 8px;
-    }
-    .card-tuition strong { color: #222; font-size: 14px; }
-    .tuition-note { font-size: 11px; color: #888; }
-    .no-tuition-badge {
-      display: inline-block;
-      background: #f0f0f0;
-      color: #888;
-      font-size: 12px;
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-
-    .card-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
-    .tag-chip-display {
+    .location-chip {
       font-size: 11px;
-      padding: 2px 8px;
-      border-radius: 10px;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3px 9px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .tag-chip-display.goal { background: var(--goal-bg); color: var(--goal-color); }
-    .tag-chip-display.service { background: var(--service-bg); color: var(--service-color); }
 
-    .card-footer {
+    /* Stat row */
+    .card-stats-row {
+      display: flex;
+      margin-bottom: 9px;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+    }
+    .stat-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 4px;
+      gap: 2px;
+    }
+    .stat-block + .stat-block { border-left: 1px solid var(--border-light); }
+    .stat-val {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-main);
+      text-align: center;
+      max-width: 100%;
+      word-break: break-all;
+    }
+    .stat-desc {
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    /* Tuition */
+    .card-tuition-row { margin-bottom: 8px; }
+    .tuition-known {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+    .tuition-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .tuition-value {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+    }
+    .tuition-note { font-size: 10px; color: var(--text-muted); }
+    .tuition-unknown {
+      display: inline-block;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: var(--bg);
+      border: 1px dashed var(--border);
+      border-radius: 4px;
+      padding: 3px 9px;
+    }
+
+    /* Card tags */
+    .card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 9px; }
+    .tag {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      letter-spacing: 0.02em;
+    }
+    .tag.goal    { background: var(--goal-bg);    color: var(--goal-color);    border: 1px solid var(--goal-border); }
+    .tag.service { background: var(--service-bg); color: var(--service-color); border: 1px solid var(--service-border); }
+
+    /* Card footer */
+    .card-foot {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      padding-top: 9px;
+      border-top: 1px solid var(--border-light);
       gap: 8px;
-      padding-top: 10px;
-      border-top: 1px solid #f0f0f0;
+      flex-wrap: wrap;
     }
-    .data-source { font-size: 11px; color: #999; }
-    .card-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .data-source { font-size: 10px; color: var(--text-muted); }
+    .card-links { display: flex; gap: 6px; flex-wrap: wrap; }
 
     .btn {
-      font-size: 12px;
-      padding: 5px 12px;
-      border-radius: 5px;
-      text-decoration: none;
+      font-size: 11px;
+      font-family: var(--font);
       font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 6px;
+      text-decoration: none;
       white-space: nowrap;
       display: inline-block;
+      transition: all 0.15s;
+      cursor: pointer;
+      border: none;
     }
-    .btn-secondary { background: white; color: #555; border: 1px solid #ccc; }
-    .btn-secondary:hover { background: #f5f5f5; }
-    .btn-primary { background: var(--accent); color: white; border: 1px solid var(--accent); }
-    .btn-primary:hover { background: #a93226; }
-    .no-website { font-size: 11px; color: #bbb; }
+    .btn-outline {
+      background: white;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { border-color: #a8a39a; color: var(--text-main); }
+    .btn-solid {
+      background: var(--accent);
+      color: white;
+      border: 1px solid var(--accent);
+    }
+    .btn-solid:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+    .no-website { font-size: 10px; color: #c0bbb4; }
 
-    /* Unknown section */
-    .unknown-section { margin-top: 24px; }
+    /* ── Unknown section ─────────────────────────────── */
+    .unknown-section { margin-top: 14px; }
     .unknown-header {
-      font-size: 13px;
+      font-size: 10px;
       font-weight: 600;
-      color: #888;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       padding: 8px 0;
-      border-top: 1px dashed #ccc;
-      margin-bottom: 10px;
+      border-top: 1px dashed var(--border);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .unknown-count {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      background: var(--border-light);
+      padding: 1px 7px;
+      border-radius: 10px;
+      color: var(--text-muted);
     }
 
-    /* Empty state */
-    .empty-state { text-align: center; padding: 60px 20px; color: #888; }
+    /* ── Empty state ─────────────────────────────────── */
+    .empty-state { text-align: center; padding: 50px 20px; color: var(--text-muted); }
     .empty-state p { font-size: 15px; margin-bottom: 16px; }
     .reset-btn-lg {
-      padding: 8px 20px;
+      padding: 9px 20px;
       background: var(--accent);
       color: white;
       border: none;
-      border-radius: 6px;
-      font-size: 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: var(--font);
+      font-weight: 600;
       cursor: pointer;
+      transition: background 0.15s;
     }
+    .reset-btn-lg:hover { background: var(--accent-hover); }
 
-    /* Mobile filter toggle (hidden on desktop) */
+    /* ── Mobile toggle ───────────────────────────────── */
     .mobile-filter-toggle { display: none; }
 
-    /* Tablet: narrow embed (≤560px container) — stack filters above results */
+    /* ── Responsive ──────────────────────────────────── */
     @container schoolwidget (max-width: 560px) {
       .layout { flex-direction: column; }
+
+      /* sidebar hidden by default; revealed via toggle */
       .ss-sidebar {
         width: 100%;
-        align-self: auto;
         border-right: none;
-        border-bottom: 1px solid var(--card-border);
+        border-bottom: 1px solid var(--sidebar-border);
+        display: none;
+        max-height: 380px;   /* enough for all filters with slight scrolling */
       }
-      .filter-panel { padding: 12px 16px; }
-    }
-
-    /* Mobile: <420px container — hide sidebar, show toggle */
-    @container schoolwidget (max-width: 420px) {
-      .ss-sidebar { display: none; }
       .ss-sidebar.open { display: block; }
+
       .mobile-filter-toggle {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 16px;
-        background: white;
-        border-bottom: 1px solid var(--card-border);
-        font-size: 14px;
+        background: var(--sidebar-bg);
+        border-bottom: 1px solid var(--sidebar-border);
+        font-size: 13px;
+        font-family: var(--font);
+        color: var(--text-sidebar);
         cursor: pointer;
         border: none;
         width: 100%;
       }
+      .filter-panel { padding: 12px 14px; }
+    }
+
+    @container schoolwidget (max-width: 420px) {
       .results { padding: 10px; }
-      .card-stats { gap: 8px; }
+      .card-stats-row { display: none; }
       .sort-bar { flex-direction: column; align-items: flex-start; gap: 6px; }
     }
   </style>
@@ -325,8 +565,11 @@
 <div class="widget-root">
 
   <header class="page-header">
-    <h1>日本语学校搜索</h1>
-    <span class="result-count" x-text="`显示 ${totalCount} 所学校`"></span>
+    <div class="header-left">
+      <div class="header-logo">日</div>
+      <h1>日本语学校搜索</h1>
+    </div>
+    <span class="result-count-badge" x-text="`${totalCount} 所`"></span>
   </header>
 
   <button class="mobile-filter-toggle"
@@ -334,103 +577,105 @@
     <span>筛选条件</span>
     <span>▼</span>
   </button>
+
   <div class="layout">
     <div class="ss-sidebar" x-ref="sidebar">
-<div class="filter-panel">
-  <div class="filter-header">
-    <span class="filter-title">筛选条件</span>
-    <button class="reset-btn" @click="resetFilters()">重置</button>
-  </div>
+      <div class="filter-panel">
+        <div class="filter-header">
+          <span class="filter-title">筛选</span>
+          <button class="reset-btn" @click="resetFilters()">重置</button>
+        </div>
 
-  <!-- Region -->
-  <div class="filter-group">
-    <label class="filter-label">📍 地区</label>
-    <select x-model="filterRegion" @change="onRegionChange()" class="filter-select">
-      <option value="">全部地区</option>
-      <template x-for="region in regions" :key="region">
-        <option :value="region" x-text="region"></option>
-      </template>
-    </select>
-  </div>
+        <!-- Region -->
+        <div class="filter-group">
+          <label class="filter-label">地区</label>
+          <select x-model="filterRegion" @change="onRegionChange()" class="filter-select">
+            <option value="">全部地区</option>
+            <template x-for="region in regions" :key="region">
+              <option :value="region" x-text="region"></option>
+            </template>
+          </select>
+        </div>
 
-  <!-- Prefecture (cascades) -->
-  <div class="filter-group" x-show="filterRegion !== ''">
-    <label class="filter-label">🏙️ 都道府県</label>
-    <select x-model="filterPrefecture" class="filter-select">
-      <option value="">全部</option>
-      <template x-for="pref in prefectures" :key="pref">
-        <option :value="pref" x-text="pref"></option>
-      </template>
-    </select>
-  </div>
+        <!-- Prefecture (cascades) -->
+        <div class="filter-group" x-show="filterRegion !== ''">
+          <label class="filter-label">都道府県</label>
+          <select x-model="filterPrefecture" class="filter-select">
+            <option value="">全部</option>
+            <template x-for="pref in prefectures" :key="pref">
+              <option :value="pref" x-text="pref"></option>
+            </template>
+          </select>
+        </div>
 
-  <!-- Tuition dual range slider -->
-  <div class="filter-group">
-    <label class="filter-label">💰 年学费</label>
-    <div class="range-display">
-      <span x-text="formatTuition(tuitionMin)"></span>
-      <span> ～ </span>
-      <span x-text="formatTuition(tuitionMax)"></span>
-    </div>
-    <div class="dual-range">
-      <input type="range" class="range-min"
-        :min="TUITION_FLOOR" :max="TUITION_CEIL" step="50000"
-        x-model.number="tuitionMin"
-        @input="if(tuitionMin > tuitionMax) tuitionMax = tuitionMin">
-      <input type="range" class="range-max"
-        :min="TUITION_FLOOR" :max="TUITION_CEIL" step="50000"
-        x-model.number="tuitionMax"
-        @input="if(tuitionMax < tuitionMin) tuitionMin = tuitionMax">
-    </div>
-  </div>
+        <!-- Tuition dual range slider -->
+        <div class="filter-group">
+          <label class="filter-label">年学费</label>
+          <div class="range-display">
+            <span x-text="formatTuition(tuitionMin)"></span>
+            <span> — </span>
+            <span x-text="formatTuition(tuitionMax)"></span>
+          </div>
+          <div class="dual-range">
+            <input type="range" class="range-min"
+              :min="TUITION_FLOOR" :max="TUITION_CEIL" step="50000"
+              x-model.number="tuitionMin"
+              @input="if(tuitionMin > tuitionMax) tuitionMax = tuitionMin">
+            <input type="range" class="range-max"
+              :min="TUITION_FLOOR" :max="TUITION_CEIL" step="50000"
+              x-model.number="tuitionMax"
+              @input="if(tuitionMax < tuitionMin) tuitionMin = tuitionMax">
+          </div>
+        </div>
 
-  <!-- Teachers min slider -->
-  <div class="filter-group">
-    <label class="filter-label">👨‍🏫 专任教师（最少）</label>
-    <div class="range-display">
-      <span x-text="teachersMin > 0 ? `${teachersMin} 名以上` : '不限'"></span>
-    </div>
-    <input type="range" class="filter-range"
-      min="0" :max="TEACHERS_MAX" step="1"
-      x-model.number="teachersMin">
-  </div>
+        <!-- Teachers min slider -->
+        <div class="filter-group">
+          <label class="filter-label">专任教师（最少）</label>
+          <div class="range-display">
+            <span x-text="teachersMin > 0 ? `${teachersMin} 名以上` : '不限'"></span>
+          </div>
+          <input type="range" class="filter-range"
+            min="0" :max="TEACHERS_MAX" step="1"
+            x-model.number="teachersMin">
+        </div>
 
-  <!-- Keyword tags -->
-  <div class="filter-group">
-    <label class="filter-label">🏷️ 关键词</label>
-    <div class="tag-group">
-      <template x-for="tag in ALL_TAGS.filter(t => t.type === 'goal')" :key="tag.key">
-        <button class="tag-chip goal"
-          :class="{ active: isTagActive(tag.key) }"
-          @click="toggleTag(tag.key)"
-          x-text="tag.label">
-        </button>
-      </template>
+        <!-- Keyword tags -->
+        <div class="filter-group">
+          <label class="filter-label">关键词</label>
+          <div class="tag-group">
+            <template x-for="tag in ALL_TAGS.filter(t => t.type === 'goal')" :key="tag.key">
+              <button class="tag-chip goal"
+                :class="{ active: isTagActive(tag.key) }"
+                @click="toggleTag(tag.key)"
+                x-text="tag.label">
+              </button>
+            </template>
+          </div>
+          <div class="tag-group" style="margin-top: 6px;">
+            <template x-for="tag in ALL_TAGS.filter(t => t.type === 'service')" :key="tag.key">
+              <button class="tag-chip service"
+                :class="{ active: isTagActive(tag.key) }"
+                @click="toggleTag(tag.key)"
+                x-text="tag.label">
+              </button>
+            </template>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="tag-group" style="margin-top: 6px;">
-      <template x-for="tag in ALL_TAGS.filter(t => t.type === 'service')" :key="tag.key">
-        <button class="tag-chip service"
-          :class="{ active: isTagActive(tag.key) }"
-          @click="toggleTag(tag.key)"
-          x-text="tag.label">
-        </button>
-      </template>
-    </div>
-  </div>
-</div>
-    </div>
+
     <main class="results">
 
       <!-- Sort bar -->
       <div class="sort-bar">
-        <span class="result-summary" x-text="`共 ${totalCount} 所学校`"></span>
+        <span class="result-summary">共 <strong x-text="totalCount"></strong> 所学校</span>
         <div class="sort-control">
-          <label>排序：</label>
+          <span>排序</span>
           <select x-model="sortBy" class="sort-select">
-            <option value="default">综合（按地区）</option>
-            <option value="tuition_asc">学费从低到高</option>
-            <option value="tuition_desc">学费从高到低</option>
-            <option value="capacity_desc">招生人数从多到少</option>
+            <option value="default">按地区</option>
+            <option value="tuition_asc">学费↑</option>
+            <option value="tuition_desc">学费↓</option>
+            <option value="capacity_desc">招生↓</option>
           </select>
         </div>
       </div>
@@ -439,36 +684,44 @@
       <div class="card-list">
         <template x-for="school in primaryResults" :key="school.id">
           <div class="school-card">
-            <div class="card-top">
+            <div class="card-head">
               <div class="card-name" x-text="school.name"></div>
-              <div class="card-location">
-                📍 <span x-text="school.prefecture"></span>
+              <span class="location-chip" x-text="school.prefecture"></span>
+            </div>
+            <div class="card-stats-row">
+              <div class="stat-block">
+                <span class="stat-val" x-text="school.capacity ? school.capacity + '名' : '—'"></span>
+                <span class="stat-desc">招生上限</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-val" x-text="school.full_time_teachers ? school.full_time_teachers + '名' : '—'"></span>
+                <span class="stat-desc">专任教师</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-val" x-text="formatMonths(school.start_months)"></span>
+                <span class="stat-desc">入学月</span>
               </div>
             </div>
-            <div class="card-stats">
-              <span class="stat">👥 招生上限 <strong x-text="school.capacity ? school.capacity + '名' : '未公开'"></strong></span>
-              <span class="stat">👨‍🏫 专任教师 <strong x-text="school.full_time_teachers ? school.full_time_teachers + '名' : '未公开'"></strong></span>
-              <span class="stat">📅 入学月 <strong x-text="formatMonths(school.start_months)"></strong></span>
-            </div>
-            <div class="card-tuition">
+            <div class="card-tuition-row">
               <template x-if="school.tuition_min !== null">
-                <span>💰 年学费 <strong x-text="`${formatTuition(school.tuition_min)} ～ ${formatTuition(school.tuition_max)}`"></strong> <span class="tuition-note">（含报名费・入学金）</span></span>
-              </template>
-              <template x-if="school.tuition_min === null">
-                <span class="no-tuition-badge">学费未公开</span>
+                <div class="tuition-known">
+                  <span class="tuition-label">年学费</span>
+                  <span class="tuition-value" x-text="`${formatTuition(school.tuition_min)} — ${formatTuition(school.tuition_max)}`"></span>
+                  <span class="tuition-note">含报名费・入学金</span>
+                </div>
               </template>
             </div>
             <div class="card-tags" x-show="school.tags.length > 0">
               <template x-for="tag in school.tags" :key="tag.key">
-                <span class="tag-chip-display" :class="tag.type" x-text="tag.label"></span>
+                <span class="tag" :class="tag.type" x-text="tag.label"></span>
               </template>
             </div>
-            <div class="card-footer">
-              <span class="data-source">数据来源：日本語教育振興協会</span>
+            <div class="card-foot">
+              <span class="data-source">日本語教育振興協会</span>
               <div class="card-links">
-                <a :href="school.nisshinkyo_url" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">📋 查看日振协资料</a>
+                <a :href="school.nisshinkyo_url" target="_blank" rel="noopener noreferrer" class="btn btn-outline">查看资料</a>
                 <template x-if="school.website">
-                  <a :href="school.website" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🌐 前往学校官网 →</a>
+                  <a :href="school.website" target="_blank" rel="noopener noreferrer" class="btn btn-solid">官网 →</a>
                 </template>
                 <template x-if="!school.website">
                   <span class="no-website">官网未登录</span>
@@ -483,34 +736,44 @@
       <template x-if="unknownResults.length > 0">
         <div class="unknown-section">
           <div class="unknown-header">
-            其他学校（学费未公开）：<span x-text="unknownResults.length"></span> 所
+            其他学校（学费未公开）
+            <span class="unknown-count" x-text="unknownResults.length"></span>
           </div>
           <div class="card-list">
             <template x-for="school in unknownResults" :key="school.id">
               <div class="school-card no-tuition">
-                <div class="card-top">
+                <div class="card-head">
                   <div class="card-name" x-text="school.name"></div>
-                  <div class="card-location">📍 <span x-text="school.prefecture"></span></div>
+                  <span class="location-chip" x-text="school.prefecture"></span>
                 </div>
-                <div class="card-stats">
-                  <span class="stat">👥 招生上限 <strong x-text="school.capacity ? school.capacity + '名' : '未公开'"></strong></span>
-                  <span class="stat">👨‍🏫 专任教师 <strong x-text="school.full_time_teachers ? school.full_time_teachers + '名' : '未公开'"></strong></span>
-                  <span class="stat">📅 入学月 <strong x-text="formatMonths(school.start_months)"></strong></span>
+                <div class="card-stats-row">
+                  <div class="stat-block">
+                    <span class="stat-val" x-text="school.capacity ? school.capacity + '名' : '—'"></span>
+                    <span class="stat-desc">招生上限</span>
+                  </div>
+                  <div class="stat-block">
+                    <span class="stat-val" x-text="school.full_time_teachers ? school.full_time_teachers + '名' : '—'"></span>
+                    <span class="stat-desc">专任教师</span>
+                  </div>
+                  <div class="stat-block">
+                    <span class="stat-val" x-text="formatMonths(school.start_months)"></span>
+                    <span class="stat-desc">入学月</span>
+                  </div>
                 </div>
-                <div class="card-tuition">
-                  <span class="no-tuition-badge">学费未公开</span>
+                <div class="card-tuition-row">
+                  <span class="tuition-unknown">学费未公开</span>
                 </div>
                 <div class="card-tags" x-show="school.tags.length > 0">
                   <template x-for="tag in school.tags" :key="tag.key">
-                    <span class="tag-chip-display" :class="tag.type" x-text="tag.label"></span>
+                    <span class="tag" :class="tag.type" x-text="tag.label"></span>
                   </template>
                 </div>
-                <div class="card-footer">
-                  <span class="data-source">数据来源：日本語教育振興協会</span>
+                <div class="card-foot">
+                  <span class="data-source">日本語教育振興協会</span>
                   <div class="card-links">
-                    <a :href="school.nisshinkyo_url" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">📋 查看日振协资料</a>
+                    <a :href="school.nisshinkyo_url" target="_blank" rel="noopener noreferrer" class="btn btn-outline">查看资料</a>
                     <template x-if="school.website">
-                      <a :href="school.website" target="_blank" rel="noopener noreferrer" class="btn btn-primary">🌐 前往学校官网 →</a>
+                      <a :href="school.website" target="_blank" rel="noopener noreferrer" class="btn btn-solid">官网 →</a>
                     </template>
                     <template x-if="!school.website">
                       <span class="no-website">官网未登录</span>
