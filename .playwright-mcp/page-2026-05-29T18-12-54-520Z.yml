@@ -1,0 +1,3185 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "日本语学校搜索" [level=1] [ref=e4]
+    - generic [ref=e5]: 显示 103 所学校
+  - button "筛选条件 ▼" [ref=e6] [cursor=pointer]:
+    - generic [ref=e7]: 筛选条件
+    - generic [ref=e8]: ▼
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]: 共 103 所学校
+      - generic [ref=e13]:
+        - generic [ref=e14]: 排序：
+        - combobox [ref=e15]:
+          - option "综合（按地区）" [selected]
+          - option "学费从低到高"
+          - option "学费从高到低"
+          - option "招生人数从多到少"
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: 日本語学校つくばスマイル
+          - generic [ref=e20]: 📍 茨城県
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - text: 👥 招生上限
+            - strong [ref=e23]: 100名
+          - generic [ref=e24]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e25]: 5名
+          - generic [ref=e26]:
+            - text: 📅 入学月
+            - strong [ref=e27]: 4月・7月・10月
+        - generic [ref=e29]:
+          - text: 💰 年学费
+          - strong [ref=e30]: ¥90万 ～ ¥117万
+          - text: （含报名费・入学金）
+        - generic [ref=e31]:
+          - generic [ref=e32]: 升大学
+          - generic [ref=e33]: 升专门学校
+          - generic [ref=e34]: JLPT対策
+          - generic [ref=e35]: 4月入学
+          - generic [ref=e36]: 10月入学
+        - generic [ref=e37]:
+          - generic [ref=e38]: 数据来源：日本語教育振興協会
+          - generic [ref=e39]:
+            - link "📋 查看日振协资料" [ref=e40] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=33
+            - link "🌐 前往学校官网 →" [ref=e41] [cursor=pointer]:
+              - /url: http://www.tsukuba-smile.jp
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: NIPPON語学院
+          - generic [ref=e45]: 📍 群馬県
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - text: 👥 招生上限
+            - strong [ref=e48]: 967名
+          - generic [ref=e49]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e50]: 27名
+          - generic [ref=e51]:
+            - text: 📅 入学月
+            - strong [ref=e52]: 1月・4月・7月・10月
+        - generic [ref=e54]:
+          - text: 💰 年学费
+          - strong [ref=e55]: ¥67万 ～ ¥125万
+          - text: （含报名费・入学金）
+        - generic [ref=e56]:
+          - generic [ref=e57]: 升大学院
+          - generic [ref=e58]: 升大学
+          - generic [ref=e59]: 升专门学校
+          - generic [ref=e60]: JLPT対策
+          - generic [ref=e61]: 4月入学
+          - generic [ref=e62]: 10月入学
+        - generic [ref=e63]:
+          - generic [ref=e64]: 数据来源：日本語教育振興協会
+          - generic [ref=e65]:
+            - link "📋 查看日振协资料" [ref=e66] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=44
+            - link "🌐 前往学校官网 →" [ref=e67] [cursor=pointer]:
+              - /url: http://www.nila.jp
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]: 与野学院日本語学校
+          - generic [ref=e71]: 📍 埼玉県
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - text: 👥 招生上限
+            - strong [ref=e74]: 300名
+          - generic [ref=e75]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e76]: 8名
+          - generic [ref=e77]:
+            - text: 📅 入学月
+            - strong [ref=e78]: 4月・7月・10月
+        - generic [ref=e80]:
+          - text: 💰 年学费
+          - strong [ref=e81]: ¥110万 ～ ¥144万
+          - text: （含报名费・入学金）
+        - generic [ref=e82]:
+          - generic [ref=e83]: 升大学院
+          - generic [ref=e84]: 升大学
+          - generic [ref=e85]: 升专门学校
+          - generic [ref=e86]: JLPT対策
+          - generic [ref=e87]: 4月入学
+          - generic [ref=e88]: 10月入学
+        - generic [ref=e89]:
+          - generic [ref=e90]: 数据来源：日本語教育振興協会
+          - generic [ref=e91]:
+            - link "📋 查看日振协资料" [ref=e92] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=48
+            - link "🌐 前往学校官网 →" [ref=e93] [cursor=pointer]:
+              - /url: https://www.yono-gakuin.co.jp
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]: 中央情報専門学校
+          - generic [ref=e97]: 📍 埼玉県
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - text: 👥 招生上限
+            - strong [ref=e100]: 160名
+          - generic [ref=e101]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e102]: 5名
+          - generic [ref=e103]:
+            - text: 📅 入学月
+            - strong [ref=e104]: 4月・10月
+        - generic [ref=e106]:
+          - text: 💰 年学费
+          - strong [ref=e107]: ¥104万 ～ ¥135万
+          - text: （含报名费・入学金）
+        - generic [ref=e108]:
+          - generic [ref=e109]: 升大学
+          - generic [ref=e110]: 升专门学校
+          - generic [ref=e111]: JLPT対策
+          - generic [ref=e112]: 4月入学
+          - generic [ref=e113]: 10月入学
+        - generic [ref=e114]:
+          - generic [ref=e115]: 数据来源：日本語教育振興協会
+          - generic [ref=e116]:
+            - link "📋 查看日振协资料" [ref=e117] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=59
+            - link "🌐 前往学校官网 →" [ref=e118] [cursor=pointer]:
+              - /url: http://ccmc.ac.jp/japanese/
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: 山手日本語学校
+          - generic [ref=e122]: 📍 埼玉県
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - text: 👥 招生上限
+            - strong [ref=e125]: 340名
+          - generic [ref=e126]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e127]: 8名
+          - generic [ref=e128]:
+            - text: 📅 入学月
+            - strong [ref=e129]: 4月・10月
+        - generic [ref=e131]:
+          - text: 💰 年学费
+          - strong [ref=e132]: ¥106万 ～ ¥138万
+          - text: （含报名费・入学金）
+        - generic [ref=e133]:
+          - generic [ref=e134]: 升大学
+          - generic [ref=e135]: 升专门学校
+          - generic [ref=e136]: JLPT対策
+          - generic [ref=e137]: 4月入学
+          - generic [ref=e138]: 10月入学
+        - generic [ref=e139]:
+          - generic [ref=e140]: 数据来源：日本語教育振興協会
+          - generic [ref=e141]:
+            - link "📋 查看日振协资料" [ref=e142] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=54
+            - link "🌐 前往学校官网 →" [ref=e143] [cursor=pointer]:
+              - /url: http://yamate-jls.aiko.ac.jp/ja/
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - generic [ref=e146]: 埼玉日本語学校
+          - generic [ref=e147]: 📍 埼玉県
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - text: 👥 招生上限
+            - strong [ref=e150]: 278名
+          - generic [ref=e151]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e152]: 8名
+          - generic [ref=e153]:
+            - text: 📅 入学月
+            - strong [ref=e154]: 4月・10月
+        - generic [ref=e156]:
+          - text: 💰 年学费
+          - strong [ref=e157]: ¥109万 ～ ¥143万
+          - text: （含报名费・入学金）
+        - generic [ref=e158]:
+          - generic [ref=e159]: 升大学
+          - generic [ref=e160]: 升专门学校
+          - generic [ref=e161]: JLPT対策
+          - generic [ref=e162]: 4月入学
+          - generic [ref=e163]: 10月入学
+        - generic [ref=e164]:
+          - generic [ref=e165]: 数据来源：日本語教育振興協会
+          - generic [ref=e166]:
+            - link "📋 查看日振协资料" [ref=e167] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=47
+            - link "🌐 前往学校官网 →" [ref=e168] [cursor=pointer]:
+              - /url: http://www.s-jls.com
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - generic [ref=e171]: 飛鳥学院
+          - generic [ref=e172]: 📍 神奈川県
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - text: 👥 招生上限
+            - strong [ref=e175]: 594名
+          - generic [ref=e176]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e177]: 21名
+          - generic [ref=e178]:
+            - text: 📅 入学月
+            - strong [ref=e179]: 1月・4月・7月・10月
+        - generic [ref=e181]:
+          - text: 💰 年学费
+          - strong [ref=e182]: ¥107万 ～ ¥163万
+          - text: （含报名费・入学金）
+        - generic [ref=e183]:
+          - generic [ref=e184]: 升大学院
+          - generic [ref=e185]: 升大学
+          - generic [ref=e186]: 升专门学校
+          - generic [ref=e187]: JLPT対策
+          - generic [ref=e188]: 4月入学
+          - generic [ref=e189]: 10月入学
+        - generic [ref=e190]:
+          - generic [ref=e191]: 数据来源：日本語教育振興協会
+          - generic [ref=e192]:
+            - link "📋 查看日振协资料" [ref=e193] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=246
+            - link "🌐 前往学校官网 →" [ref=e194] [cursor=pointer]:
+              - /url: http://www.asuka-gakuin.jp/
+      - generic [ref=e195]:
+        - generic [ref=e196]:
+          - generic [ref=e197]: 相模国際学院
+          - generic [ref=e198]: 📍 神奈川県
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - text: 👥 招生上限
+            - strong [ref=e201]: 100名
+          - generic [ref=e202]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e203]: 6名
+          - generic [ref=e204]:
+            - text: 📅 入学月
+            - strong [ref=e205]: 4月・10月
+        - generic [ref=e207]:
+          - text: 💰 年学费
+          - strong [ref=e208]: ¥118万 ～ ¥155万
+          - text: （含报名费・入学金）
+        - generic [ref=e209]:
+          - generic [ref=e210]: 升专门学校
+          - generic [ref=e211]: JLPT対策
+          - generic [ref=e212]: 4月入学
+          - generic [ref=e213]: 10月入学
+        - generic [ref=e214]:
+          - generic [ref=e215]: 数据来源：日本語教育振興協会
+          - generic [ref=e216]:
+            - link "📋 查看日振协资料" [ref=e217] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=518
+            - link "🌐 前往学校官网 →" [ref=e218] [cursor=pointer]:
+              - /url: http://sagamikokusai.jp
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - generic [ref=e221]: 学校法人石川学園横浜デザイン学院
+          - generic [ref=e222]: 📍 神奈川県
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - text: 👥 招生上限
+            - strong [ref=e225]: 240名
+          - generic [ref=e226]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e227]: 10名
+          - generic [ref=e228]:
+            - text: 📅 入学月
+            - strong [ref=e229]: 4月・10月・4,10月
+        - generic [ref=e231]:
+          - text: 💰 年学费
+          - strong [ref=e232]: ¥79万 ～ ¥146万
+          - text: （含报名费・入学金）
+        - generic [ref=e233]:
+          - generic [ref=e234]: 升大学院
+          - generic [ref=e235]: 升大学
+          - generic [ref=e236]: 升专门学校
+          - generic [ref=e237]: JLPT対策
+          - generic [ref=e238]: 中文对应
+          - generic [ref=e239]: 4月入学
+          - generic [ref=e240]: 10月入学
+        - generic [ref=e241]:
+          - generic [ref=e242]: 数据来源：日本語教育振興協会
+          - generic [ref=e243]:
+            - link "📋 查看日振协资料" [ref=e244] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=243
+            - link "🌐 前往学校官网 →" [ref=e245] [cursor=pointer]:
+              - /url: http://www.ydc.ac.jp
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - generic [ref=e248]: 水野外語学院
+          - generic [ref=e249]: 📍 千葉県
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - text: 👥 招生上限
+            - strong [ref=e252]: 80名
+          - generic [ref=e253]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e254]: 4名
+          - generic [ref=e255]:
+            - text: 📅 入学月
+            - strong [ref=e256]: 1月・4月・7月・10月
+        - generic [ref=e258]:
+          - text: 💰 年学费
+          - strong [ref=e259]: ¥77万 ～ ¥116万
+          - text: （含报名费・入学金）
+        - generic [ref=e260]:
+          - generic [ref=e261]: 升专门学校
+          - generic [ref=e262]: JLPT対策
+          - generic [ref=e263]: 4月入学
+          - generic [ref=e264]: 10月入学
+        - generic [ref=e265]:
+          - generic [ref=e266]: 数据来源：日本語教育振興協会
+          - generic [ref=e267]:
+            - link "📋 查看日振协资料" [ref=e268] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=71
+            - link "🌐 前往学校官网 →" [ref=e269] [cursor=pointer]:
+              - /url: http://www.mizunogaigogakuin.com/
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - generic [ref=e272]: 明友日本語学院
+          - generic [ref=e273]: 📍 千葉県
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - text: 👥 招生上限
+            - strong [ref=e276]: 280名
+          - generic [ref=e277]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e278]: 7名
+          - generic [ref=e279]:
+            - text: 📅 入学月
+            - strong [ref=e280]: 1月・4月・7月・10月
+        - generic [ref=e282]:
+          - text: 💰 年学费
+          - strong [ref=e283]: ¥91万 ～ ¥140万
+          - text: （含报名费・入学金）
+        - generic [ref=e284]:
+          - generic [ref=e285]: 升大学院
+          - generic [ref=e286]: 升大学
+          - generic [ref=e287]: 升专门学校
+          - generic [ref=e288]: JLPT対策
+          - generic [ref=e289]: 4月入学
+          - generic [ref=e290]: 10月入学
+        - generic [ref=e291]:
+          - generic [ref=e292]: 数据来源：日本語教育振興協会
+          - generic [ref=e293]:
+            - link "📋 查看日振协资料" [ref=e294] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=83
+            - link "🌐 前往学校官网 →" [ref=e295] [cursor=pointer]:
+              - /url: http://www.meiyuu-js.com
+      - generic [ref=e296]:
+        - generic [ref=e297]:
+          - generic [ref=e298]: 日本国際工科専門学校日本語科
+          - generic [ref=e299]: 📍 千葉県
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - text: 👥 招生上限
+            - strong [ref=e302]: 720名
+          - generic [ref=e303]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e304]: 16名
+          - generic [ref=e305]:
+            - text: 📅 入学月
+            - strong [ref=e306]: 4月・10月
+        - generic [ref=e308]:
+          - text: 💰 年学费
+          - strong [ref=e309]: ¥72万 ～ ¥134万
+          - text: （含报名费・入学金）
+        - generic [ref=e310]:
+          - generic [ref=e311]: 升大学院
+          - generic [ref=e312]: 升大学
+          - generic [ref=e313]: 升专门学校
+          - generic [ref=e314]: JLPT対策
+          - generic [ref=e315]: 中文对应
+          - generic [ref=e316]: 4月入学
+          - generic [ref=e317]: 10月入学
+        - generic [ref=e318]:
+          - generic [ref=e319]: 数据来源：日本語教育振興協会
+          - generic [ref=e320]:
+            - link "📋 查看日振协资料" [ref=e321] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=76
+            - link "🌐 前往学校官网 →" [ref=e322] [cursor=pointer]:
+              - /url: https://www.nkk.ac.jp/japanese
+      - generic [ref=e323]:
+        - generic [ref=e324]:
+          - generic [ref=e325]: 文化外国語専門学校
+          - generic [ref=e326]: 📍 東京都
+        - generic [ref=e327]:
+          - generic [ref=e328]:
+            - text: 👥 招生上限
+            - strong [ref=e329]: 280名
+          - generic [ref=e330]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e331]: 15名
+          - generic [ref=e332]:
+            - text: 📅 入学月
+            - strong [ref=e333]: 4月・10月
+        - generic [ref=e335]:
+          - text: 💰 年学费
+          - strong [ref=e336]: ¥110万 ～ ¥158万
+          - text: （含报名费・入学金）
+        - generic [ref=e337]:
+          - generic [ref=e338]: 升大学院
+          - generic [ref=e339]: 升大学
+          - generic [ref=e340]: 升专门学校
+          - generic [ref=e341]: JLPT対策
+          - generic [ref=e342]: 中文对应
+          - generic [ref=e343]: 4月入学
+          - generic [ref=e344]: 10月入学
+        - generic [ref=e345]:
+          - generic [ref=e346]: 数据来源：日本語教育振興協会
+          - generic [ref=e347]:
+            - link "📋 查看日振协资料" [ref=e348] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=179
+            - link "🌐 前往学校官网 →" [ref=e349] [cursor=pointer]:
+              - /url: http://www.bunka-bi.ac.jp/
+      - generic [ref=e350]:
+        - generic [ref=e351]:
+          - generic [ref=e352]: 青山スクールオブジャパニーズ
+          - generic [ref=e353]: 📍 東京都
+        - generic [ref=e354]:
+          - generic [ref=e355]:
+            - text: 👥 招生上限
+            - strong [ref=e356]: 172名
+          - generic [ref=e357]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e358]: 6名
+          - generic [ref=e359]:
+            - text: 📅 入学月
+            - strong [ref=e360]: 1月・4月・7月・10月
+        - generic [ref=e362]:
+          - text: 💰 年学费
+          - strong [ref=e363]: ¥79万 ～ ¥152万
+          - text: （含报名费・入学金）
+        - generic [ref=e364]:
+          - generic [ref=e365]: 升大学
+          - generic [ref=e366]: 升专门学校
+          - generic [ref=e367]: JLPT対策
+          - generic [ref=e368]: 4月入学
+          - generic [ref=e369]: 10月入学
+        - generic [ref=e370]:
+          - generic [ref=e371]: 数据来源：日本語教育振興協会
+          - generic [ref=e372]:
+            - link "📋 查看日振协资料" [ref=e373] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=178
+            - link "🌐 前往学校官网 →" [ref=e374] [cursor=pointer]:
+              - /url: http://www.aoyamaschool.com/
+      - generic [ref=e375]:
+        - generic [ref=e376]:
+          - generic [ref=e377]: ミッドリーム日本語学校
+          - generic [ref=e378]: 📍 東京都
+        - generic [ref=e379]:
+          - generic [ref=e380]:
+            - text: 👥 招生上限
+            - strong [ref=e381]: 890名
+          - generic [ref=e382]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e383]: 25名
+          - generic [ref=e384]:
+            - text: 📅 入学月
+            - strong [ref=e385]: 1月・4月・7月・10月
+        - generic [ref=e387]:
+          - text: 💰 年学费
+          - strong [ref=e388]: ¥93万 ～ ¥144万
+          - text: （含报名费・入学金）
+        - generic [ref=e389]:
+          - generic [ref=e390]: 升大学院
+          - generic [ref=e391]: 升大学
+          - generic [ref=e392]: 升专门学校
+          - generic [ref=e393]: JLPT対策
+          - generic [ref=e394]: 中文对应
+          - generic [ref=e395]: 4月入学
+          - generic [ref=e396]: 10月入学
+        - generic [ref=e397]:
+          - generic [ref=e398]: 数据来源：日本語教育振興協会
+          - generic [ref=e399]:
+            - link "📋 查看日振协资料" [ref=e400] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=121
+            - link "🌐 前往学校官网 →" [ref=e401] [cursor=pointer]:
+              - /url: http://midream.ac.jp/
+      - generic [ref=e402]:
+        - generic [ref=e403]:
+          - generic [ref=e404]: 行知学園日本語学校
+          - generic [ref=e405]: 📍 東京都
+        - generic [ref=e406]:
+          - generic [ref=e407]:
+            - text: 👥 招生上限
+            - strong [ref=e408]: 505名
+          - generic [ref=e409]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e410]: 12名
+          - generic [ref=e411]:
+            - text: 📅 入学月
+            - strong [ref=e412]: 1月・4月・7月・10月
+        - generic [ref=e414]:
+          - text: 💰 年学费
+          - strong [ref=e415]: ¥84万 ～ ¥154万
+          - text: （含报名费・入学金）
+        - generic [ref=e416]:
+          - generic [ref=e417]: 升大学院
+          - generic [ref=e418]: 升大学
+          - generic [ref=e419]: 升专门学校
+          - generic [ref=e420]: JLPT対策
+          - generic [ref=e421]: 中文对应
+          - generic [ref=e422]: 4月入学
+          - generic [ref=e423]: 10月入学
+        - generic [ref=e424]:
+          - generic [ref=e425]: 数据来源：日本語教育振興協会
+          - generic [ref=e426]:
+            - link "📋 查看日振协资料" [ref=e427] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=508
+            - link "🌐 前往学校官网 →" [ref=e428] [cursor=pointer]:
+              - /url: http://www.coach-japanese.com/
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - generic [ref=e431]: 専門学校東京国際ビジネスカレッジ日本語科
+          - generic [ref=e432]: 📍 東京都
+        - generic [ref=e433]:
+          - generic [ref=e434]:
+            - text: 👥 招生上限
+            - strong [ref=e435]: 200名
+          - generic [ref=e436]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e437]: 7名
+          - generic [ref=e438]:
+            - text: 📅 入学月
+            - strong [ref=e439]: 4月・10月
+        - generic [ref=e441]:
+          - text: 💰 年学费
+          - strong [ref=e442]: ¥157万 ～ ¥157万
+          - text: （含报名费・入学金）
+        - generic [ref=e443]:
+          - generic [ref=e444]: 升大学
+          - generic [ref=e445]: 升专门学校
+          - generic [ref=e446]: JLPT対策
+          - generic [ref=e447]: 4月入学
+          - generic [ref=e448]: 10月入学
+        - generic [ref=e449]:
+          - generic [ref=e450]: 数据来源：日本語教育振興協会
+          - generic [ref=e451]:
+            - link "📋 查看日振协资料" [ref=e452] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=150
+            - link "🌐 前往学校官网 →" [ref=e453] [cursor=pointer]:
+              - /url: http://www.tibc.jp
+      - generic [ref=e454]:
+        - generic [ref=e455]:
+          - generic [ref=e456]: 新宿平和日本語学校
+          - generic [ref=e457]: 📍 東京都
+        - generic [ref=e458]:
+          - generic [ref=e459]:
+            - text: 👥 招生上限
+            - strong [ref=e460]: 140名
+          - generic [ref=e461]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e462]: 7名
+          - generic [ref=e463]:
+            - text: 📅 入学月
+            - strong [ref=e464]: 1月・4月・7月・10月
+        - generic [ref=e466]:
+          - text: 💰 年学费
+          - strong [ref=e467]: ¥101万 ～ ¥156万
+          - text: （含报名费・入学金）
+        - generic [ref=e468]:
+          - generic [ref=e469]: 升大学
+          - generic [ref=e470]: 升专门学校
+          - generic [ref=e471]: JLPT対策
+          - generic [ref=e472]: 4月入学
+          - generic [ref=e473]: 10月入学
+        - generic [ref=e474]:
+          - generic [ref=e475]: 数据来源：日本語教育振興協会
+          - generic [ref=e476]:
+            - link "📋 查看日振协资料" [ref=e477] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=127
+            - link "🌐 前往学校官网 →" [ref=e478] [cursor=pointer]:
+              - /url: http://www.shinjuku-heiwa.com/
+      - generic [ref=e479]:
+        - generic [ref=e480]:
+          - generic [ref=e481]: 国書日本語学校
+          - generic [ref=e482]: 📍 東京都
+        - generic [ref=e483]:
+          - generic [ref=e484]:
+            - text: 👥 招生上限
+            - strong [ref=e485]: 788名
+          - generic [ref=e486]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e487]: 18名
+          - generic [ref=e488]:
+            - text: 📅 入学月
+            - strong [ref=e489]: 1月・1,7月・4月・10月・4,10月・7月
+        - generic [ref=e491]:
+          - text: 💰 年学费
+          - strong [ref=e492]: ¥88万 ～ ¥169万
+          - text: （含报名费・入学金）
+        - generic [ref=e493]:
+          - generic [ref=e494]: 升大学院
+          - generic [ref=e495]: 升大学
+          - generic [ref=e496]: 升专门学校
+          - generic [ref=e497]: JLPT対策
+          - generic [ref=e498]: 4月入学
+          - generic [ref=e499]: 10月入学
+        - generic [ref=e500]:
+          - generic [ref=e501]: 数据来源：日本語教育振興協会
+          - generic [ref=e502]:
+            - link "📋 查看日振协资料" [ref=e503] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=214
+            - link "🌐 前往学校官网 →" [ref=e504] [cursor=pointer]:
+              - /url: http://www.kokusho-edu.jp/
+      - generic [ref=e505]:
+        - generic [ref=e506]:
+          - generic [ref=e507]: 青山国際教育学院
+          - generic [ref=e508]: 📍 東京都
+        - generic [ref=e509]:
+          - generic [ref=e510]:
+            - text: 👥 招生上限
+            - strong [ref=e511]: 400名
+          - generic [ref=e512]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e513]: 9名
+          - generic [ref=e514]:
+            - text: 📅 入学月
+            - strong [ref=e515]: 1月・4月・7月・10月・4,7,10月
+        - generic [ref=e517]:
+          - text: 💰 年学费
+          - strong [ref=e518]: ¥92万 ～ ¥174万
+          - text: （含报名费・入学金）
+        - generic [ref=e519]:
+          - generic [ref=e520]: 升大学院
+          - generic [ref=e521]: 升大学
+          - generic [ref=e522]: 升专门学校
+          - generic [ref=e523]: JLPT対策
+          - generic [ref=e524]: 中文对应
+          - generic [ref=e525]: 4月入学
+          - generic [ref=e526]: 10月入学
+        - generic [ref=e527]:
+          - generic [ref=e528]: 数据来源：日本語教育振興協会
+          - generic [ref=e529]:
+            - link "📋 查看日振协资料" [ref=e530] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=97
+            - link "🌐 前往学校官网 →" [ref=e531] [cursor=pointer]:
+              - /url: https://www.aoyama-international.com/
+      - generic [ref=e532]:
+        - generic [ref=e533]:
+          - generic [ref=e534]: 東洋言語学院
+          - generic [ref=e535]: 📍 東京都
+        - generic [ref=e536]:
+          - generic [ref=e537]:
+            - text: 👥 招生上限
+            - strong [ref=e538]: 700名
+          - generic [ref=e539]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e540]: 18名
+          - generic [ref=e541]:
+            - text: 📅 入学月
+            - strong [ref=e542]: 1月・4月・7月・10月
+        - generic [ref=e544]:
+          - text: 💰 年学费
+          - strong [ref=e545]: ¥82万 ～ ¥151万
+          - text: （含报名费・入学金）
+        - generic [ref=e546]:
+          - generic [ref=e547]: 升大学院
+          - generic [ref=e548]: 升大学
+          - generic [ref=e549]: 升专门学校
+          - generic [ref=e550]: JLPT対策
+          - generic [ref=e551]: 中文对应
+          - generic [ref=e552]: 4月入学
+          - generic [ref=e553]: 10月入学
+        - generic [ref=e554]:
+          - generic [ref=e555]: 数据来源：日本語教育振興協会
+          - generic [ref=e556]:
+            - link "📋 查看日振协资料" [ref=e557] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=228
+            - link "🌐 前往学校官网 →" [ref=e558] [cursor=pointer]:
+              - /url: http://www.tls-japan.com
+      - generic [ref=e559]:
+        - generic [ref=e560]:
+          - generic [ref=e561]: ウエストコースト語学院
+          - generic [ref=e562]: 📍 東京都
+        - generic [ref=e563]:
+          - generic [ref=e564]:
+            - text: 👥 招生上限
+            - strong [ref=e565]: 120名
+          - generic [ref=e566]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e567]: 5名
+          - generic [ref=e568]:
+            - text: 📅 入学月
+            - strong [ref=e569]: 4月・7月・10月
+        - generic [ref=e571]:
+          - text: 💰 年学费
+          - strong [ref=e572]: ¥82万 ～ ¥154万
+          - text: （含报名费・入学金）
+        - generic [ref=e573]:
+          - generic [ref=e574]: 升大学院
+          - generic [ref=e575]: 升大学
+          - generic [ref=e576]: 升专门学校
+          - generic [ref=e577]: JLPT対策
+          - generic [ref=e578]: 4月入学
+          - generic [ref=e579]: 10月入学
+        - generic [ref=e580]:
+          - generic [ref=e581]: 数据来源：日本語教育振興協会
+          - generic [ref=e582]:
+            - link "📋 查看日振协资料" [ref=e583] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=166
+            - link "🌐 前往学校官网 →" [ref=e584] [cursor=pointer]:
+              - /url: http://www.wls-jp.com
+      - generic [ref=e585]:
+        - generic [ref=e586]:
+          - generic [ref=e587]: 亜細亜友之会外語学院
+          - generic [ref=e588]: 📍 東京都
+        - generic [ref=e589]:
+          - generic [ref=e590]:
+            - text: 👥 招生上限
+            - strong [ref=e591]: 420名
+          - generic [ref=e592]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e593]: 12名
+          - generic [ref=e594]:
+            - text: 📅 入学月
+            - strong [ref=e595]: 1月・4月・7月・10月・4,7,10月
+        - generic [ref=e597]:
+          - text: 💰 年学费
+          - strong [ref=e598]: ¥82万 ～ ¥153万
+          - text: （含报名费・入学金）
+        - generic [ref=e599]:
+          - generic [ref=e600]: 升大学院
+          - generic [ref=e601]: 升大学
+          - generic [ref=e602]: 升专门学校
+          - generic [ref=e603]: JLPT対策
+          - generic [ref=e604]: 中文对应
+          - generic [ref=e605]: 4月入学
+          - generic [ref=e606]: 10月入学
+        - generic [ref=e607]:
+          - generic [ref=e608]: 数据来源：日本語教育振興協会
+          - generic [ref=e609]:
+            - link "📋 查看日振协资料" [ref=e610] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=202
+            - link "🌐 前往学校官网 →" [ref=e611] [cursor=pointer]:
+              - /url: http://www.asiatomo.com.cn
+      - generic [ref=e612]:
+        - generic [ref=e613]:
+          - generic [ref=e614]: ジェット日本語学校
+          - generic [ref=e615]: 📍 東京都
+        - generic [ref=e616]:
+          - generic [ref=e617]:
+            - text: 👥 招生上限
+            - strong [ref=e618]: 150名
+          - generic [ref=e619]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e620]: 6名
+          - generic [ref=e621]:
+            - text: 📅 入学月
+            - strong [ref=e622]: 4月・10月・4, 10月
+        - generic [ref=e624]:
+          - text: 💰 年学费
+          - strong [ref=e625]: ¥85万 ～ ¥136万
+          - text: （含报名费・入学金）
+        - generic [ref=e626]:
+          - generic [ref=e627]: 升大学院
+          - generic [ref=e628]: 升大学
+          - generic [ref=e629]: 升专门学校
+          - generic [ref=e630]: JLPT対策
+          - generic [ref=e631]: 4月入学
+          - generic [ref=e632]: 10月入学
+        - generic [ref=e633]:
+          - generic [ref=e634]: 数据来源：日本語教育振興協会
+          - generic [ref=e635]:
+            - link "📋 查看日振协资料" [ref=e636] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=207
+            - link "🌐 前往学校官网 →" [ref=e637] [cursor=pointer]:
+              - /url: http://jet.ac.jp/
+      - generic [ref=e638]:
+        - generic [ref=e639]:
+          - generic [ref=e640]: 日本学生支援機構東京日本語教育センター
+          - generic [ref=e641]: 📍 東京都
+        - generic [ref=e642]:
+          - generic [ref=e643]:
+            - text: 👥 招生上限
+            - strong [ref=e644]: 380名
+          - generic [ref=e645]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e646]: 21名
+          - generic [ref=e647]:
+            - text: 📅 入学月
+            - strong [ref=e648]: 4月・10月
+        - generic [ref=e650]:
+          - text: 💰 年学费
+          - strong [ref=e651]: ¥82万 ～ ¥119万
+          - text: （含报名费・入学金）
+        - generic [ref=e652]:
+          - generic [ref=e653]: 升大学院
+          - generic [ref=e654]: 升大学
+          - generic [ref=e655]: 升专门学校
+          - generic [ref=e656]: JLPT対策
+          - generic [ref=e657]: 4月入学
+          - generic [ref=e658]: 10月入学
+        - generic [ref=e659]:
+          - generic [ref=e660]: 数据来源：日本語教育振興協会
+          - generic [ref=e661]:
+            - link "📋 查看日振协资料" [ref=e662] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=128
+            - link "🌐 前往学校官网 →" [ref=e663] [cursor=pointer]:
+              - /url: https://www.jasso.go.jp/ryugaku/jlec/tjlec/index.html
+      - generic [ref=e664]:
+        - generic [ref=e665]:
+          - generic [ref=e666]: エリート日本語学校
+          - generic [ref=e667]: 📍 東京都
+        - generic [ref=e668]:
+          - generic [ref=e669]:
+            - text: 👥 招生上限
+            - strong [ref=e670]: 1000名
+          - generic [ref=e671]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e672]: 19名
+          - generic [ref=e673]:
+            - text: 📅 入学月
+            - strong [ref=e674]: 4,7,10,1月
+        - generic [ref=e676]:
+          - text: 💰 年学费
+          - strong [ref=e677]: ¥151万 ～ ¥151万
+          - text: （含报名费・入学金）
+        - generic [ref=e678]:
+          - generic [ref=e679]: 升大学院
+          - generic [ref=e680]: 升大学
+          - generic [ref=e681]: 升专门学校
+          - generic [ref=e682]: JLPT対策
+          - generic [ref=e683]: 中文对应
+        - generic [ref=e684]:
+          - generic [ref=e685]: 数据来源：日本語教育振興協会
+          - generic [ref=e686]:
+            - link "📋 查看日振协资料" [ref=e687] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=125
+            - link "🌐 前往学校官网 →" [ref=e688] [cursor=pointer]:
+              - /url: https://eliteschooljapan.com
+      - generic [ref=e689]:
+        - generic [ref=e690]:
+          - generic [ref=e691]: 九段日本文化研究所日本語学院
+          - generic [ref=e692]: 📍 東京都
+        - generic [ref=e693]:
+          - generic [ref=e694]:
+            - text: 👥 招生上限
+            - strong [ref=e695]: 200名
+          - generic [ref=e696]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e697]: 5名
+          - generic [ref=e698]:
+            - text: 📅 入学月
+            - strong [ref=e699]: 4,7,10,1月
+        - generic [ref=e701]:
+          - text: 💰 年学费
+          - strong [ref=e702]: ¥130万 ～ ¥173万
+          - text: （含报名费・入学金）
+        - generic [ref=e703]:
+          - generic [ref=e704]: 升大学院
+          - generic [ref=e705]: 升大学
+          - generic [ref=e706]: 升专门学校
+          - generic [ref=e707]: JLPT対策
+        - generic [ref=e708]:
+          - generic [ref=e709]: 数据来源：日本語教育振興協会
+          - generic [ref=e710]:
+            - link "📋 查看日振协资料" [ref=e711] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=88
+            - link "🌐 前往学校官网 →" [ref=e712] [cursor=pointer]:
+              - /url: http://www.kilc.co.jp
+      - generic [ref=e713]:
+        - generic [ref=e714]:
+          - generic [ref=e715]: 東京中央日本語学院
+          - generic [ref=e716]: 📍 東京都
+        - generic [ref=e717]:
+          - generic [ref=e718]:
+            - text: 👥 招生上限
+            - strong [ref=e719]: 1080名
+          - generic [ref=e720]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e721]: 28名
+          - generic [ref=e722]:
+            - text: 📅 入学月
+            - strong [ref=e723]: 1月・4月・7月・10月・4,7,10月・4,7,10,1月
+        - generic [ref=e725]:
+          - text: 💰 年学费
+          - strong [ref=e726]: ¥81万 ～ ¥156万
+          - text: （含报名费・入学金）
+        - generic [ref=e727]:
+          - generic [ref=e728]: 升大学院
+          - generic [ref=e729]: 升大学
+          - generic [ref=e730]: 升专门学校
+          - generic [ref=e731]: JLPT対策
+          - generic [ref=e732]: 中文对应
+          - generic [ref=e733]: 4月入学
+          - generic [ref=e734]: 10月入学
+        - generic [ref=e735]:
+          - generic [ref=e736]: 数据来源：日本語教育振興協会
+          - generic [ref=e737]:
+            - link "📋 查看日振协资料" [ref=e738] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=176
+            - link "🌐 前往学校官网 →" [ref=e739] [cursor=pointer]:
+              - /url: https://tcj-education.com/
+      - generic [ref=e740]:
+        - generic [ref=e741]:
+          - generic [ref=e742]: 中央工学校附属日本語学校
+          - generic [ref=e743]: 📍 東京都
+        - generic [ref=e744]:
+          - generic [ref=e745]:
+            - text: 👥 招生上限
+            - strong [ref=e746]: 224名
+          - generic [ref=e747]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e748]: 6名
+          - generic [ref=e749]:
+            - text: 📅 入学月
+            - strong [ref=e750]: 1月・4月・7月・10月
+        - generic [ref=e752]:
+          - text: 💰 年学费
+          - strong [ref=e753]: ¥92万 ～ ¥141万
+          - text: （含报名费・入学金）
+        - generic [ref=e754]:
+          - generic [ref=e755]: 升大学
+          - generic [ref=e756]: 升专门学校
+          - generic [ref=e757]: JLPT対策
+          - generic [ref=e758]: 4月入学
+          - generic [ref=e759]: 10月入学
+        - generic [ref=e760]:
+          - generic [ref=e761]: 数据来源：日本語教育振興協会
+          - generic [ref=e762]:
+            - link "📋 查看日振协资料" [ref=e763] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=206
+            - link "🌐 前往学校官网 →" [ref=e764] [cursor=pointer]:
+              - /url: http://www.chuo-j.ac.jp
+      - generic [ref=e765]:
+        - generic [ref=e766]:
+          - generic [ref=e767]: サム教育学院
+          - generic [ref=e768]: 📍 東京都
+        - generic [ref=e769]:
+          - generic [ref=e770]:
+            - text: 👥 招生上限
+            - strong [ref=e771]: 540名
+          - generic [ref=e772]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e773]: 8名
+          - generic [ref=e774]:
+            - text: 📅 入学月
+            - strong [ref=e775]: 1月・4月・7月・10月
+        - generic [ref=e777]:
+          - text: 💰 年学费
+          - strong [ref=e778]: ¥90万 ～ ¥140万
+          - text: （含报名费・入学金）
+        - generic [ref=e779]:
+          - generic [ref=e780]: 升大学院
+          - generic [ref=e781]: 升大学
+          - generic [ref=e782]: 升专门学校
+          - generic [ref=e783]: JLPT対策
+          - generic [ref=e784]: 4月入学
+          - generic [ref=e785]: 10月入学
+        - generic [ref=e786]:
+          - generic [ref=e787]: 数据来源：日本語教育振興協会
+          - generic [ref=e788]:
+            - link "📋 查看日振协资料" [ref=e789] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=123
+            - link "🌐 前往学校官网 →" [ref=e790] [cursor=pointer]:
+              - /url: https://samu-language.com/
+      - generic [ref=e791]:
+        - generic [ref=e792]:
+          - generic [ref=e793]: 東京国際日本語学院
+          - generic [ref=e794]: 📍 東京都
+        - generic [ref=e795]:
+          - generic [ref=e796]:
+            - text: 👥 招生上限
+            - strong [ref=e797]: 450名
+          - generic [ref=e798]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e799]: 8名
+          - generic [ref=e800]:
+            - text: 📅 入学月
+            - strong [ref=e801]: 1月・4月・7月・10月
+        - generic [ref=e803]:
+          - text: 💰 年学费
+          - strong [ref=e804]: ¥109万 ～ ¥140万
+          - text: （含报名费・入学金）
+        - generic [ref=e805]:
+          - generic [ref=e806]: 升大学
+          - generic [ref=e807]: 升专门学校
+          - generic [ref=e808]: JLPT対策
+          - generic [ref=e809]: 中文对应
+          - generic [ref=e810]: 4月入学
+          - generic [ref=e811]: 10月入学
+        - generic [ref=e812]:
+          - generic [ref=e813]: 数据来源：日本語教育振興協会
+          - generic [ref=e814]:
+            - link "📋 查看日振协资料" [ref=e815] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=102
+            - link "🌐 前往学校官网 →" [ref=e816] [cursor=pointer]:
+              - /url: http://www.tijs.jp
+      - generic [ref=e817]:
+        - generic [ref=e818]:
+          - generic [ref=e819]: ヨシダ日本語学院
+          - generic [ref=e820]: 📍 東京都
+        - generic [ref=e821]:
+          - generic [ref=e822]:
+            - text: 👥 招生上限
+            - strong [ref=e823]: 240名
+          - generic [ref=e824]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e825]: 6名
+          - generic [ref=e826]:
+            - text: 📅 入学月
+            - strong [ref=e827]: 1月・4月・7月・10月・4,7,10,1月
+        - generic [ref=e829]:
+          - text: 💰 年学费
+          - strong [ref=e830]: ¥98万 ～ ¥149万
+          - text: （含报名费・入学金）
+        - generic [ref=e831]:
+          - generic [ref=e832]: 升大学院
+          - generic [ref=e833]: 升大学
+          - generic [ref=e834]: 升专门学校
+          - generic [ref=e835]: JLPT対策
+          - generic [ref=e836]: 4月入学
+          - generic [ref=e837]: 10月入学
+        - generic [ref=e838]:
+          - generic [ref=e839]: 数据来源：日本語教育振興協会
+          - generic [ref=e840]:
+            - link "📋 查看日振协资料" [ref=e841] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=116
+            - link "🌐 前往学校官网 →" [ref=e842] [cursor=pointer]:
+              - /url: https://yosida.com
+      - generic [ref=e843]:
+        - generic [ref=e844]:
+          - generic [ref=e845]: 東京教育専門学院・多摩川校
+          - generic [ref=e846]: 📍 東京都
+        - generic [ref=e847]:
+          - generic [ref=e848]:
+            - text: 👥 招生上限
+            - strong [ref=e849]: 80名
+          - generic [ref=e850]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e851]: 3名
+          - generic [ref=e852]:
+            - text: 📅 入学月
+            - strong [ref=e853]: 4月・7月・10月
+        - generic [ref=e855]:
+          - text: 💰 年学费
+          - strong [ref=e856]: ¥94万 ～ ¥121万
+          - text: （含报名费・入学金）
+        - generic [ref=e857]:
+          - generic [ref=e858]: 升专门学校
+          - generic [ref=e859]: JLPT対策
+          - generic [ref=e860]: 中文对应
+          - generic [ref=e861]: 4月入学
+          - generic [ref=e862]: 10月入学
+        - generic [ref=e863]:
+          - generic [ref=e864]: 数据来源：日本語教育振興協会
+          - generic [ref=e865]:
+            - link "📋 查看日振协资料" [ref=e866] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=167
+            - link "🌐 前往学校官网 →" [ref=e867] [cursor=pointer]:
+              - /url: http://www.nihongo21tyo.jp
+      - generic [ref=e868]:
+        - generic [ref=e869]:
+          - generic [ref=e870]: 日本東京国際学院
+          - generic [ref=e871]: 📍 東京都
+        - generic [ref=e872]:
+          - generic [ref=e873]:
+            - text: 👥 招生上限
+            - strong [ref=e874]: 360名
+          - generic [ref=e875]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e876]: 15名
+          - generic [ref=e877]:
+            - text: 📅 入学月
+            - strong [ref=e878]: 1月・4月・7月・10月
+        - generic [ref=e880]:
+          - text: 💰 年学费
+          - strong [ref=e881]: ¥92万 ～ ¥141万
+          - text: （含报名费・入学金）
+        - generic [ref=e882]:
+          - generic [ref=e883]: 升大学院
+          - generic [ref=e884]: 升大学
+          - generic [ref=e885]: 升专门学校
+          - generic [ref=e886]: JLPT対策
+          - generic [ref=e887]: 中文对应
+          - generic [ref=e888]: 4月入学
+          - generic [ref=e889]: 10月入学
+        - generic [ref=e890]:
+          - generic [ref=e891]: 数据来源：日本語教育振興協会
+          - generic [ref=e892]:
+            - link "📋 查看日振协资料" [ref=e893] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=555
+            - link "🌐 前往学校官网 →" [ref=e894] [cursor=pointer]:
+              - /url: http://jtis.tokyo
+      - generic [ref=e895]:
+        - generic [ref=e896]:
+          - generic [ref=e897]: UJS Language Institute
+          - generic [ref=e898]: 📍 東京都
+        - generic [ref=e899]:
+          - generic [ref=e900]:
+            - text: 👥 招生上限
+            - strong [ref=e901]: 320名
+          - generic [ref=e902]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e903]: 9名
+          - generic [ref=e904]:
+            - text: 📅 入学月
+            - strong [ref=e905]: 1月・4月・7月・10月
+        - generic [ref=e907]:
+          - text: 💰 年学费
+          - strong [ref=e908]: ¥78万 ～ ¥146万
+          - text: （含报名费・入学金）
+        - generic [ref=e909]:
+          - generic [ref=e910]: 升大学院
+          - generic [ref=e911]: 升大学
+          - generic [ref=e912]: 升专门学校
+          - generic [ref=e913]: JLPT対策
+          - generic [ref=e914]: 中文对应
+          - generic [ref=e915]: 4月入学
+          - generic [ref=e916]: 10月入学
+        - generic [ref=e917]:
+          - generic [ref=e918]: 数据来源：日本語教育振興協会
+          - generic [ref=e919]:
+            - link "📋 查看日振协资料" [ref=e920] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=94
+            - link "🌐 前往学校官网 →" [ref=e921] [cursor=pointer]:
+              - /url: http://ujsli.jp
+      - generic [ref=e922]:
+        - generic [ref=e923]:
+          - generic [ref=e924]: 早稲田言語学院
+          - generic [ref=e925]: 📍 東京都
+        - generic [ref=e926]:
+          - generic [ref=e927]:
+            - text: 👥 招生上限
+            - strong [ref=e928]: 736名
+          - generic [ref=e929]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e930]: 27名
+          - generic [ref=e931]:
+            - text: 📅 入学月
+            - strong [ref=e932]: 1月・4月・7月・10月
+        - generic [ref=e934]:
+          - text: 💰 年学费
+          - strong [ref=e935]: ¥100万 ～ ¥154万
+          - text: （含报名费・入学金）
+        - generic [ref=e936]:
+          - generic [ref=e937]: 升大学院
+          - generic [ref=e938]: 升大学
+          - generic [ref=e939]: 升专门学校
+          - generic [ref=e940]: JLPT対策
+          - generic [ref=e941]: 中文对应
+          - generic [ref=e942]: 4月入学
+          - generic [ref=e943]: 10月入学
+        - generic [ref=e944]:
+          - generic [ref=e945]: 数据来源：日本語教育振興協会
+          - generic [ref=e946]:
+            - link "📋 查看日振协资料" [ref=e947] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=237
+            - link "🌐 前往学校官网 →" [ref=e948] [cursor=pointer]:
+              - /url: http://www.wls.co.jp
+      - generic [ref=e949]:
+        - generic [ref=e950]:
+          - generic [ref=e951]: ＫＩＪ語学院東京校
+          - generic [ref=e952]: 📍 東京都
+        - generic [ref=e953]:
+          - generic [ref=e954]:
+            - text: 👥 招生上限
+            - strong [ref=e955]: 150名
+          - generic [ref=e956]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e957]: 7名
+          - generic [ref=e958]:
+            - text: 📅 入学月
+            - strong [ref=e959]: 1月・4月・7月・10月
+        - generic [ref=e961]:
+          - text: 💰 年学费
+          - strong [ref=e962]: ¥100万 ～ ¥156万
+          - text: （含报名费・入学金）
+        - generic [ref=e963]:
+          - generic [ref=e964]: 升大学院
+          - generic [ref=e965]: 升大学
+          - generic [ref=e966]: 升专门学校
+          - generic [ref=e967]: JLPT対策
+          - generic [ref=e968]: 中文对应
+          - generic [ref=e969]: 4月入学
+          - generic [ref=e970]: 10月入学
+        - generic [ref=e971]:
+          - generic [ref=e972]: 数据来源：日本語教育振興協会
+          - generic [ref=e973]:
+            - link "📋 查看日振协资料" [ref=e974] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=507
+            - link "🌐 前往学校官网 →" [ref=e975] [cursor=pointer]:
+              - /url: https://www.kij123.com/
+      - generic [ref=e976]:
+        - generic [ref=e977]:
+          - generic [ref=e978]: 早稲田外語専門学校
+          - generic [ref=e979]: 📍 東京都
+        - generic [ref=e980]:
+          - generic [ref=e981]:
+            - text: 👥 招生上限
+            - strong [ref=e982]: 160名
+          - generic [ref=e983]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e984]: 6名
+          - generic [ref=e985]:
+            - text: 📅 入学月
+            - strong [ref=e986]: 4月・10月
+        - generic [ref=e988]:
+          - text: 💰 年学费
+          - strong [ref=e989]: ¥73万 ～ ¥105万
+          - text: （含报名费・入学金）
+        - generic [ref=e990]:
+          - generic [ref=e991]: 升大学院
+          - generic [ref=e992]: 升大学
+          - generic [ref=e993]: 升专门学校
+          - generic [ref=e994]: JLPT対策
+          - generic [ref=e995]: 4月入学
+          - generic [ref=e996]: 10月入学
+        - generic [ref=e997]:
+          - generic [ref=e998]: 数据来源：日本語教育振興協会
+          - generic [ref=e999]:
+            - link "📋 查看日振协资料" [ref=e1000] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=141
+            - link "🌐 前往学校官网 →" [ref=e1001] [cursor=pointer]:
+              - /url: http://www.waseda-flc.ac.jp/
+      - generic [ref=e1002]:
+        - generic [ref=e1003]:
+          - generic [ref=e1004]: エヴァグリーンランゲージスクール
+          - generic [ref=e1005]: 📍 東京都
+        - generic [ref=e1006]:
+          - generic [ref=e1007]:
+            - text: 👥 招生上限
+            - strong [ref=e1008]: 80名
+          - generic [ref=e1009]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1010]: 4名
+          - generic [ref=e1011]:
+            - text: 📅 入学月
+            - strong [ref=e1012]: 4月・7月・10月
+        - generic [ref=e1014]:
+          - text: 💰 年学费
+          - strong [ref=e1015]: ¥114万 ～ ¥148万
+          - text: （含报名费・入学金）
+        - generic [ref=e1016]:
+          - generic [ref=e1017]: 升大学
+          - generic [ref=e1018]: 升专门学校
+          - generic [ref=e1019]: JLPT対策
+          - generic [ref=e1020]: 4月入学
+          - generic [ref=e1021]: 10月入学
+        - generic [ref=e1022]:
+          - generic [ref=e1023]: 数据来源：日本語教育振興協会
+          - generic [ref=e1024]:
+            - link "📋 查看日振协资料" [ref=e1025] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=164
+            - link "🌐 前往学校官网 →" [ref=e1026] [cursor=pointer]:
+              - /url: http://www.evergreen.gr.jp/
+      - generic [ref=e1027]:
+        - generic [ref=e1028]:
+          - generic [ref=e1029]: 新宿御苑学院
+          - generic [ref=e1030]: 📍 東京都
+        - generic [ref=e1031]:
+          - generic [ref=e1032]:
+            - text: 👥 招生上限
+            - strong [ref=e1033]: 174名
+          - generic [ref=e1034]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1035]: 4名
+          - generic [ref=e1036]:
+            - text: 📅 入学月
+            - strong [ref=e1037]: 1月・4月・7月・10月
+        - generic [ref=e1039]:
+          - text: 💰 年学费
+          - strong [ref=e1040]: ¥97万 ～ ¥148万
+          - text: （含报名费・入学金）
+        - generic [ref=e1041]:
+          - generic [ref=e1042]: 升大学
+          - generic [ref=e1043]: 升专门学校
+          - generic [ref=e1044]: JLPT対策
+          - generic [ref=e1045]: 4月入学
+          - generic [ref=e1046]: 10月入学
+        - generic [ref=e1047]:
+          - generic [ref=e1048]: 数据来源：日本語教育振興協会
+          - generic [ref=e1049]:
+            - link "📋 查看日振协资料" [ref=e1050] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=103
+            - link "🌐 前往学校官网 →" [ref=e1051] [cursor=pointer]:
+              - /url: http://www.gyoen.co.jp
+      - generic [ref=e1052]:
+        - generic [ref=e1053]:
+          - generic [ref=e1054]: 東京ワールド日本語学校
+          - generic [ref=e1055]: 📍 東京都
+        - generic [ref=e1056]:
+          - generic [ref=e1057]:
+            - text: 👥 招生上限
+            - strong [ref=e1058]: 1752名
+          - generic [ref=e1059]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1060]: 47名
+          - generic [ref=e1061]:
+            - text: 📅 入学月
+            - strong [ref=e1062]: 1月・4月・7月・10月
+        - generic [ref=e1064]:
+          - text: 💰 年学费
+          - strong [ref=e1065]: ¥88万 ～ ¥167万
+          - text: （含报名费・入学金）
+        - generic [ref=e1066]:
+          - generic [ref=e1067]: 升大学院
+          - generic [ref=e1068]: 升大学
+          - generic [ref=e1069]: 升专门学校
+          - generic [ref=e1070]: 就职
+          - generic [ref=e1071]: JLPT対策
+          - generic [ref=e1072]: 4月入学
+          - generic [ref=e1073]: 10月入学
+        - generic [ref=e1074]:
+          - generic [ref=e1075]: 数据来源：日本語教育振興協会
+          - generic [ref=e1076]:
+            - link "📋 查看日振协资料" [ref=e1077] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=131
+            - link "🌐 前往学校官网 →" [ref=e1078] [cursor=pointer]:
+              - /url: https://twla.jp
+      - generic [ref=e1079]:
+        - generic [ref=e1080]:
+          - generic [ref=e1081]: 国際情報ビジネス専門学校
+          - generic [ref=e1082]: 📍 栃木県
+        - generic [ref=e1083]:
+          - generic [ref=e1084]:
+            - text: 👥 招生上限
+            - strong [ref=e1085]: 80名
+          - generic [ref=e1086]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1087]: 2名
+          - generic [ref=e1088]:
+            - text: 📅 入学月
+            - strong [ref=e1089]: 4月・10月
+        - generic [ref=e1091]:
+          - text: 💰 年学费
+          - strong [ref=e1092]: ¥102万 ～ ¥132万
+          - text: （含报名费・入学金）
+        - generic [ref=e1093]:
+          - generic [ref=e1094]: 升大学院
+          - generic [ref=e1095]: 升专门学校
+          - generic [ref=e1096]: JLPT対策
+          - generic [ref=e1097]: 4月入学
+          - generic [ref=e1098]: 10月入学
+        - generic [ref=e1099]:
+          - generic [ref=e1100]: 数据来源：日本語教育振興協会
+          - generic [ref=e1101]:
+            - link "📋 查看日振协资料" [ref=e1102] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=35
+            - link "🌐 前往学校官网 →" [ref=e1103] [cursor=pointer]:
+              - /url: http://www.tbc-u.ac.jp
+      - generic [ref=e1104]:
+        - generic [ref=e1105]:
+          - generic [ref=e1106]: セントメリー日本語学院
+          - generic [ref=e1107]: 📍 栃木県
+        - generic [ref=e1108]:
+          - generic [ref=e1109]:
+            - text: 👥 招生上限
+            - strong [ref=e1110]: 350名
+          - generic [ref=e1111]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1112]: 7名
+          - generic [ref=e1113]:
+            - text: 📅 入学月
+            - strong [ref=e1114]: 1月・4月・7月・10月
+        - generic [ref=e1116]:
+          - text: 💰 年学费
+          - strong [ref=e1117]: ¥90万 ～ ¥145万
+          - text: （含报名费・入学金）
+        - generic [ref=e1118]:
+          - generic [ref=e1119]: 升大学院
+          - generic [ref=e1120]: 升大学
+          - generic [ref=e1121]: 升专门学校
+          - generic [ref=e1122]: JLPT対策
+          - generic [ref=e1123]: 中文对应
+          - generic [ref=e1124]: 4月入学
+          - generic [ref=e1125]: 10月入学
+        - generic [ref=e1126]:
+          - generic [ref=e1127]: 数据来源：日本語教育振興協会
+          - generic [ref=e1128]:
+            - link "📋 查看日振协资料" [ref=e1129] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=34
+            - link "🌐 前往学校官网 →" [ref=e1130] [cursor=pointer]:
+              - /url: http://stmary-u.jp/
+      - generic [ref=e1131]:
+        - generic [ref=e1132]:
+          - generic [ref=e1133]: 名古屋福徳日本語学院
+          - generic [ref=e1134]: 📍 愛知県
+        - generic [ref=e1135]:
+          - generic [ref=e1136]:
+            - text: 👥 招生上限
+            - strong [ref=e1137]: 300名
+          - generic [ref=e1138]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1139]: 10名
+          - generic [ref=e1140]:
+            - text: 📅 入学月
+            - strong [ref=e1141]: 1月・4月・7月・10月
+        - generic [ref=e1143]:
+          - text: 💰 年学费
+          - strong [ref=e1144]: ¥86万 ～ ¥133万
+          - text: （含报名费・入学金）
+        - generic [ref=e1145]:
+          - generic [ref=e1146]: 升大学
+          - generic [ref=e1147]: 升专门学校
+          - generic [ref=e1148]: JLPT対策
+          - generic [ref=e1149]: 4月入学
+          - generic [ref=e1150]: 10月入学
+        - generic [ref=e1151]:
+          - generic [ref=e1152]: 数据来源：日本語教育振興協会
+          - generic [ref=e1153]:
+            - link "📋 查看日振协资料" [ref=e1154] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=288
+            - link "🌐 前往学校官网 →" [ref=e1155] [cursor=pointer]:
+              - /url: http://www.nfng.jp
+      - generic [ref=e1156]:
+        - generic [ref=e1157]:
+          - generic [ref=e1158]: ECC日本語学院名古屋校
+          - generic [ref=e1159]: 📍 愛知県
+        - generic [ref=e1160]:
+          - generic [ref=e1161]:
+            - text: 👥 招生上限
+            - strong [ref=e1162]: 240名
+          - generic [ref=e1163]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1164]: 8名
+          - generic [ref=e1165]:
+            - text: 📅 入学月
+            - strong [ref=e1166]: 4月・7月・10月・4,10月
+        - generic [ref=e1168]:
+          - text: 💰 年学费
+          - strong [ref=e1169]: ¥83万 ～ ¥157万
+          - text: （含报名费・入学金）
+        - generic [ref=e1170]:
+          - generic [ref=e1171]: 升大学院
+          - generic [ref=e1172]: 升大学
+          - generic [ref=e1173]: 升专门学校
+          - generic [ref=e1174]: JLPT対策
+          - generic [ref=e1175]: 中文对应
+          - generic [ref=e1176]: 4月入学
+          - generic [ref=e1177]: 10月入学
+        - generic [ref=e1178]:
+          - generic [ref=e1179]: 数据来源：日本語教育振興協会
+          - generic [ref=e1180]:
+            - link "📋 查看日振协资料" [ref=e1181] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=296
+            - link "🌐 前往学校官网 →" [ref=e1182] [cursor=pointer]:
+              - /url: http://www.ecc-nihongo.com
+      - generic [ref=e1183]:
+        - generic [ref=e1184]:
+          - generic [ref=e1185]: コウブンインターナショナル
+          - generic [ref=e1186]: 📍 愛知県
+        - generic [ref=e1187]:
+          - generic [ref=e1188]:
+            - text: 👥 招生上限
+            - strong [ref=e1189]: 100名
+          - generic [ref=e1190]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1191]: 3名
+          - generic [ref=e1192]:
+            - text: 📅 入学月
+            - strong [ref=e1193]: 4月・10月
+        - generic [ref=e1195]:
+          - text: 💰 年学费
+          - strong [ref=e1196]: ¥111万 ～ ¥141万
+          - text: （含报名费・入学金）
+        - generic [ref=e1197]:
+          - generic [ref=e1198]: 升专门学校
+          - generic [ref=e1199]: JLPT対策
+          - generic [ref=e1200]: 4月入学
+          - generic [ref=e1201]: 10月入学
+        - generic [ref=e1202]:
+          - generic [ref=e1203]: 数据来源：日本語教育振興協会
+          - generic [ref=e1204]:
+            - link "📋 查看日振协资料" [ref=e1205] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=305
+            - link "🌐 前往学校官网 →" [ref=e1206] [cursor=pointer]:
+              - /url: http://www.koubun-int.jp
+      - generic [ref=e1207]:
+        - generic [ref=e1208]:
+          - generic [ref=e1209]: 名古屋国際日本語学校
+          - generic [ref=e1210]: 📍 愛知県
+        - generic [ref=e1211]:
+          - generic [ref=e1212]:
+            - text: 👥 招生上限
+            - strong [ref=e1213]: 158名
+          - generic [ref=e1214]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1215]: 5名
+          - generic [ref=e1216]:
+            - text: 📅 入学月
+            - strong [ref=e1217]: 4月・7月
+        - generic [ref=e1219]:
+          - text: 💰 年学费
+          - strong [ref=e1220]: ¥122万 ～ ¥137万
+          - text: （含报名费・入学金）
+        - generic [ref=e1221]:
+          - generic [ref=e1222]: 升大学院
+          - generic [ref=e1223]: 升大学
+          - generic [ref=e1224]: 升专门学校
+          - generic [ref=e1225]: JLPT対策
+          - generic [ref=e1226]: 4月入学
+        - generic [ref=e1227]:
+          - generic [ref=e1228]: 数据来源：日本語教育振興協会
+          - generic [ref=e1229]:
+            - link "📋 查看日振协资料" [ref=e1230] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=298
+            - link "🌐 前往学校官网 →" [ref=e1231] [cursor=pointer]:
+              - /url: http://www.nagoyais.com
+      - generic [ref=e1232]:
+        - generic [ref=e1233]:
+          - generic [ref=e1234]: 名古屋SKY日本語学校
+          - generic [ref=e1235]: 📍 愛知県
+        - generic [ref=e1236]:
+          - generic [ref=e1237]:
+            - text: 👥 招生上限
+            - strong [ref=e1238]: 262名
+          - generic [ref=e1239]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1240]: 9名
+          - generic [ref=e1241]:
+            - text: 📅 入学月
+            - strong [ref=e1242]: 1月・4月・7月・10月
+        - generic [ref=e1244]:
+          - text: 💰 年学费
+          - strong [ref=e1245]: ¥91万 ～ ¥141万
+          - text: （含报名费・入学金）
+        - generic [ref=e1246]:
+          - generic [ref=e1247]: 升大学
+          - generic [ref=e1248]: 升专门学校
+          - generic [ref=e1249]: JLPT対策
+          - generic [ref=e1250]: 4月入学
+          - generic [ref=e1251]: 10月入学
+        - generic [ref=e1252]:
+          - generic [ref=e1253]: 数据来源：日本語教育振興協会
+          - generic [ref=e1254]:
+            - link "📋 查看日振协资料" [ref=e1255] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=286
+            - link "🌐 前往学校官网 →" [ref=e1256] [cursor=pointer]:
+              - /url: http://www.nagoya-sky.co.jp
+      - generic [ref=e1257]:
+        - generic [ref=e1258]:
+          - generic [ref=e1259]: 名古屋経営会計専門学校日本語科
+          - generic [ref=e1260]: 📍 愛知県
+        - generic [ref=e1261]:
+          - generic [ref=e1262]:
+            - text: 👥 招生上限
+            - strong [ref=e1263]: 320名
+          - generic [ref=e1264]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1265]: 17名
+          - generic [ref=e1266]:
+            - text: 📅 入学月
+            - strong [ref=e1267]: 4月・10月
+        - generic [ref=e1269]:
+          - text: 💰 年学费
+          - strong [ref=e1270]: ¥125万 ～ ¥164万
+          - text: （含报名费・入学金）
+        - generic [ref=e1271]:
+          - generic [ref=e1272]: 升大学
+          - generic [ref=e1273]: 升专门学校
+          - generic [ref=e1274]: JLPT対策
+          - generic [ref=e1275]: 4月入学
+          - generic [ref=e1276]: 10月入学
+        - generic [ref=e1277]:
+          - generic [ref=e1278]: 数据来源：日本語教育振興協会
+          - generic [ref=e1279]:
+            - link "📋 查看日振协资料" [ref=e1280] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=284
+            - link "🌐 前往学校官网 →" [ref=e1281] [cursor=pointer]:
+              - /url: http://www.meikei-net.ac.jp
+      - generic [ref=e1282]:
+        - generic [ref=e1283]:
+          - generic [ref=e1284]: ＡＲＭＳ日本語学校
+          - generic [ref=e1285]: 📍 愛知県
+        - generic [ref=e1286]:
+          - generic [ref=e1287]:
+            - text: 👥 招生上限
+            - strong [ref=e1288]: 240名
+          - generic [ref=e1289]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1290]: 11名
+          - generic [ref=e1291]:
+            - text: 📅 入学月
+            - strong [ref=e1292]: 4月・10月
+        - generic [ref=e1294]:
+          - text: 💰 年学费
+          - strong [ref=e1295]: ¥76万 ～ ¥141万
+          - text: （含报名费・入学金）
+        - generic [ref=e1296]:
+          - generic [ref=e1297]: 升大学
+          - generic [ref=e1298]: 升专门学校
+          - generic [ref=e1299]: JLPT対策
+          - generic [ref=e1300]: 4月入学
+          - generic [ref=e1301]: 10月入学
+        - generic [ref=e1302]:
+          - generic [ref=e1303]: 数据来源：日本語教育振興協会
+          - generic [ref=e1304]:
+            - link "📋 查看日振协资料" [ref=e1305] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=297
+            - link "🌐 前往学校官网 →" [ref=e1306] [cursor=pointer]:
+              - /url: https://ah-jls.com/
+      - generic [ref=e1307]:
+        - generic [ref=e1308]:
+          - generic [ref=e1309]: ＡＳＡＨＩ文化学院
+          - generic [ref=e1310]: 📍 愛知県
+        - generic [ref=e1311]:
+          - generic [ref=e1312]:
+            - text: 👥 招生上限
+            - strong [ref=e1313]: 200名
+          - generic [ref=e1314]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1315]: 11名
+          - generic [ref=e1316]:
+            - text: 📅 入学月
+            - strong [ref=e1317]: 4月・10月
+        - generic [ref=e1319]:
+          - text: 💰 年学费
+          - strong [ref=e1320]: ¥110万 ～ ¥140万
+          - text: （含报名费・入学金）
+        - generic [ref=e1321]:
+          - generic [ref=e1322]: 升大学
+          - generic [ref=e1323]: 升专门学校
+          - generic [ref=e1324]: JLPT対策
+          - generic [ref=e1325]: 4月入学
+          - generic [ref=e1326]: 10月入学
+        - generic [ref=e1327]:
+          - generic [ref=e1328]: 数据来源：日本語教育振興協会
+          - generic [ref=e1329]:
+            - link "📋 查看日振协资料" [ref=e1330] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=533
+            - link "🌐 前往学校官网 →" [ref=e1331] [cursor=pointer]:
+              - /url: http://asahica.com
+      - generic [ref=e1332]:
+        - generic [ref=e1333]:
+          - generic [ref=e1334]: ノースリバー日本語スクール
+          - generic [ref=e1335]: 📍 愛知県
+        - generic [ref=e1336]:
+          - generic [ref=e1337]:
+            - text: 👥 招生上限
+            - strong [ref=e1338]: 300名
+          - generic [ref=e1339]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1340]: 7名
+          - generic [ref=e1341]:
+            - text: 📅 入学月
+            - strong [ref=e1342]: 1月・4月・7月・10月
+        - generic [ref=e1344]:
+          - text: 💰 年学费
+          - strong [ref=e1345]: ¥79万 ～ ¥121万
+          - text: （含报名费・入学金）
+        - generic [ref=e1346]:
+          - generic [ref=e1347]: 升大学
+          - generic [ref=e1348]: 升专门学校
+          - generic [ref=e1349]: JLPT対策
+          - generic [ref=e1350]: 4月入学
+          - generic [ref=e1351]: 10月入学
+        - generic [ref=e1352]:
+          - generic [ref=e1353]: 数据来源：日本語教育振興協会
+          - generic [ref=e1354]:
+            - link "📋 查看日振协资料" [ref=e1355] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=291
+            - link "🌐 前往学校官网 →" [ref=e1356] [cursor=pointer]:
+              - /url: https://nrsac.jp
+      - generic [ref=e1357]:
+        - generic [ref=e1358]:
+          - generic [ref=e1359]: スバル学院本巣校
+          - generic [ref=e1360]: 📍 岐阜県
+        - generic [ref=e1361]:
+          - generic [ref=e1362]:
+            - text: 👥 招生上限
+            - strong [ref=e1363]: 160名
+          - generic [ref=e1364]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1365]: 7名
+          - generic [ref=e1366]:
+            - text: 📅 入学月
+            - strong [ref=e1367]: 4月・10月
+        - generic [ref=e1369]:
+          - text: 💰 年学费
+          - strong [ref=e1370]: ¥115万 ～ ¥151万
+          - text: （含报名费・入学金）
+        - generic [ref=e1371]:
+          - generic [ref=e1372]: 升大学院
+          - generic [ref=e1373]: 升大学
+          - generic [ref=e1374]: 升专门学校
+          - generic [ref=e1375]: JLPT対策
+          - generic [ref=e1376]: 4月入学
+          - generic [ref=e1377]: 10月入学
+        - generic [ref=e1378]:
+          - generic [ref=e1379]: 数据来源：日本語教育振興協会
+          - generic [ref=e1380]:
+            - link "📋 查看日振协资料" [ref=e1381] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=276
+            - link "🌐 前往学校官网 →" [ref=e1382] [cursor=pointer]:
+              - /url: https://www.nihongo-subaru.com/
+      - generic [ref=e1383]:
+        - generic [ref=e1384]:
+          - generic [ref=e1385]: 浜松日本語学院
+          - generic [ref=e1386]: 📍 静岡県
+        - generic [ref=e1387]:
+          - generic [ref=e1388]:
+            - text: 👥 招生上限
+            - strong [ref=e1389]: 505名
+          - generic [ref=e1390]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1391]: 15名
+          - generic [ref=e1392]:
+            - text: 📅 入学月
+            - strong [ref=e1393]: 4月・10月
+        - generic [ref=e1395]:
+          - text: 💰 年学费
+          - strong [ref=e1396]: ¥111万 ～ ¥141万
+          - text: （含报名费・入学金）
+        - generic [ref=e1397]:
+          - generic [ref=e1398]: 升大学
+          - generic [ref=e1399]: 升专门学校
+          - generic [ref=e1400]: JLPT対策
+          - generic [ref=e1401]: 4月入学
+          - generic [ref=e1402]: 10月入学
+        - generic [ref=e1403]:
+          - generic [ref=e1404]: 数据来源：日本語教育振興協会
+          - generic [ref=e1405]:
+            - link "📋 查看日振协资料" [ref=e1406] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=463
+            - link "🌐 前往学校官网 →" [ref=e1407] [cursor=pointer]:
+              - /url: https://sist-jlc.ac.jp/
+      - generic [ref=e1408]:
+        - generic [ref=e1409]:
+          - generic [ref=e1410]: 国際ことば学院日本語学校
+          - generic [ref=e1411]: 📍 静岡県
+        - generic [ref=e1412]:
+          - generic [ref=e1413]:
+            - text: 👥 招生上限
+            - strong [ref=e1414]: 280名
+          - generic [ref=e1415]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1416]: 7名
+          - generic [ref=e1417]:
+            - text: 📅 入学月
+            - strong [ref=e1418]: 4月・7月・10月
+        - generic [ref=e1420]:
+          - text: 💰 年学费
+          - strong [ref=e1421]: ¥93万 ～ ¥121万
+          - text: （含报名费・入学金）
+        - generic [ref=e1422]:
+          - generic [ref=e1423]: 升大学
+          - generic [ref=e1424]: 升专门学校
+          - generic [ref=e1425]: JLPT対策
+          - generic [ref=e1426]: 4月入学
+          - generic [ref=e1427]: 10月入学
+        - generic [ref=e1428]:
+          - generic [ref=e1429]: 数据来源：日本語教育振興協会
+          - generic [ref=e1430]:
+            - link "📋 查看日振协资料" [ref=e1431] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=279
+            - link "🌐 前往学校官网 →" [ref=e1432] [cursor=pointer]:
+              - /url: http://kotoba.ac.jp
+      - generic [ref=e1433]:
+        - generic [ref=e1434]:
+          - generic [ref=e1435]: 富士山日本語学校
+          - generic [ref=e1436]: 📍 静岡県
+        - generic [ref=e1437]:
+          - generic [ref=e1438]:
+            - text: 👥 招生上限
+            - strong [ref=e1439]: 160名
+          - generic [ref=e1440]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1441]: 6名
+          - generic [ref=e1442]:
+            - text: 📅 入学月
+            - strong [ref=e1443]: 4月・7月・10月
+        - generic [ref=e1445]:
+          - text: 💰 年学费
+          - strong [ref=e1446]: ¥114万 ～ ¥148万
+          - text: （含报名费・入学金）
+        - generic [ref=e1447]:
+          - generic [ref=e1448]: 升大学
+          - generic [ref=e1449]: 升专门学校
+          - generic [ref=e1450]: JLPT対策
+          - generic [ref=e1451]: 4月入学
+          - generic [ref=e1452]: 10月入学
+        - generic [ref=e1453]:
+          - generic [ref=e1454]: 数据来源：日本語教育振興協会
+          - generic [ref=e1455]:
+            - link "📋 查看日振协资料" [ref=e1456] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=498
+            - link "🌐 前往学校官网 →" [ref=e1457] [cursor=pointer]:
+              - /url: http://fujisan.kotoba.ac.jp
+      - generic [ref=e1458]:
+        - generic [ref=e1459]:
+          - generic [ref=e1460]: 静岡インターナショナルスクール
+          - generic [ref=e1461]: 📍 静岡県
+        - generic [ref=e1462]:
+          - generic [ref=e1463]:
+            - text: 👥 招生上限
+            - strong [ref=e1464]: 180名
+          - generic [ref=e1465]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1466]: 7名
+          - generic [ref=e1467]:
+            - text: 📅 入学月
+            - strong [ref=e1468]: 4月・10月
+        - generic [ref=e1470]:
+          - text: 💰 年学费
+          - strong [ref=e1471]: ¥106万 ～ ¥136万
+          - text: （含报名费・入学金）
+        - generic [ref=e1472]:
+          - generic [ref=e1473]: 升大学
+          - generic [ref=e1474]: 升专门学校
+          - generic [ref=e1475]: JLPT対策
+          - generic [ref=e1476]: 4月入学
+          - generic [ref=e1477]: 10月入学
+        - generic [ref=e1478]:
+          - generic [ref=e1479]: 数据来源：日本語教育振興協会
+          - generic [ref=e1480]:
+            - link "📋 查看日振协资料" [ref=e1481] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=278
+            - link "🌐 前往学校官网 →" [ref=e1482] [cursor=pointer]:
+              - /url: http://www.sins.co.jp
+      - generic [ref=e1483]:
+        - generic [ref=e1484]:
+          - generic [ref=e1485]: A.C.C.国際交流学園
+          - generic [ref=e1486]: 📍 静岡県
+        - generic [ref=e1487]:
+          - generic [ref=e1488]:
+            - text: 👥 招生上限
+            - strong [ref=e1489]: 320名
+          - generic [ref=e1490]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1491]: 12名
+          - generic [ref=e1492]:
+            - text: 📅 入学月
+            - strong [ref=e1493]: 1月・4月・7月・10月・4, 10月
+        - generic [ref=e1495]:
+          - text: 💰 年学费
+          - strong [ref=e1496]: ¥39万 ～ ¥137万
+          - text: （含报名费・入学金）
+        - generic [ref=e1497]:
+          - generic [ref=e1498]: 升大学
+          - generic [ref=e1499]: 升专门学校
+          - generic [ref=e1500]: 就职
+          - generic [ref=e1501]: JLPT対策
+          - generic [ref=e1502]: 4月入学
+          - generic [ref=e1503]: 10月入学
+        - generic [ref=e1504]:
+          - generic [ref=e1505]: 数据来源：日本語教育振興協会
+          - generic [ref=e1506]:
+            - link "📋 查看日振协资料" [ref=e1507] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=282
+            - link "🌐 前往学校官网 →" [ref=e1508] [cursor=pointer]:
+              - /url: http://www.accjapan.com
+      - generic [ref=e1509]:
+        - generic [ref=e1510]:
+          - generic [ref=e1511]: 湘南日本語学園浜松校
+          - generic [ref=e1512]: 📍 静岡県
+        - generic [ref=e1513]:
+          - generic [ref=e1514]:
+            - text: 👥 招生上限
+            - strong [ref=e1515]: 200名
+          - generic [ref=e1516]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1517]: 6名
+          - generic [ref=e1518]:
+            - text: 📅 入学月
+            - strong [ref=e1519]: 10月・4,10月
+        - generic [ref=e1521]:
+          - text: 💰 年学费
+          - strong [ref=e1522]: ¥103万 ～ ¥134万
+          - text: （含报名费・入学金）
+        - generic [ref=e1523]:
+          - generic [ref=e1524]: 升大学
+          - generic [ref=e1525]: 升专门学校
+          - generic [ref=e1526]: JLPT対策
+          - generic [ref=e1527]: 10月入学
+        - generic [ref=e1528]:
+          - generic [ref=e1529]: 数据来源：日本語教育振興協会
+          - generic [ref=e1530]:
+            - link "📋 查看日振协资料" [ref=e1531] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=511
+            - link "🌐 前往学校官网 →" [ref=e1532] [cursor=pointer]:
+              - /url: https://syonan-academy.jp/
+      - generic [ref=e1533]:
+        - generic [ref=e1534]:
+          - generic [ref=e1535]: 静岡日本語教育センター
+          - generic [ref=e1536]: 📍 静岡県
+        - generic [ref=e1537]:
+          - generic [ref=e1538]:
+            - text: 👥 招生上限
+            - strong [ref=e1539]: 200名
+          - generic [ref=e1540]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1541]: 9名
+          - generic [ref=e1542]:
+            - text: 📅 入学月
+            - strong [ref=e1543]: 4月・10月
+        - generic [ref=e1545]:
+          - text: 💰 年学费
+          - strong [ref=e1546]: ¥61万 ～ ¥114万
+          - text: （含报名费・入学金）
+        - generic [ref=e1547]:
+          - generic [ref=e1548]: 升大学院
+          - generic [ref=e1549]: 升大学
+          - generic [ref=e1550]: 升专门学校
+          - generic [ref=e1551]: JLPT対策
+          - generic [ref=e1552]: 4月入学
+          - generic [ref=e1553]: 10月入学
+        - generic [ref=e1554]:
+          - generic [ref=e1555]: 数据来源：日本語教育振興協会
+          - generic [ref=e1556]:
+            - link "📋 查看日振协资料" [ref=e1557] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=277
+            - link "🌐 前往学校官网 →" [ref=e1558] [cursor=pointer]:
+              - /url: http://sjec.jp/
+      - generic [ref=e1559]:
+        - generic [ref=e1560]:
+          - generic [ref=e1561]: ＴＬＳ袋井
+          - generic [ref=e1562]: 📍 静岡県
+        - generic [ref=e1563]:
+          - generic [ref=e1564]:
+            - text: 👥 招生上限
+            - strong [ref=e1565]: 150名
+          - generic [ref=e1566]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1567]: 6名
+          - generic [ref=e1568]:
+            - text: 📅 入学月
+            - strong [ref=e1569]: 4月・7月・10月
+        - generic [ref=e1571]:
+          - text: 💰 年学费
+          - strong [ref=e1572]: ¥110万 ～ ¥143万
+          - text: （含报名费・入学金）
+        - generic [ref=e1573]:
+          - generic [ref=e1574]: 升专门学校
+          - generic [ref=e1575]: 4月入学
+          - generic [ref=e1576]: 10月入学
+        - generic [ref=e1577]:
+          - generic [ref=e1578]: 数据来源：日本語教育振興協会
+          - generic [ref=e1579]:
+            - link "📋 查看日振协资料" [ref=e1580] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=536
+            - link "🌐 前往学校官网 →" [ref=e1581] [cursor=pointer]:
+              - /url: https://takusin-ls.com/
+      - generic [ref=e1582]:
+        - generic [ref=e1583]:
+          - generic [ref=e1584]: 専門学校アリス学園
+          - generic [ref=e1585]: 📍 石川県
+        - generic [ref=e1586]:
+          - generic [ref=e1587]:
+            - text: 👥 招生上限
+            - strong [ref=e1588]: 200名
+          - generic [ref=e1589]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1590]: 10名
+          - generic [ref=e1591]:
+            - text: 📅 入学月
+            - strong [ref=e1592]: 4月・10月
+        - generic [ref=e1594]:
+          - text: 💰 年学费
+          - strong [ref=e1595]: ¥100万 ～ ¥129万
+          - text: （含报名费・入学金）
+        - generic [ref=e1596]:
+          - generic [ref=e1597]: 升大学院
+          - generic [ref=e1598]: 升大学
+          - generic [ref=e1599]: 升专门学校
+          - generic [ref=e1600]: JLPT対策
+          - generic [ref=e1601]: 4月入学
+          - generic [ref=e1602]: 10月入学
+        - generic [ref=e1603]:
+          - generic [ref=e1604]: 数据来源：日本語教育振興協会
+          - generic [ref=e1605]:
+            - link "📋 查看日振协资料" [ref=e1606] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=262
+            - link "🌐 前往学校官网 →" [ref=e1607] [cursor=pointer]:
+              - /url: http://alice-japan.net/gakuen/
+      - generic [ref=e1608]:
+        - generic [ref=e1609]:
+          - generic [ref=e1610]: 富山国際学院
+          - generic [ref=e1611]: 📍 富山県
+        - generic [ref=e1612]:
+          - generic [ref=e1613]:
+            - text: 👥 招生上限
+            - strong [ref=e1614]: 60名
+          - generic [ref=e1615]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1616]: 4名
+          - generic [ref=e1617]:
+            - text: 📅 入学月
+            - strong [ref=e1618]: 4月・10月
+        - generic [ref=e1620]:
+          - text: 💰 年学费
+          - strong [ref=e1621]: ¥99万 ～ ¥130万
+          - text: （含报名费・入学金）
+        - generic [ref=e1622]:
+          - generic [ref=e1623]: 升大学
+          - generic [ref=e1624]: 升专门学校
+          - generic [ref=e1625]: JLPT対策
+          - generic [ref=e1626]: 4月入学
+          - generic [ref=e1627]: 10月入学
+        - generic [ref=e1628]:
+          - generic [ref=e1629]: 数据来源：日本語教育振興協会
+          - generic [ref=e1630]:
+            - link "📋 查看日振协资料" [ref=e1631] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=260
+            - link "🌐 前往学校官网 →" [ref=e1632] [cursor=pointer]:
+              - /url: https://www.toyamaia.com
+      - generic [ref=e1633]:
+        - generic [ref=e1634]:
+          - generic [ref=e1635]: 京都励学国際学院
+          - generic [ref=e1636]: 📍 京都府
+        - generic [ref=e1637]:
+          - generic [ref=e1638]:
+            - text: 👥 招生上限
+            - strong [ref=e1639]: 120名
+          - generic [ref=e1640]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1641]: 6名
+          - generic [ref=e1642]:
+            - text: 📅 入学月
+            - strong [ref=e1643]: 4月・7月・10月
+        - generic [ref=e1645]:
+          - text: 💰 年学费
+          - strong [ref=e1646]: ¥105万 ～ ¥137万
+          - text: （含报名费・入学金）
+        - generic [ref=e1647]:
+          - generic [ref=e1648]: 升大学
+          - generic [ref=e1649]: 升专门学校
+          - generic [ref=e1650]: JLPT対策
+          - generic [ref=e1651]: 4月入学
+          - generic [ref=e1652]: 10月入学
+        - generic [ref=e1653]:
+          - generic [ref=e1654]: 数据来源：日本語教育振興協会
+          - generic [ref=e1655]:
+            - link "📋 查看日振协资料" [ref=e1656] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=319
+            - link "🌐 前往学校官网 →" [ref=e1657] [cursor=pointer]:
+              - /url: http://reigaku.jp
+      - generic [ref=e1658]:
+        - generic [ref=e1659]:
+          - generic [ref=e1660]: 公益財団法人京都日本語教育センター京都日本語学校
+          - generic [ref=e1661]: 📍 京都府
+        - generic [ref=e1662]:
+          - generic [ref=e1663]:
+            - text: 👥 招生上限
+            - strong [ref=e1664]: 130名
+          - generic [ref=e1665]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1666]: 4名
+          - generic [ref=e1667]:
+            - text: 📅 入学月
+            - strong [ref=e1668]: 4月・10月
+        - generic [ref=e1670]:
+          - text: 💰 年学费
+          - strong [ref=e1671]: ¥127万 ～ ¥167万
+          - text: （含报名费・入学金）
+        - generic [ref=e1672]:
+          - generic [ref=e1673]: 升大学院
+          - generic [ref=e1674]: 升大学
+          - generic [ref=e1675]: 升专门学校
+          - generic [ref=e1676]: JLPT対策
+          - generic [ref=e1677]: 4月入学
+          - generic [ref=e1678]: 10月入学
+        - generic [ref=e1679]:
+          - generic [ref=e1680]: 数据来源：日本語教育振興協会
+          - generic [ref=e1681]:
+            - link "📋 查看日振协资料" [ref=e1682] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=310
+            - link "🌐 前往学校官网 →" [ref=e1683] [cursor=pointer]:
+              - /url: http://www.kjls.or.jp/
+      - generic [ref=e1684]:
+        - generic [ref=e1685]:
+          - generic [ref=e1686]: 京都民際日本語学校
+          - generic [ref=e1687]: 📍 京都府
+        - generic [ref=e1688]:
+          - generic [ref=e1689]:
+            - text: 👥 招生上限
+            - strong [ref=e1690]: 542名
+          - generic [ref=e1691]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1692]: 24名
+          - generic [ref=e1693]:
+            - text: 📅 入学月
+            - strong [ref=e1694]: 1月・4月・7月・10月・4,7,10,1月
+        - generic [ref=e1696]:
+          - text: 💰 年学费
+          - strong [ref=e1697]: ¥105万 ～ ¥162万
+          - text: （含报名费・入学金）
+        - generic [ref=e1698]:
+          - generic [ref=e1699]: 升大学院
+          - generic [ref=e1700]: 升大学
+          - generic [ref=e1701]: 升专门学校
+          - generic [ref=e1702]: JLPT対策
+          - generic [ref=e1703]: 4月入学
+          - generic [ref=e1704]: 10月入学
+        - generic [ref=e1705]:
+          - generic [ref=e1706]: 数据来源：日本語教育振興協会
+          - generic [ref=e1707]:
+            - link "📋 查看日振协资料" [ref=e1708] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=317
+            - link "🌐 前往学校官网 →" [ref=e1709] [cursor=pointer]:
+              - /url: http://www.kyotominsai.co.jp
+      - generic [ref=e1710]:
+        - generic [ref=e1711]:
+          - generic [ref=e1712]: 四日市日本語学校
+          - generic [ref=e1713]: 📍 三重県
+        - generic [ref=e1714]:
+          - generic [ref=e1715]:
+            - text: 👥 招生上限
+            - strong [ref=e1716]: 180名
+          - generic [ref=e1717]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1718]: 4名
+          - generic [ref=e1719]:
+            - text: 📅 入学月
+            - strong [ref=e1720]: 4月・10月
+        - generic [ref=e1722]:
+          - text: 💰 年学费
+          - strong [ref=e1723]: ¥105万 ～ ¥136万
+          - text: （含报名费・入学金）
+        - generic [ref=e1724]:
+          - generic [ref=e1725]: 升大学
+          - generic [ref=e1726]: 升专门学校
+          - generic [ref=e1727]: JLPT対策
+          - generic [ref=e1728]: 4月入学
+          - generic [ref=e1729]: 10月入学
+        - generic [ref=e1730]:
+          - generic [ref=e1731]: 数据来源：日本語教育振興協会
+          - generic [ref=e1732]:
+            - link "📋 查看日振协资料" [ref=e1733] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=307
+            - link "🌐 前往学校官网 →" [ref=e1734] [cursor=pointer]:
+              - /url: http://www.cty-net.ne.jp/~yjls/
+      - generic [ref=e1735]:
+        - generic [ref=e1736]:
+          - generic [ref=e1737]: ISIランゲージスクール大阪校
+          - generic [ref=e1738]: 📍 大阪府
+        - generic [ref=e1739]:
+          - generic [ref=e1740]:
+            - text: 👥 招生上限
+            - strong [ref=e1741]: 480名
+          - generic [ref=e1742]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1743]: 24名
+          - generic [ref=e1744]:
+            - text: 📅 入学月
+            - strong [ref=e1745]: 4月・7月・10月
+        - generic [ref=e1747]:
+          - text: 💰 年学费
+          - strong [ref=e1748]: ¥129万 ～ ¥169万
+          - text: （含报名费・入学金）
+        - generic [ref=e1749]:
+          - generic [ref=e1750]: 升大学院
+          - generic [ref=e1751]: 升大学
+          - generic [ref=e1752]: 升专门学校
+          - generic [ref=e1753]: JLPT対策
+          - generic [ref=e1754]: 4月入学
+          - generic [ref=e1755]: 10月入学
+        - generic [ref=e1756]:
+          - generic [ref=e1757]: 数据来源：日本語教育振興協会
+          - generic [ref=e1758]:
+            - link "📋 查看日振协资料" [ref=e1759] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=224
+            - link "🌐 前往学校官网 →" [ref=e1760] [cursor=pointer]:
+              - /url: https://www.isi-education.com/ja/location/osaka/
+      - generic [ref=e1761]:
+        - generic [ref=e1762]:
+          - generic [ref=e1763]: 清風情報工科学院日本語科
+          - generic [ref=e1764]: 📍 大阪府
+        - generic [ref=e1765]:
+          - generic [ref=e1766]:
+            - text: 👥 招生上限
+            - strong [ref=e1767]: 336名
+          - generic [ref=e1768]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1769]: 10名
+          - generic [ref=e1770]:
+            - text: 📅 入学月
+            - strong [ref=e1771]: 4月・10月
+        - generic [ref=e1773]:
+          - text: 💰 年学费
+          - strong [ref=e1774]: ¥111万 ～ ¥145万
+          - text: （含报名费・入学金）
+        - generic [ref=e1775]:
+          - generic [ref=e1776]: 升大学院
+          - generic [ref=e1777]: 升大学
+          - generic [ref=e1778]: 升专门学校
+          - generic [ref=e1779]: JLPT対策
+          - generic [ref=e1780]: 中文对应
+          - generic [ref=e1781]: 4月入学
+          - generic [ref=e1782]: 10月入学
+        - generic [ref=e1783]:
+          - generic [ref=e1784]: 数据来源：日本語教育振興協会
+          - generic [ref=e1785]:
+            - link "📋 查看日振协资料" [ref=e1786] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=343
+            - link "🌐 前往学校官网 →" [ref=e1787] [cursor=pointer]:
+              - /url: http://www.i-seifu.jp/language/
+      - generic [ref=e1788]:
+        - generic [ref=e1789]:
+          - generic [ref=e1790]: 日中語学専門学院
+          - generic [ref=e1791]: 📍 大阪府
+        - generic [ref=e1792]:
+          - generic [ref=e1793]:
+            - text: 👥 招生上限
+            - strong [ref=e1794]: 176名
+          - generic [ref=e1795]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1796]: 10名
+          - generic [ref=e1797]:
+            - text: 📅 入学月
+            - strong [ref=e1798]: 1月・4月・7月・10月
+        - generic [ref=e1800]:
+          - text: 💰 年学费
+          - strong [ref=e1801]: ¥93万 ～ ¥142万
+          - text: （含报名费・入学金）
+        - generic [ref=e1802]:
+          - generic [ref=e1803]: 升大学
+          - generic [ref=e1804]: 升专门学校
+          - generic [ref=e1805]: JLPT対策
+          - generic [ref=e1806]: 4月入学
+          - generic [ref=e1807]: 10月入学
+        - generic [ref=e1808]:
+          - generic [ref=e1809]: 数据来源：日本語教育振興協会
+          - generic [ref=e1810]:
+            - link "📋 查看日振协资料" [ref=e1811] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=351
+            - link "🌐 前往学校官网 →" [ref=e1812] [cursor=pointer]:
+              - /url: http://jcla-osaka.com/
+      - generic [ref=e1813]:
+        - generic [ref=e1814]:
+          - generic [ref=e1815]: アジアハウス附属海風日本語学舎
+          - generic [ref=e1816]: 📍 大阪府
+        - generic [ref=e1817]:
+          - generic [ref=e1818]:
+            - text: 👥 招生上限
+            - strong [ref=e1819]: 100名
+          - generic [ref=e1820]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1821]: 5名
+          - generic [ref=e1822]:
+            - text: 📅 入学月
+            - strong [ref=e1823]: 4月・7月・10月
+        - generic [ref=e1825]:
+          - text: 💰 年学费
+          - strong [ref=e1826]: ¥114万 ～ ¥149万
+          - text: （含报名费・入学金）
+        - generic [ref=e1827]:
+          - generic [ref=e1828]: 升大学
+          - generic [ref=e1829]: 升专门学校
+          - generic [ref=e1830]: 4月入学
+          - generic [ref=e1831]: 10月入学
+        - generic [ref=e1832]:
+          - generic [ref=e1833]: 数据来源：日本語教育振興協会
+          - generic [ref=e1834]:
+            - link "📋 查看日振协资料" [ref=e1835] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=341
+            - link "🌐 前往学校官网 →" [ref=e1836] [cursor=pointer]:
+              - /url: http://asia-house.net/
+      - generic [ref=e1837]:
+        - generic [ref=e1838]:
+          - generic [ref=e1839]: エール学園日本語教育学科
+          - generic [ref=e1840]: 📍 大阪府
+        - generic [ref=e1841]:
+          - generic [ref=e1842]:
+            - text: 👥 招生上限
+            - strong [ref=e1843]: 640名
+          - generic [ref=e1844]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1845]: 15名
+          - generic [ref=e1846]:
+            - text: 📅 入学月
+            - strong [ref=e1847]: 4月・10月
+        - generic [ref=e1849]:
+          - text: 💰 年学费
+          - strong [ref=e1850]: ¥85万 ～ ¥160万
+          - text: （含报名费・入学金）
+        - generic [ref=e1851]:
+          - generic [ref=e1852]: 升大学院
+          - generic [ref=e1853]: 升大学
+          - generic [ref=e1854]: 升专门学校
+          - generic [ref=e1855]: JLPT対策
+          - generic [ref=e1856]: 4月入学
+          - generic [ref=e1857]: 10月入学
+        - generic [ref=e1858]:
+          - generic [ref=e1859]: 数据来源：日本語教育振興協会
+          - generic [ref=e1860]:
+            - link "📋 查看日振协资料" [ref=e1861] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=333
+            - link "🌐 前往学校官网 →" [ref=e1862] [cursor=pointer]:
+              - /url: http://www.ehle.ac.jp/jls/
+      - generic [ref=e1863]:
+        - generic [ref=e1864]:
+          - generic [ref=e1865]: J国際学院
+          - generic [ref=e1866]: 📍 大阪府
+        - generic [ref=e1867]:
+          - generic [ref=e1868]:
+            - text: 👥 招生上限
+            - strong [ref=e1869]: 560名
+          - generic [ref=e1870]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1871]: 10名
+          - generic [ref=e1872]:
+            - text: 📅 入学月
+            - strong [ref=e1873]: 1月・4月・7月・10月・4,7,10,1月
+        - generic [ref=e1875]:
+          - text: 💰 年学费
+          - strong [ref=e1876]: ¥80万 ～ ¥152万
+          - text: （含报名费・入学金）
+        - generic [ref=e1877]:
+          - generic [ref=e1878]: 升大学院
+          - generic [ref=e1879]: 升大学
+          - generic [ref=e1880]: 升专门学校
+          - generic [ref=e1881]: JLPT対策
+          - generic [ref=e1882]: 中文对应
+          - generic [ref=e1883]: 4月入学
+          - generic [ref=e1884]: 10月入学
+        - generic [ref=e1885]:
+          - generic [ref=e1886]: 数据来源：日本語教育振興協会
+          - generic [ref=e1887]:
+            - link "📋 查看日振协资料" [ref=e1888] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=325
+            - link "🌐 前往学校官网 →" [ref=e1889] [cursor=pointer]:
+              - /url: http://jcom-ies.co.jp/
+      - generic [ref=e1890]:
+        - generic [ref=e1891]:
+          - generic [ref=e1892]: SANWA外国語学院
+          - generic [ref=e1893]: 📍 大阪府
+        - generic [ref=e1894]:
+          - generic [ref=e1895]:
+            - text: 👥 招生上限
+            - strong [ref=e1896]: 85名
+          - generic [ref=e1897]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1898]: 12名
+          - generic [ref=e1899]:
+            - text: 📅 入学月
+            - strong [ref=e1900]: 4月・10月
+        - generic [ref=e1902]:
+          - text: 💰 年学费
+          - strong [ref=e1903]: ¥107万 ～ ¥139万
+          - text: （含报名费・入学金）
+        - generic [ref=e1904]:
+          - generic [ref=e1905]: 升大学
+          - generic [ref=e1906]: 升专门学校
+          - generic [ref=e1907]: JLPT対策
+          - generic [ref=e1908]: 4月入学
+          - generic [ref=e1909]: 10月入学
+        - generic [ref=e1910]:
+          - generic [ref=e1911]: 数据来源：日本語教育振興協会
+          - generic [ref=e1912]:
+            - link "📋 查看日振协资料" [ref=e1913] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=516
+            - link "🌐 前往学校官网 →" [ref=e1914] [cursor=pointer]:
+              - /url: http://sanwa-language.com
+      - generic [ref=e1915]:
+        - generic [ref=e1916]:
+          - generic [ref=e1917]: 日本学生支援機構大阪日本語教育センター
+          - generic [ref=e1918]: 📍 大阪府
+        - generic [ref=e1919]:
+          - generic [ref=e1920]:
+            - text: 👥 招生上限
+            - strong [ref=e1921]: 365名
+          - generic [ref=e1922]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1923]: 19名
+          - generic [ref=e1924]:
+            - text: 📅 入学月
+            - strong [ref=e1925]: 4月・10月
+        - generic [ref=e1927]:
+          - text: 💰 年学费
+          - strong [ref=e1928]: ¥82万 ～ ¥119万
+          - text: （含报名费・入学金）
+        - generic [ref=e1929]:
+          - generic [ref=e1930]: 升大学院
+          - generic [ref=e1931]: 升大学
+          - generic [ref=e1932]: 升专门学校
+          - generic [ref=e1933]: JLPT対策
+          - generic [ref=e1934]: 4月入学
+          - generic [ref=e1935]: 10月入学
+        - generic [ref=e1936]:
+          - generic [ref=e1937]: 数据来源：日本語教育振興協会
+          - generic [ref=e1938]:
+            - link "📋 查看日振协资料" [ref=e1939] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=327
+            - link "🌐 前往学校官网 →" [ref=e1940] [cursor=pointer]:
+              - /url: https://www.jasso.go.jp/ryugaku/jlec/ojlec/index.html
+      - generic [ref=e1941]:
+        - generic [ref=e1942]:
+          - generic [ref=e1943]: 大阪日本語アカデミー
+          - generic [ref=e1944]: 📍 大阪府
+        - generic [ref=e1945]:
+          - generic [ref=e1946]:
+            - text: 👥 招生上限
+            - strong [ref=e1947]: 244名
+          - generic [ref=e1948]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1949]: 11名
+          - generic [ref=e1950]:
+            - text: 📅 入学月
+            - strong [ref=e1951]: 1月・4月・7月・10月
+        - generic [ref=e1953]:
+          - text: 💰 年学费
+          - strong [ref=e1954]: ¥76万 ～ ¥144万
+          - text: （含报名费・入学金）
+        - generic [ref=e1955]:
+          - generic [ref=e1956]: 升大学院
+          - generic [ref=e1957]: 升大学
+          - generic [ref=e1958]: 升专门学校
+          - generic [ref=e1959]: JLPT対策
+          - generic [ref=e1960]: 4月入学
+          - generic [ref=e1961]: 10月入学
+        - generic [ref=e1962]:
+          - generic [ref=e1963]: 数据来源：日本語教育振興協会
+          - generic [ref=e1964]:
+            - link "📋 查看日振协资料" [ref=e1965] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=495
+            - link "🌐 前往学校官网 →" [ref=e1966] [cursor=pointer]:
+              - /url: http://oja.jp/
+      - generic [ref=e1967]:
+        - generic [ref=e1968]:
+          - generic [ref=e1969]: クローバー学院
+          - generic [ref=e1970]: 📍 大阪府
+        - generic [ref=e1971]:
+          - generic [ref=e1972]:
+            - text: 👥 招生上限
+            - strong [ref=e1973]: 232名
+          - generic [ref=e1974]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e1975]: 9名
+          - generic [ref=e1976]:
+            - text: 📅 入学月
+            - strong [ref=e1977]: 1月・4月・7月・10月・4,10月
+        - generic [ref=e1979]:
+          - text: 💰 年学费
+          - strong [ref=e1980]: ¥95万 ～ ¥144万
+          - text: （含报名费・入学金）
+        - generic [ref=e1981]:
+          - generic [ref=e1982]: 升大学院
+          - generic [ref=e1983]: 升大学
+          - generic [ref=e1984]: 升专门学校
+          - generic [ref=e1985]: JLPT対策
+          - generic [ref=e1986]: 中文对应
+          - generic [ref=e1987]: 4月入学
+          - generic [ref=e1988]: 10月入学
+        - generic [ref=e1989]:
+          - generic [ref=e1990]: 数据来源：日本語教育振興協会
+          - generic [ref=e1991]:
+            - link "📋 查看日振协资料" [ref=e1992] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=326
+            - link "🌐 前往学校官网 →" [ref=e1993] [cursor=pointer]:
+              - /url: http://www.clover-li.co.jp
+      - generic [ref=e1994]:
+        - generic [ref=e1995]:
+          - generic [ref=e1996]: 大阪YMCA学院
+          - generic [ref=e1997]: 📍 大阪府
+        - generic [ref=e1998]:
+          - generic [ref=e1999]:
+            - text: 👥 招生上限
+            - strong [ref=e2000]: 500名
+          - generic [ref=e2001]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2002]: 15名
+          - generic [ref=e2003]:
+            - text: 📅 入学月
+            - strong [ref=e2004]: 4月・10月・4,7,10,1月
+        - generic [ref=e2006]:
+          - text: 💰 年学费
+          - strong [ref=e2007]: ¥88万 ～ ¥171万
+          - text: （含报名费・入学金）
+        - generic [ref=e2008]:
+          - generic [ref=e2009]: 升大学
+          - generic [ref=e2010]: 升专门学校
+          - generic [ref=e2011]: JLPT対策
+          - generic [ref=e2012]: 4月入学
+          - generic [ref=e2013]: 10月入学
+        - generic [ref=e2014]:
+          - generic [ref=e2015]: 数据来源：日本語教育振興協会
+          - generic [ref=e2016]:
+            - link "📋 查看日振协资料" [ref=e2017] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=330
+            - link "🌐 前往学校官网 →" [ref=e2018] [cursor=pointer]:
+              - /url: https://www.osakaymca.ac.jp/nihongo/
+      - generic [ref=e2019]:
+        - generic [ref=e2020]:
+          - generic [ref=e2021]: 国際語学学院
+          - generic [ref=e2022]: 📍 兵庫県
+        - generic [ref=e2023]:
+          - generic [ref=e2024]:
+            - text: 👥 招生上限
+            - strong [ref=e2025]: 528名
+          - generic [ref=e2026]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2027]: 12名
+          - generic [ref=e2028]:
+            - text: 📅 入学月
+            - strong [ref=e2029]: 1月・4月・7月・10月
+        - generic [ref=e2031]:
+          - text: 💰 年学费
+          - strong [ref=e2032]: ¥97万 ～ ¥146万
+          - text: （含报名费・入学金）
+        - generic [ref=e2033]:
+          - generic [ref=e2034]: 升大学院
+          - generic [ref=e2035]: 升大学
+          - generic [ref=e2036]: 升专门学校
+          - generic [ref=e2037]: JLPT対策
+          - generic [ref=e2038]: 4月入学
+          - generic [ref=e2039]: 10月入学
+        - generic [ref=e2040]:
+          - generic [ref=e2041]: 数据来源：日本語教育振興協会
+          - generic [ref=e2042]:
+            - link "📋 查看日振协资料" [ref=e2043] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=364
+            - link "🌐 前往学校官网 →" [ref=e2044] [cursor=pointer]:
+              - /url: https://www.kobe-ila.com
+      - generic [ref=e2045]:
+        - generic [ref=e2046]:
+          - generic [ref=e2047]: 神戸東洋日本語学院
+          - generic [ref=e2048]: 📍 兵庫県
+        - generic [ref=e2049]:
+          - generic [ref=e2050]:
+            - text: 👥 招生上限
+            - strong [ref=e2051]: 520名
+          - generic [ref=e2052]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2053]: 16名
+          - generic [ref=e2054]:
+            - text: 📅 入学月
+            - strong [ref=e2055]: 1月・4月・7月・10月
+        - generic [ref=e2057]:
+          - text: 💰 年学费
+          - strong [ref=e2058]: ¥72万 ～ ¥136万
+          - text: （含报名费・入学金）
+        - generic [ref=e2059]:
+          - generic [ref=e2060]: 升大学院
+          - generic [ref=e2061]: 升大学
+          - generic [ref=e2062]: 升专门学校
+          - generic [ref=e2063]: JLPT対策
+          - generic [ref=e2064]: 中文对应
+          - generic [ref=e2065]: 4月入学
+          - generic [ref=e2066]: 10月入学
+        - generic [ref=e2067]:
+          - generic [ref=e2068]: 数据来源：日本語教育振興協会
+          - generic [ref=e2069]:
+            - link "📋 查看日振协资料" [ref=e2070] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=372
+            - link "🌐 前往学校官网 →" [ref=e2071] [cursor=pointer]:
+              - /url: http://www.jp-college.com
+      - generic [ref=e2072]:
+        - generic [ref=e2073]:
+          - generic [ref=e2074]: コミュニカ学院
+          - generic [ref=e2075]: 📍 兵庫県
+        - generic [ref=e2076]:
+          - generic [ref=e2077]:
+            - text: 👥 招生上限
+            - strong [ref=e2078]: 192名
+          - generic [ref=e2079]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2080]: 6名
+          - generic [ref=e2081]:
+            - text: 📅 入学月
+            - strong [ref=e2082]: 1月・4月・7月・10月
+        - generic [ref=e2084]:
+          - text: 💰 年学费
+          - strong [ref=e2085]: ¥196万 ～ ¥196万
+          - text: （含报名费・入学金）
+        - generic [ref=e2086]:
+          - generic [ref=e2087]: 升大学院
+          - generic [ref=e2088]: 升大学
+          - generic [ref=e2089]: 升专门学校
+          - generic [ref=e2090]: JLPT対策
+          - generic [ref=e2091]: 4月入学
+          - generic [ref=e2092]: 10月入学
+        - generic [ref=e2093]:
+          - generic [ref=e2094]: 数据来源：日本語教育振興協会
+          - generic [ref=e2095]:
+            - link "📋 查看日振协资料" [ref=e2096] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=371
+            - link "🌐 前往学校官网 →" [ref=e2097] [cursor=pointer]:
+              - /url: http://www.communica-institute.org
+      - generic [ref=e2098]:
+        - generic [ref=e2099]:
+          - generic [ref=e2100]: 和歌山YMCA国際福祉専門学校日本語科
+          - generic [ref=e2101]: 📍 和歌山県
+        - generic [ref=e2102]:
+          - generic [ref=e2103]:
+            - text: 👥 招生上限
+            - strong [ref=e2104]: 120名
+          - generic [ref=e2105]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2106]: 4名
+          - generic [ref=e2107]:
+            - text: 📅 入学月
+            - strong [ref=e2108]: 4月・10月
+        - generic [ref=e2110]:
+          - text: 💰 年学费
+          - strong [ref=e2111]: ¥72万 ～ ¥132万
+          - text: （含报名费・入学金）
+        - generic [ref=e2112]:
+          - generic [ref=e2113]: 升大学院
+          - generic [ref=e2114]: 升大学
+          - generic [ref=e2115]: 升专门学校
+          - generic [ref=e2116]: JLPT対策
+          - generic [ref=e2117]: 4月入学
+          - generic [ref=e2118]: 10月入学
+        - generic [ref=e2119]:
+          - generic [ref=e2120]: 数据来源：日本語教育振興協会
+          - generic [ref=e2121]:
+            - link "📋 查看日振协资料" [ref=e2122] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=388
+            - link "🌐 前往学校官网 →" [ref=e2123] [cursor=pointer]:
+              - /url: https://wakayamaymca.ac.jp/japanese/wp/
+      - generic [ref=e2124]:
+        - generic [ref=e2125]:
+          - generic [ref=e2126]: はぴねす外語学院
+          - generic [ref=e2127]: 📍 愛媛県
+        - generic [ref=e2128]:
+          - generic [ref=e2129]:
+            - text: 👥 招生上限
+            - strong [ref=e2130]: 70名
+          - generic [ref=e2131]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2132]: 3名
+          - generic [ref=e2133]:
+            - text: 📅 入学月
+            - strong [ref=e2134]: 4月・10月
+        - generic [ref=e2136]:
+          - text: 💰 年学费
+          - strong [ref=e2137]: ¥90万 ～ ¥117万
+          - text: （含报名费・入学金）
+        - generic [ref=e2138]:
+          - generic [ref=e2139]: 4月入学
+          - generic [ref=e2140]: 10月入学
+        - generic [ref=e2141]:
+          - generic [ref=e2142]: 数据来源：日本語教育振興協会
+          - generic [ref=e2143]:
+            - link "📋 查看日振协资料" [ref=e2144] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=509
+            - link "🌐 前往学校官网 →" [ref=e2145] [cursor=pointer]:
+              - /url: http://www.hapinesu-fls.com
+      - generic [ref=e2146]:
+        - generic [ref=e2147]:
+          - generic [ref=e2148]: 岡山外語学院
+          - generic [ref=e2149]: 📍 岡山県
+        - generic [ref=e2150]:
+          - generic [ref=e2151]:
+            - text: 👥 招生上限
+            - strong [ref=e2152]: 400名
+          - generic [ref=e2153]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2154]: 14名
+          - generic [ref=e2155]:
+            - text: 📅 入学月
+            - strong [ref=e2156]: 4月・10月
+        - generic [ref=e2158]:
+          - text: 💰 年学费
+          - strong [ref=e2159]: ¥84万 ～ ¥156万
+          - text: （含报名费・入学金）
+        - generic [ref=e2160]:
+          - generic [ref=e2161]: 升大学院
+          - generic [ref=e2162]: 升大学
+          - generic [ref=e2163]: 升专门学校
+          - generic [ref=e2164]: JLPT対策
+          - generic [ref=e2165]: 4月入学
+          - generic [ref=e2166]: 10月入学
+        - generic [ref=e2167]:
+          - generic [ref=e2168]: 数据来源：日本語教育振興協会
+          - generic [ref=e2169]:
+            - link "📋 查看日振协资料" [ref=e2170] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=393
+            - link "🌐 前往学校官网 →" [ref=e2171] [cursor=pointer]:
+              - /url: http://okg-jp.com/
+      - generic [ref=e2172]:
+        - generic [ref=e2173]:
+          - generic [ref=e2174]: 長船日本語学院
+          - generic [ref=e2175]: 📍 岡山県
+        - generic [ref=e2176]:
+          - generic [ref=e2177]:
+            - text: 👥 招生上限
+            - strong [ref=e2178]: 225名
+          - generic [ref=e2179]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2180]: 6名
+          - generic [ref=e2181]:
+            - text: 📅 入学月
+            - strong [ref=e2182]: 4月・7月・10月
+        - generic [ref=e2184]:
+          - text: 💰 年学费
+          - strong [ref=e2185]: ¥106万 ～ ¥135万
+          - text: （含报名费・入学金）
+        - generic [ref=e2186]:
+          - generic [ref=e2187]: 升大学
+          - generic [ref=e2188]: 升专门学校
+          - generic [ref=e2189]: JLPT対策
+          - generic [ref=e2190]: 4月入学
+          - generic [ref=e2191]: 10月入学
+        - generic [ref=e2192]:
+          - generic [ref=e2193]: 数据来源：日本語教育振興協会
+          - generic [ref=e2194]:
+            - link "📋 查看日振协资料" [ref=e2195] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=392
+            - link "🌐 前往学校官网 →" [ref=e2196] [cursor=pointer]:
+              - /url: http://www.osafune.info
+      - generic [ref=e2197]:
+        - generic [ref=e2198]:
+          - generic [ref=e2199]: 倉敷外語学院
+          - generic [ref=e2200]: 📍 岡山県
+        - generic [ref=e2201]:
+          - generic [ref=e2202]:
+            - text: 👥 招生上限
+            - strong [ref=e2203]: 500名
+          - generic [ref=e2204]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2205]: 13名
+          - generic [ref=e2206]:
+            - text: 📅 入学月
+            - strong [ref=e2207]: 4月・10月
+        - generic [ref=e2209]:
+          - text: 💰 年学费
+          - strong [ref=e2210]: ¥108万 ～ ¥141万
+          - text: （含报名费・入学金）
+        - generic [ref=e2211]:
+          - generic [ref=e2212]: 升大学
+          - generic [ref=e2213]: 升专门学校
+          - generic [ref=e2214]: JLPT対策
+          - generic [ref=e2215]: 4月入学
+          - generic [ref=e2216]: 10月入学
+        - generic [ref=e2217]:
+          - generic [ref=e2218]: 数据来源：日本語教育振興協会
+          - generic [ref=e2219]:
+            - link "📋 查看日振协资料" [ref=e2220] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=466
+            - link "🌐 前往学校官网 →" [ref=e2221] [cursor=pointer]:
+              - /url: http://kurashikigaigo.jp/
+      - generic [ref=e2222]:
+        - generic [ref=e2223]:
+          - generic [ref=e2224]: 専門学校広島国際ビジネスカレッジ
+          - generic [ref=e2225]: 📍 広島県
+        - generic [ref=e2226]:
+          - generic [ref=e2227]:
+            - text: 👥 招生上限
+            - strong [ref=e2228]: 260名
+          - generic [ref=e2229]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2230]: 9名
+          - generic [ref=e2231]:
+            - text: 📅 入学月
+            - strong [ref=e2232]: 4月・10月
+        - generic [ref=e2234]:
+          - text: 💰 年学费
+          - strong [ref=e2235]: ¥66万 ～ ¥120万
+          - text: （含报名费・入学金）
+        - generic [ref=e2236]:
+          - generic [ref=e2237]: 升专门学校
+          - generic [ref=e2238]: JLPT対策
+          - generic [ref=e2239]: 4月入学
+          - generic [ref=e2240]: 10月入学
+        - generic [ref=e2241]:
+          - generic [ref=e2242]: 数据来源：日本語教育振興協会
+          - generic [ref=e2243]:
+            - link "📋 查看日振协资料" [ref=e2244] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=402
+            - link "🌐 前往学校官网 →" [ref=e2245] [cursor=pointer]:
+              - /url: http://hibc.jp
+      - generic [ref=e2246]:
+        - generic [ref=e2247]:
+          - generic [ref=e2248]: 専門学校さくら国際言語学院
+          - generic [ref=e2249]: 📍 山口県
+        - generic [ref=e2250]:
+          - generic [ref=e2251]:
+            - text: 👥 招生上限
+            - strong [ref=e2252]: 200名
+          - generic [ref=e2253]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2254]: 9名
+          - generic [ref=e2255]:
+            - text: 📅 入学月
+            - strong [ref=e2256]: 4月・7月・10月
+        - generic [ref=e2258]:
+          - text: 💰 年学费
+          - strong [ref=e2259]: ¥104万 ～ ¥136万
+          - text: （含报名费・入学金）
+        - generic [ref=e2260]:
+          - generic [ref=e2261]: 升大学
+          - generic [ref=e2262]: 升专门学校
+          - generic [ref=e2263]: JLPT対策
+          - generic [ref=e2264]: 4月入学
+          - generic [ref=e2265]: 10月入学
+        - generic [ref=e2266]:
+          - generic [ref=e2267]: 数据来源：日本語教育振興協会
+          - generic [ref=e2268]:
+            - link "📋 查看日振协资料" [ref=e2269] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=404
+            - link "🌐 前往学校官网 →" [ref=e2270] [cursor=pointer]:
+              - /url: http://www.sakura.ac.jp
+      - generic [ref=e2271]:
+        - generic [ref=e2272]:
+          - generic [ref=e2273]: 専門学校さくら国際言語教育学院
+          - generic [ref=e2274]: 📍 山口県
+        - generic [ref=e2275]:
+          - generic [ref=e2276]:
+            - text: 👥 招生上限
+            - strong [ref=e2277]: 120名
+          - generic [ref=e2278]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2279]: 4名
+          - generic [ref=e2280]:
+            - text: 📅 入学月
+            - strong [ref=e2281]: 4月・7月・10月
+        - generic [ref=e2283]:
+          - text: 💰 年学费
+          - strong [ref=e2284]: ¥104万 ～ ¥136万
+          - text: （含报名费・入学金）
+        - generic [ref=e2285]:
+          - generic [ref=e2286]: 升专门学校
+          - generic [ref=e2287]: JLPT対策
+          - generic [ref=e2288]: 4月入学
+          - generic [ref=e2289]: 10月入学
+        - generic [ref=e2290]:
+          - generic [ref=e2291]: 数据来源：日本語教育振興協会
+          - generic [ref=e2292]:
+            - link "📋 查看日振协资料" [ref=e2293] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=405
+            - link "🌐 前往学校官网 →" [ref=e2294] [cursor=pointer]:
+              - /url: http://sakura.ac.jp/
+      - generic [ref=e2295]:
+        - generic [ref=e2296]:
+          - generic [ref=e2297]: 徳山総合ビジネス専門学校
+          - generic [ref=e2298]: 📍 山口県
+        - generic [ref=e2299]:
+          - generic [ref=e2300]:
+            - text: 👥 招生上限
+            - strong [ref=e2301]: 200名
+          - generic [ref=e2302]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2303]: 8名
+          - generic [ref=e2304]:
+            - text: 📅 入学月
+            - strong [ref=e2305]: 4月・10月
+        - generic [ref=e2307]:
+          - text: 💰 年学费
+          - strong [ref=e2308]: ¥92万 ～ ¥118万
+          - text: （含报名费・入学金）
+        - generic [ref=e2309]:
+          - generic [ref=e2310]: 升专门学校
+          - generic [ref=e2311]: JLPT対策
+          - generic [ref=e2312]: 4月入学
+          - generic [ref=e2313]: 10月入学
+        - generic [ref=e2314]:
+          - generic [ref=e2315]: 数据来源：日本語教育振興協会
+          - generic [ref=e2316]:
+            - link "📋 查看日振协资料" [ref=e2317] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=406
+            - link "🌐 前往学校官网 →" [ref=e2318] [cursor=pointer]:
+              - /url: https://www.tokubi.net/
+      - generic [ref=e2319]:
+        - generic [ref=e2320]:
+          - generic [ref=e2321]: 異文化間コミュニケーションセンター附属日本語学校
+          - generic [ref=e2322]: 📍 沖縄県
+        - generic [ref=e2323]:
+          - generic [ref=e2324]:
+            - text: 👥 招生上限
+            - strong [ref=e2325]: 48名
+          - generic [ref=e2326]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2327]: 3名
+          - generic [ref=e2328]:
+            - text: 📅 入学月
+            - strong [ref=e2329]: 4月・7月・10月
+        - generic [ref=e2331]:
+          - text: 💰 年学费
+          - strong [ref=e2332]: ¥89万 ～ ¥139万
+          - text: （含报名费・入学金）
+        - generic [ref=e2333]:
+          - generic [ref=e2334]: 升专门学校
+          - generic [ref=e2335]: 4月入学
+          - generic [ref=e2336]: 10月入学
+        - generic [ref=e2337]:
+          - generic [ref=e2338]: 数据来源：日本語教育振興協会
+          - generic [ref=e2339]:
+            - link "📋 查看日振协资料" [ref=e2340] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=502
+            - link "🌐 前往学校官网 →" [ref=e2341] [cursor=pointer]:
+              - /url: https://www.okinawa-japanese.com/
+      - generic [ref=e2342]:
+        - generic [ref=e2343]:
+          - generic [ref=e2344]: 日亜外語学院
+          - generic [ref=e2345]: 📍 沖縄県
+        - generic [ref=e2346]:
+          - generic [ref=e2347]:
+            - text: 👥 招生上限
+            - strong [ref=e2348]: 240名
+          - generic [ref=e2349]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2350]: 6名
+          - generic [ref=e2351]:
+            - text: 📅 入学月
+            - strong [ref=e2352]: 4月・10月
+        - generic [ref=e2354]:
+          - text: 💰 年学费
+          - strong [ref=e2355]: ¥90万 ～ ¥143万
+          - text: （含报名费・入学金）
+        - generic [ref=e2356]:
+          - generic [ref=e2357]: 升大学
+          - generic [ref=e2358]: 升专门学校
+          - generic [ref=e2359]: JLPT対策
+          - generic [ref=e2360]: 4月入学
+          - generic [ref=e2361]: 10月入学
+        - generic [ref=e2362]:
+          - generic [ref=e2363]: 数据来源：日本語教育振興協会
+          - generic [ref=e2364]:
+            - link "📋 查看日振协资料" [ref=e2365] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=456
+            - link "🌐 前往学校官网 →" [ref=e2366] [cursor=pointer]:
+              - /url: http://orange.zero.jp/nichia
+      - generic [ref=e2367]:
+        - generic [ref=e2368]:
+          - generic [ref=e2369]: 国際言語文化センター附属日本語学校
+          - generic [ref=e2370]: 📍 沖縄県
+        - generic [ref=e2371]:
+          - generic [ref=e2372]:
+            - text: 👥 招生上限
+            - strong [ref=e2373]: 220名
+          - generic [ref=e2374]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2375]: 15名
+          - generic [ref=e2376]:
+            - text: 📅 入学月
+            - strong [ref=e2377]: 1月・4月・7月・10月
+        - generic [ref=e2379]:
+          - text: 💰 年学费
+          - strong [ref=e2380]: ¥77万 ～ ¥143万
+          - text: （含报名费・入学金）
+        - generic [ref=e2381]:
+          - generic [ref=e2382]: 升大学院
+          - generic [ref=e2383]: 升大学
+          - generic [ref=e2384]: 升专门学校
+          - generic [ref=e2385]: JLPT対策
+          - generic [ref=e2386]: 4月入学
+          - generic [ref=e2387]: 10月入学
+        - generic [ref=e2388]:
+          - generic [ref=e2389]: 数据来源：日本語教育振興協会
+          - generic [ref=e2390]:
+            - link "📋 查看日振协资料" [ref=e2391] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=455
+            - link "🌐 前往学校官网 →" [ref=e2392] [cursor=pointer]:
+              - /url: https://iclcjapan.com/
+      - generic [ref=e2393]:
+        - generic [ref=e2394]:
+          - generic [ref=e2395]: 熊本YMCA学院日本語科
+          - generic [ref=e2396]: 📍 熊本県
+        - generic [ref=e2397]:
+          - generic [ref=e2398]:
+            - text: 👥 招生上限
+            - strong [ref=e2399]: 140名
+          - generic [ref=e2400]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2401]: 5名
+          - generic [ref=e2402]:
+            - text: 📅 入学月
+            - strong [ref=e2403]: 4月・10月
+        - generic [ref=e2405]:
+          - text: 💰 年学费
+          - strong [ref=e2406]: ¥109万 ～ ¥142万
+          - text: （含报名费・入学金）
+        - generic [ref=e2407]:
+          - generic [ref=e2408]: 升专门学校
+          - generic [ref=e2409]: JLPT対策
+          - generic [ref=e2410]: 4月入学
+          - generic [ref=e2411]: 10月入学
+        - generic [ref=e2412]:
+          - generic [ref=e2413]: 数据来源：日本語教育振興協会
+          - generic [ref=e2414]:
+            - link "📋 查看日振协资料" [ref=e2415] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=448
+            - link "🌐 前往学校官网 →" [ref=e2416] [cursor=pointer]:
+              - /url: http://www.kumamoto-ymca.or.jp/nihongo/
+      - generic [ref=e2417]:
+        - generic [ref=e2418]:
+          - generic [ref=e2419]: さくら日本語学院
+          - generic [ref=e2420]: 📍 福岡県
+        - generic [ref=e2421]:
+          - generic [ref=e2422]:
+            - text: 👥 招生上限
+            - strong [ref=e2423]: 496名
+          - generic [ref=e2424]:
+            - text: 👨‍🏫 专任教师
+            - strong [ref=e2425]: 14名
+          - generic [ref=e2426]:
+            - text: 📅 入学月
+            - strong [ref=e2427]: 1月・4月・7月・10月
+        - generic [ref=e2429]:
+          - text: 💰 年学费
+          - strong [ref=e2430]: ¥85万 ～ ¥151万
+          - text: （含报名费・入学金）
+        - generic [ref=e2431]:
+          - generic [ref=e2432]: 升大学院
+          - generic [ref=e2433]: 升大学
+          - generic [ref=e2434]: 升专门学校
+          - generic [ref=e2435]: JLPT対策
+          - generic [ref=e2436]: 4月入学
+          - generic [ref=e2437]: 10月入学
+        - generic [ref=e2438]:
+          - generic [ref=e2439]: 数据来源：日本語教育振興協会
+          - generic [ref=e2440]:
+            - link "📋 查看日振协资料" [ref=e2441] [cursor=pointer]:
+              - /url: https://www.nisshinkyo.org/search/college.php?id=438
+            - link "🌐 前往学校官网 →" [ref=e2442] [cursor=pointer]:
+              - /url: http://www.j-sakura.net
+    - generic [ref=e2443]:
+      - generic [ref=e2444]: 其他学校（学费未公开）：8 所
+      - generic [ref=e2445]:
+        - generic [ref=e2446]:
+          - generic [ref=e2447]:
+            - generic [ref=e2448]: 東京外語専門学校
+            - generic [ref=e2449]: 📍 東京都
+          - generic [ref=e2450]:
+            - generic [ref=e2451]:
+              - text: 👥 招生上限
+              - strong [ref=e2452]: 未公开
+            - generic [ref=e2453]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2454]: 未公开
+            - generic [ref=e2455]:
+              - text: 📅 入学月
+              - strong [ref=e2456]: 未公开
+          - generic [ref=e2458]: 学费未公开
+          - generic [ref=e2459]:
+            - generic [ref=e2460]: 数据来源：日本語教育振興協会
+            - generic [ref=e2461]:
+              - link "📋 查看日振协资料" [ref=e2462] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=106
+              - generic [ref=e2463]: 官网未登录
+        - generic [ref=e2464]:
+          - generic [ref=e2465]:
+            - generic [ref=e2466]: ＹＭＣＡ東京日本語学校
+            - generic [ref=e2467]: 📍 東京都
+          - generic [ref=e2468]:
+            - generic [ref=e2469]:
+              - text: 👥 招生上限
+              - strong [ref=e2470]: 未公开
+            - generic [ref=e2471]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2472]: 未公开
+            - generic [ref=e2473]:
+              - text: 📅 入学月
+              - strong [ref=e2474]: 未公开
+          - generic [ref=e2476]: 学费未公开
+          - generic [ref=e2477]:
+            - generic [ref=e2478]: 数据来源：日本語教育振興協会
+            - generic [ref=e2479]:
+              - link "📋 查看日振协资料" [ref=e2480] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=89
+              - generic [ref=e2481]: 官网未登录
+        - generic [ref=e2482]:
+          - generic [ref=e2483]:
+            - generic [ref=e2484]: 学校法人サンシャイン学園東京福祉保育専門学校
+            - generic [ref=e2485]: 📍 東京都
+          - generic [ref=e2486]:
+            - generic [ref=e2487]:
+              - text: 👥 招生上限
+              - strong [ref=e2488]: 未公开
+            - generic [ref=e2489]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2490]: 未公开
+            - generic [ref=e2491]:
+              - text: 📅 入学月
+              - strong [ref=e2492]: 未公开
+          - generic [ref=e2494]: 学费未公开
+          - generic [ref=e2495]:
+            - generic [ref=e2496]: 数据来源：日本語教育振興協会
+            - generic [ref=e2497]:
+              - link "📋 查看日振协资料" [ref=e2498] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=194
+              - generic [ref=e2499]: 官网未登录
+        - generic [ref=e2500]:
+          - generic [ref=e2501]:
+            - generic [ref=e2502]: ホツマインターナショナルスクール東京校
+            - generic [ref=e2503]: 📍 東京都
+          - generic [ref=e2504]:
+            - generic [ref=e2505]:
+              - text: 👥 招生上限
+              - strong [ref=e2506]: 未公开
+            - generic [ref=e2507]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2508]: 未公开
+            - generic [ref=e2509]:
+              - text: 📅 入学月
+              - strong [ref=e2510]: 未公开
+          - generic [ref=e2512]: 学费未公开
+          - generic [ref=e2513]:
+            - generic [ref=e2514]: 数据来源：日本語教育振興協会
+            - generic [ref=e2515]:
+              - link "📋 查看日振协资料" [ref=e2516] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=462
+              - generic [ref=e2517]: 官网未登录
+        - generic [ref=e2518]:
+          - generic [ref=e2519]:
+            - generic [ref=e2520]: YAMASA言語文化学院
+            - generic [ref=e2521]: 📍 愛知県
+          - generic [ref=e2522]:
+            - generic [ref=e2523]:
+              - text: 👥 招生上限
+              - strong [ref=e2524]: 未公开
+            - generic [ref=e2525]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2526]: 未公开
+            - generic [ref=e2527]:
+              - text: 📅 入学月
+              - strong [ref=e2528]: 未公开
+          - generic [ref=e2530]: 学费未公开
+          - generic [ref=e2531]:
+            - generic [ref=e2532]: 数据来源：日本語教育振興協会
+            - generic [ref=e2533]:
+              - link "📋 查看日振协资料" [ref=e2534] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=301
+              - generic [ref=e2535]: 官网未登录
+        - generic [ref=e2536]:
+          - generic [ref=e2537]:
+            - generic [ref=e2538]: 公益財団法人 アジア学生文化協会
+            - generic [ref=e2539]: 📍 東京都
+          - generic [ref=e2540]:
+            - generic [ref=e2541]:
+              - text: 👥 招生上限
+              - strong [ref=e2542]: 未公开
+            - generic [ref=e2543]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2544]: 未公开
+            - generic [ref=e2545]:
+              - text: 📅 入学月
+              - strong [ref=e2546]: 未公开
+          - generic [ref=e2548]: 学费未公开
+          - generic [ref=e2549]:
+            - generic [ref=e2550]: 数据来源：日本語教育振興協会
+            - generic [ref=e2551]:
+              - link "📋 查看日振协资料" [ref=e2552] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=144
+              - generic [ref=e2553]: 官网未登录
+        - generic [ref=e2554]:
+          - generic [ref=e2555]:
+            - generic [ref=e2556]: 外語学院アドバンスアカデミー
+            - generic [ref=e2557]: 📍 愛知県
+          - generic [ref=e2558]:
+            - generic [ref=e2559]:
+              - text: 👥 招生上限
+              - strong [ref=e2560]: 未公开
+            - generic [ref=e2561]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2562]: 未公开
+            - generic [ref=e2563]:
+              - text: 📅 入学月
+              - strong [ref=e2564]: 未公开
+          - generic [ref=e2566]: 学费未公开
+          - generic [ref=e2567]:
+            - generic [ref=e2568]: 数据来源：日本語教育振興協会
+            - generic [ref=e2569]:
+              - link "📋 查看日振协资料" [ref=e2570] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=285
+              - generic [ref=e2571]: 官网未登录
+        - generic [ref=e2572]:
+          - generic [ref=e2573]:
+            - generic [ref=e2574]: 大阪ＹＭＣＡ国際専門学校
+            - generic [ref=e2575]: 📍 大阪府
+          - generic [ref=e2576]:
+            - generic [ref=e2577]:
+              - text: 👥 招生上限
+              - strong [ref=e2578]: 未公开
+            - generic [ref=e2579]:
+              - text: 👨‍🏫 专任教师
+              - strong [ref=e2580]: 未公开
+            - generic [ref=e2581]:
+              - text: 📅 入学月
+              - strong [ref=e2582]: 未公开
+          - generic [ref=e2584]: 学费未公开
+          - generic [ref=e2585]:
+            - generic [ref=e2586]: 数据来源：日本語教育振興協会
+            - generic [ref=e2587]:
+              - link "📋 查看日振协资料" [ref=e2588] [cursor=pointer]:
+                - /url: https://www.nisshinkyo.org/search/college.php?id=324
+              - generic [ref=e2589]: 官网未登录

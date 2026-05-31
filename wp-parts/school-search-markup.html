@@ -1,0 +1,240 @@
+<!-- === 日本語学校搜索 — MARKUP BLOCK ===
+     Paste into: WordPress → Custom HTML block (where you want the widget)
+     Requires: school-search.css in Additional CSS
+               school-search-script.html in a Custom HTML block (anywhere on same page)
+-->
+
+<div class="widget-root" x-data="schoolSearch()">
+
+  <header class="page-header">
+    <div class="header-left">
+      <div class="header-logo">日</div>
+      <h1>日本语学校搜索</h1>
+    </div>
+    <span class="result-count-badge" x-text="`${totalCount} 所`"></span>
+  </header>
+
+  <button class="mobile-filter-toggle"
+    @click="$refs.sidebar.classList.toggle('open')">
+    <span>筛选条件</span>
+    <span>▼</span>
+  </button>
+
+  <div class="layout">
+    <div class="ss-sidebar" x-ref="sidebar">
+      <div class="filter-panel">
+        <div class="filter-header">
+          <span class="filter-title">筛选</span>
+          <button class="reset-btn" @click="resetFilters()">重置</button>
+        </div>
+
+        <!-- Region -->
+        <div class="filter-group">
+          <label class="filter-label">地区</label>
+          <select x-model="filterRegion" @change="onRegionChange()" class="filter-select">
+            <option value="">全部地区</option>
+            <template x-for="region in regions" :key="region">
+              <option :value="region" x-text="region"></option>
+            </template>
+          </select>
+        </div>
+
+        <!-- Prefecture (cascades) -->
+        <div class="filter-group" x-show="filterRegion !== ''">
+          <label class="filter-label">都道府県</label>
+          <select x-model="filterPrefecture" class="filter-select">
+            <option value="">全部</option>
+            <template x-for="pref in prefectures" :key="pref">
+              <option :value="pref" x-text="pref"></option>
+            </template>
+          </select>
+        </div>
+
+        <!-- Tuition dual range slider -->
+        <div class="filter-group">
+          <label class="filter-label">年学费</label>
+          <div class="range-display">
+            <span x-text="formatTuition(tuitionMin)"></span>
+            <span> — </span>
+            <span x-text="formatTuition(tuitionMax)"></span>
+          </div>
+          <div class="dual-range">
+            <input type="range" class="range-min"
+              :min="TUITION_FLOOR" :max="TUITION_CEIL" step="50000"
+              x-model.number="tuitionMin"
+              @input="if(tuitionMin > tuitionMax) tuitionMax = tuitionMin">
+            <input type="range" class="range-max"
+              :min="TUITION_FLOOR" :max="TUITION_CEIL" step="50000"
+              x-model.number="tuitionMax"
+              @input="if(tuitionMax < tuitionMin) tuitionMin = tuitionMax">
+          </div>
+        </div>
+
+        <!-- Teachers min slider -->
+        <div class="filter-group">
+          <label class="filter-label">专任教师（最少）</label>
+          <div class="range-display">
+            <span x-text="teachersMin > 0 ? `${teachersMin} 名以上` : '不限'"></span>
+          </div>
+          <input type="range" class="filter-range"
+            min="0" :max="TEACHERS_MAX" step="1"
+            x-model.number="teachersMin">
+        </div>
+
+        <!-- Keyword tags -->
+        <div class="filter-group">
+          <label class="filter-label">关键词</label>
+          <div class="tag-group">
+            <template x-for="tag in ALL_TAGS.filter(t => t.type === 'goal')" :key="tag.key">
+              <button class="tag-chip goal"
+                :class="{ active: isTagActive(tag.key) }"
+                @click="toggleTag(tag.key)"
+                x-text="tag.label">
+              </button>
+            </template>
+          </div>
+          <div class="tag-group" style="margin-top: 6px;">
+            <template x-for="tag in ALL_TAGS.filter(t => t.type === 'service')" :key="tag.key">
+              <button class="tag-chip service"
+                :class="{ active: isTagActive(tag.key) }"
+                @click="toggleTag(tag.key)"
+                x-text="tag.label">
+              </button>
+            </template>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ss-results">
+
+      <!-- Sort bar -->
+      <div class="sort-bar">
+        <span class="result-summary">共 <strong x-text="totalCount"></strong> 所学校</span>
+        <div class="sort-control">
+          <span>排序</span>
+          <select x-model="sortBy" class="sort-select">
+            <option value="default">按地区</option>
+            <option value="tuition_asc">学费↑</option>
+            <option value="tuition_desc">学费↓</option>
+            <option value="capacity_desc">招生↓</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Primary results -->
+      <div class="card-list">
+        <template x-for="school in primaryResults" :key="school.id">
+          <div class="school-card">
+            <div class="card-head">
+              <div class="card-name" x-text="school.name"></div>
+              <span class="location-chip" x-text="school.prefecture"></span>
+            </div>
+            <div class="card-stats-row">
+              <div class="stat-block">
+                <span class="stat-val" x-text="school.capacity ? school.capacity + '名' : '—'"></span>
+                <span class="stat-desc">招生上限</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-val" x-text="school.full_time_teachers ? school.full_time_teachers + '名' : '—'"></span>
+                <span class="stat-desc">专任教师</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-val" x-text="formatMonths(school.start_months)"></span>
+                <span class="stat-desc">入学月</span>
+              </div>
+            </div>
+            <div class="card-tuition-row">
+              <template x-if="school.tuition_min !== null">
+                <div class="tuition-known">
+                  <span class="tuition-label">年学费</span>
+                  <span class="tuition-value" x-text="`${formatTuition(school.tuition_min)} — ${formatTuition(school.tuition_max)}`"></span>
+                  <span class="tuition-note">含报名费・入学金</span>
+                </div>
+              </template>
+            </div>
+            <div class="card-tags" x-show="school.tags.length > 0">
+              <template x-for="tag in school.tags" :key="tag.key">
+                <span class="tag" :class="tag.type" x-text="tag.label"></span>
+              </template>
+            </div>
+            <div class="card-foot">
+              <span class="data-source">日本語教育振興協会</span>
+              <div class="card-links">
+                <a :href="school.nisshinkyo_url" target="_blank" rel="noopener noreferrer" class="ss-btn ss-btn-outline">查看资料</a>
+                <template x-if="school.website">
+                  <a :href="school.website" target="_blank" rel="noopener noreferrer" class="ss-btn ss-btn-solid">官网 →</a>
+                </template>
+                <template x-if="!school.website">
+                  <span class="no-website">官网未登录</span>
+                </template>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <!-- Tuition-unknown section -->
+      <template x-if="unknownResults.length > 0">
+        <div class="unknown-section">
+          <div class="unknown-header">
+            其他学校（学费未公开）
+            <span class="unknown-count" x-text="unknownResults.length"></span>
+          </div>
+          <div class="card-list">
+            <template x-for="school in unknownResults" :key="school.id">
+              <div class="school-card no-tuition">
+                <div class="card-head">
+                  <div class="card-name" x-text="school.name"></div>
+                  <span class="location-chip" x-text="school.prefecture"></span>
+                </div>
+                <div class="card-stats-row">
+                  <div class="stat-block">
+                    <span class="stat-val" x-text="school.capacity ? school.capacity + '名' : '—'"></span>
+                    <span class="stat-desc">招生上限</span>
+                  </div>
+                  <div class="stat-block">
+                    <span class="stat-val" x-text="school.full_time_teachers ? school.full_time_teachers + '名' : '—'"></span>
+                    <span class="stat-desc">专任教师</span>
+                  </div>
+                  <div class="stat-block">
+                    <span class="stat-val" x-text="formatMonths(school.start_months)"></span>
+                    <span class="stat-desc">入学月</span>
+                  </div>
+                </div>
+                <div class="card-tuition-row">
+                  <span class="tuition-unknown">学费未公开</span>
+                </div>
+                <div class="card-tags" x-show="school.tags.length > 0">
+                  <template x-for="tag in school.tags" :key="tag.key">
+                    <span class="tag" :class="tag.type" x-text="tag.label"></span>
+                  </template>
+                </div>
+                <div class="card-foot">
+                  <span class="data-source">日本語教育振興協会</span>
+                  <div class="card-links">
+                    <a :href="school.nisshinkyo_url" target="_blank" rel="noopener noreferrer" class="ss-btn ss-btn-outline">查看资料</a>
+                    <template x-if="school.website">
+                      <a :href="school.website" target="_blank" rel="noopener noreferrer" class="ss-btn ss-btn-solid">官网 →</a>
+                    </template>
+                    <template x-if="!school.website">
+                      <span class="no-website">官网未登录</span>
+                    </template>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+
+      <!-- Empty state -->
+      <template x-if="primaryResults.length === 0 && unknownResults.length === 0">
+        <div class="empty-state">
+          <p>没有符合条件的学校，请调整筛选条件。</p>
+          <button @click="resetFilters()" class="reset-btn-lg">清除所有筛选</button>
+        </div>
+      </template>
+    </div>
+  </div>
+</div>
