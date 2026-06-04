@@ -107,6 +107,36 @@
 /* ── One-sub note ── */
 .tck-pe__onesub{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap}
 .tck-pe__onesub-dot{width:6px;height:6px;border-radius:50%;background:var(--sage);flex-shrink:0}
+
+/* ── Case Slider ── */
+.tck-pe__cslider{margin:24px 0 28px}
+.tck-pe__cslider-head{font-size:11.5px;font-weight:600;color:var(--forest);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.tck-pe__cslider-sub{font-size:12.5px;color:var(--muted);margin-bottom:14px}
+.tck-pe__cslider-wrap{overflow:hidden;border-radius:14px}
+.tck-pe__cslider-track{display:flex;transition:transform .38s cubic-bezier(.4,0,.2,1)}
+.tck-pe__cslider-slide{min-width:100%}
+.tck-pe__cslider-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px 32px;display:flex;flex-direction:column;gap:20px}
+.tck-pe__cslider-result-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.tck-pe__cslider-school{font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;color:var(--forest);line-height:1.3}
+.tck-pe__cslider-outcome{font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;background:var(--forest);color:#fff;white-space:nowrap;align-self:flex-start;margin-top:3px;letter-spacing:.04em}
+.tck-pe__cslider-profile{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.6}
+.tck-pe__cslider-sep{height:1px;background:var(--border)}
+.tck-pe__cslider-block{display:flex;flex-direction:column;gap:6px}
+.tck-pe__cslider-lbl{font-size:10.5px;font-weight:700;color:var(--sage);letter-spacing:.12em;text-transform:uppercase}
+.tck-pe__cslider-body{font-size:13.5px;color:var(--ink);line-height:1.8}
+.tck-pe__cslider-freq{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.6}
+.tck-pe__cslider-instr{display:flex;align-items:center;gap:10px;padding-top:16px;border-top:1px solid var(--border)}
+.tck-pe__cslider-instr-name{font-family:'Noto Serif SC',serif;font-size:14px;font-weight:700;color:var(--forest)}
+.tck-pe__cslider-instr-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px;letter-spacing:.05em;white-space:nowrap}
+.tck-pe__cslider-instr-badge--sp{background:var(--forest);color:#fff}
+.tck-pe__cslider-instr-badge--pm{background:var(--gold-lt);color:#9a7a20;border:1px solid #e5cf8a}
+.tck-pe__cslider-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:14px}
+.tck-pe__cslider-btn{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--border);background:#fff;color:var(--forest);font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .18s,border-color .18s;line-height:1}
+.tck-pe__cslider-btn:hover{background:var(--sage-lt);border-color:var(--sage)}
+.tck-pe__cslider-dots{display:flex;gap:6px;align-items:center}
+.tck-pe__cslider-dot{width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;transition:background .2s,transform .2s;border:none;padding:0}
+.tck-pe__cslider-dot.active{background:var(--forest);transform:scale(1.35)}
+@media(max-width:500px){.tck-pe__cslider-card{padding:20px 18px}.tck-pe__cslider-school{font-size:17px}}
 </style>
 
 <div class="tck-pe">
@@ -234,6 +264,149 @@
       </div>
     </div>
 
+    <!-- 指導ケース -->
+    <div class="tck-pe__cslider">
+      <div class="tck-pe__cslider-head">指导案例</div>
+      <div class="tck-pe__cslider-sub">真实学生，真实过程</div>
+      <div class="tck-pe__cslider-wrap">
+        <div class="tck-pe__cslider-track" id="tck-pe-jhs-track">
+
+          <!-- Slide 1 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">渋谷学園幕張中学</div>
+                  <span class="tck-pe__cslider-outcome">合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">小学6年级 · 美国在住 · 入试2个月前开始集中对策</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">英语整体备考已在其他机构进行，但Essay的论点深度和表达精度还差一口气。入试只剩2个月，需要高效集中突破Essay这一关。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">英语Essay集中精修 · 出願书类协助</div>
+                <div class="tck-pe__cslider-freq">週3回 · 60分 · 英语笔试 / Essay / 面接对策</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">水田 早枝子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">広尾学園中学 AGコース</div>
+                  <span class="tck-pe__cslider-outcome">合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">小学生 · 中国在住</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">广尾学园AG课程要考英语、日语（国語）、算数三科——在中国就读的孩子三科同时备考，各科准备时间都显不足。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">三科目过去问集中训练（各科专职讲师）</div>
+                <div class="tck-pe__cslider-freq">英语 週90分 · 国語 週60分 · 算数 週60分</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">相吉 晃太朗</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">茗渓学園中学</div>
+                  <span class="tck-pe__cslider-outcome">合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">入試4个月前开始准备</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">英语力不足，日语作文几乎从零开始——两项弱点要在4个月内同时补强，时间非常紧张。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">英语力强化 · 日语作文专项</div>
+                <div class="tck-pe__cslider-freq">英語 週2回60分 · 日語作文 週1回60分</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">瀧澤 真結</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">東京学芸大附属国際中学</div>
+                  <span class="tck-pe__cslider-outcome">合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">入試3个月前开始准备</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">各科考试和出願手续要同时推进——书类全是日文，自己不知道从哪里下手；同时日语和英语作文都需要集中训练。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">书类制作支援 · 面接对策 · 日语 / 英语作文</div>
+                <div class="tck-pe__cslider-freq">週2回 · 各60分</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">瀧澤 真結</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="tck-pe__cslider-nav">
+        <button class="tck-pe__cslider-btn" id="tck-pe-jhs-prev" aria-label="Previous">&#8592;</button>
+        <div class="tck-pe__cslider-dots">
+          <button class="tck-pe__cslider-dot active" data-i="0"></button>
+          <button class="tck-pe__cslider-dot" data-i="1"></button>
+          <button class="tck-pe__cslider-dot" data-i="2"></button>
+          <button class="tck-pe__cslider-dot" data-i="3"></button>
+        </div>
+        <button class="tck-pe__cslider-btn" id="tck-pe-jhs-next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+    <script>(function(){
+      var track=document.getElementById('tck-pe-jhs-track');
+      var nav=track.closest('.tck-pe__cslider').querySelector('.tck-pe__cslider-nav');
+      var dots=nav.querySelectorAll('.tck-pe__cslider-dot');
+      var total=4,cur=0;
+      function go(n){cur=(n+total)%total;track.style.transform='translateX(-'+(cur*100)+'%)';dots.forEach(function(d,i){d.classList.toggle('active',i===cur);});}
+      document.getElementById('tck-pe-jhs-prev').addEventListener('click',function(){go(cur-1);});
+      document.getElementById('tck-pe-jhs-next').addEventListener('click',function(){go(cur+1);});
+      dots.forEach(function(d){d.addEventListener('click',function(){go(+this.dataset.i);});});
+    })();</script>
+
     <div class="tck-pe__cta-row">
       <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-pe__btn tck-pe__btn--primary">免费学习咨询 →</a>
       <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-pe__btn tck-pe__btn--ghost">学校评估咨询 →</a>
@@ -320,6 +493,149 @@
         <span class="tck-pe__school">かえつ有明</span>
       </div>
     </div>
+
+    <!-- 指導ケース -->
+    <div class="tck-pe__cslider">
+      <div class="tck-pe__cslider-head">指导案例</div>
+      <div class="tck-pe__cslider-sub">真实学生，真实过程</div>
+      <div class="tck-pe__cslider-wrap">
+        <div class="tck-pe__cslider-track" id="tck-pe-hs-track">
+
+          <!-- Slide 1 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">ICU高校</div>
+                  <span class="tck-pe__cslider-outcome">合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">Mさん · 香港在住 · 4月从零起步约5个月备考</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">准备时间极短，几乎从零开始备考ICU高校这一高难度学校——大目标过于遥远，不知道从哪一步开始、每天做什么。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">分段目标管理 · 两位老师搭档个别强化</div>
+                <div class="tck-pe__cslider-freq">把大目标拆解成每周可实现的小目标，逐步累积实力</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">水田 早枝子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">ICU高校</div>
+                  <span class="tck-pe__cslider-outcome">合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">Tさん · 日本在住</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">志望理由書和Essay不知道怎么写——不知道如何把自己的经历变成有说服力的文章，自我表达一直是难关。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">志望理由整理 · Essay个别精修</div>
+                <div class="tck-pe__cslider-freq">帮孩子梳理出"只有自己才能写"的内容，写出真正有说服力的申请文书</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">水田 早枝子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">同志社国際高校</div>
+                  <span class="tck-pe__cslider-outcome">合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">Yさん · 奥地利在住</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">要用英语写高水准小论文，但遇到难题时表达会卡住——词汇和论点还不够扎实，面对真实考题时信心不足。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">英语Essay强化 · 高级词汇运用训练</div>
+                <div class="tck-pe__cslider-freq">针对各类题型反复训练，直到面对难题也能自信作答</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">岡留 智史</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">早稲田大学本庄高校</div>
+                  <span class="tck-pe__cslider-outcome">合格 · TOEFL 100点超</span>
+                </div>
+                <div class="tck-pe__cslider-profile">Aさん · 泰国在住 · 约5个月集中对策</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">TOEFL分数未达目标，Writing和Speaking是明显弱项——需要在约5个月内将弱项强化到100分水平。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">TOEFL弱项专项强化 · 各题型集训</div>
+                <div class="tck-pe__cslider-freq">约5个月持续指导，TOEFL最终超过100分</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">岡留 智史</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="tck-pe__cslider-nav">
+        <button class="tck-pe__cslider-btn" id="tck-pe-hs-prev" aria-label="Previous">&#8592;</button>
+        <div class="tck-pe__cslider-dots">
+          <button class="tck-pe__cslider-dot active" data-i="0"></button>
+          <button class="tck-pe__cslider-dot" data-i="1"></button>
+          <button class="tck-pe__cslider-dot" data-i="2"></button>
+          <button class="tck-pe__cslider-dot" data-i="3"></button>
+        </div>
+        <button class="tck-pe__cslider-btn" id="tck-pe-hs-next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+    <script>(function(){
+      var track=document.getElementById('tck-pe-hs-track');
+      var nav=track.closest('.tck-pe__cslider').querySelector('.tck-pe__cslider-nav');
+      var dots=nav.querySelectorAll('.tck-pe__cslider-dot');
+      var total=4,cur=0;
+      function go(n){cur=(n+total)%total;track.style.transform='translateX(-'+(cur*100)+'%)';dots.forEach(function(d,i){d.classList.toggle('active',i===cur);});}
+      document.getElementById('tck-pe-hs-prev').addEventListener('click',function(){go(cur-1);});
+      document.getElementById('tck-pe-hs-next').addEventListener('click',function(){go(cur+1);});
+      dots.forEach(function(d){d.addEventListener('click',function(){go(+this.dataset.i);});});
+    })();</script>
 
     <div class="tck-pe__timing">
       <div class="tck-pe__timing-head">什么时候开始最合适？</div>
@@ -426,6 +742,120 @@
         <span class="tck-pe__school">順天高校</span>
       </div>
     </div>
+
+    <!-- 指導ケース -->
+    <div class="tck-pe__cslider">
+      <div class="tck-pe__cslider-head">指导案例</div>
+      <div class="tck-pe__cslider-sub">真实学生，真实过程</div>
+      <div class="tck-pe__cslider-wrap">
+        <div class="tck-pe__cslider-track" id="tck-pe-tr-track">
+
+          <!-- Slide 1 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">東京学芸大附属国際中学</div>
+                  <span class="tck-pe__cslider-outcome">編入 合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">中学3年级 · 韩国在住</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">英语Essay内容浮于表面，缺乏深度；日语作文有不自然的表达——两项都要在短期内突破，不能只提升表面流利度。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">英语Essay深度强化 · 日语作文自然表达训练</div>
+                <div class="tck-pe__cslider-freq">英語Essay 週1回60分 · 日語作文 週1回60分</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">岡村 京子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">市川中学</div>
+                  <span class="tck-pe__cslider-outcome">編入 合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">中学2年级 · 现地校就读 · 约1年前开始准备</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">预计1年后回日本，需要在不影响现地校学习的情况下，把国語・数学补到市川中学的授课水平——相当于从中1内容重新系统学习。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">国語 · 数学系统强化 / 1年间稳步推进</div>
+                <div class="tck-pe__cslider-freq">国語 週2回60分 · 数学 週2回60分 · 持续1年</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">田中 隆介</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="tck-pe__cslider-slide">
+            <div class="tck-pe__cslider-card">
+              <div>
+                <div class="tck-pe__cslider-result-row">
+                  <div class="tck-pe__cslider-school">広尾学園高校</div>
+                  <span class="tck-pe__cslider-outcome">編入 合格</span>
+                </div>
+                <div class="tck-pe__cslider-profile">高中 · 美国在住 · 约6个月（1月～9月）</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">备考课题</div>
+                <div class="tck-pe__cslider-body">长期在美国就读，日本课程几乎未接触；尤其广尾特有的英语诗歌题型完全陌生——6个月内要从零掌握考题风格并达到合格水平。</div>
+              </div>
+              <div class="tck-pe__cslider-sep"></div>
+              <div class="tck-pe__cslider-block">
+                <div class="tck-pe__cslider-lbl">TCK的支援</div>
+                <div class="tck-pe__cslider-body">英语（诗歌题型专项）· 数学基础力强化</div>
+                <div class="tck-pe__cslider-freq">英語 週2回60分 · 数学 週2回60分 · 约6个月集中对策</div>
+              </div>
+              <div class="tck-pe__cslider-instr">
+                <span class="tck-pe__cslider-instr-name">田中 隆介</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="tck-pe__cslider-nav">
+        <button class="tck-pe__cslider-btn" id="tck-pe-tr-prev" aria-label="Previous">&#8592;</button>
+        <div class="tck-pe__cslider-dots">
+          <button class="tck-pe__cslider-dot active" data-i="0"></button>
+          <button class="tck-pe__cslider-dot" data-i="1"></button>
+          <button class="tck-pe__cslider-dot" data-i="2"></button>
+        </div>
+        <button class="tck-pe__cslider-btn" id="tck-pe-tr-next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+    <script>(function(){
+      var track=document.getElementById('tck-pe-tr-track');
+      var nav=track.closest('.tck-pe__cslider').querySelector('.tck-pe__cslider-nav');
+      var dots=nav.querySelectorAll('.tck-pe__cslider-dot');
+      var total=3,cur=0;
+      function go(n){cur=(n+total)%total;track.style.transform='translateX(-'+(cur*100)+'%)';dots.forEach(function(d,i){d.classList.toggle('active',i===cur);});}
+      document.getElementById('tck-pe-tr-prev').addEventListener('click',function(){go(cur-1);});
+      document.getElementById('tck-pe-tr-next').addEventListener('click',function(){go(cur+1);});
+      dots.forEach(function(d){d.addEventListener('click',function(){go(+this.dataset.i);});});
+    })();</script>
 
     <div class="tck-pe__cta-row">
       <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-pe__btn tck-pe__btn--primary">免费学习咨询 →</a>
