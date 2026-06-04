@@ -1,0 +1,114 @@
+<!-- TCK 私立高校择校与规划 page block -->
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap">
+
+<style>
+/* === scope: tck-pe === */
+.tck-pe{font-family:'Noto Sans SC',sans-serif;color:#111;line-height:1.7}
+.tck-pe *{box-sizing:border-box;margin:0;padding:0}
+.tck-pe a{text-decoration:none;color:inherit}
+.tck-pe{
+  --forest:#2d5016;--sage:#5a8a3c;--sage-lt:#eef5e8;
+  --gold:#c9a84c;--gold-lt:#fdf7e6;
+  --pink:#e91e63;--pink-dk:#c2185b;
+  --cream:#f9f6ef;--ink:#1e2a1e;--muted:#6a7a6a;
+  --border:#dde8d0
+}
+
+/* ── Intro hero ── */
+.tck-pe__intro{text-align:center;padding:52px 0 44px}
+.tck-pe__sup{font-size:11.5px;letter-spacing:.2em;color:var(--sage);text-transform:uppercase;display:block;margin-bottom:12px}
+.tck-pe__h1{font-family:'Noto Serif SC',serif!important;font-size:clamp(24px,3.8vw,36px)!important;font-weight:700!important;color:var(--forest)!important;line-height:1.35!important;margin:0 0 14px!important;padding:0!important}
+.tck-pe__lead{font-size:14.5px;color:var(--muted);max-width:540px;margin:0 auto 40px;line-height:1.85}
+
+/* ── Journey bar ── */
+.tck-pe__journey{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;gap:0;margin-bottom:4px}
+.tck-pe__jstep{display:flex;flex-direction:column;align-items:center;gap:9px;padding:18px 18px 16px;border-radius:14px;text-decoration:none;transition:background .18s,box-shadow .18s;flex:1;max-width:170px;min-width:110px}
+.tck-pe__jstep:hover{background:var(--sage-lt);box-shadow:0 2px 12px rgba(45,80,22,.09)}
+.tck-pe__jnum{width:36px;height:36px;border-radius:50%;background:var(--forest);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tck-pe__jtxt{font-size:13.5px;font-weight:600;color:var(--forest);text-align:center;line-height:1.35}
+.tck-pe__jage{font-size:11.5px;color:var(--muted);text-align:center;line-height:1.5;padding:0 4px}
+.tck-pe__jlink{font-size:11px;color:var(--sage);letter-spacing:.04em;margin-top:2px}
+.tck-pe__jarrow{width:28px;flex-shrink:0;align-self:center;height:1px;background:var(--border);margin:0 4px;position:relative}
+.tck-pe__jarrow::after{content:'›';position:absolute;right:-7px;top:-10px;color:var(--border);font-size:20px}
+
+/* ── Section ── */
+.tck-pe__section{padding:52px 0;border-top:1px solid var(--border)}
+.tck-pe__section:first-of-type{border-top:none}
+.tck-pe__sec-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:24px}
+.tck-pe__sec-n{font-family:'Noto Serif SC',serif;font-size:52px;font-weight:700;color:var(--border);line-height:.9;flex-shrink:0;user-select:none}
+.tck-pe__sec-meta{flex:1;padding-top:4px}
+.tck-pe__sec-tag{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:5px}
+.tck-pe__sec-h2{font-family:'Noto Serif SC',serif;font-size:clamp(19px,2.8vw,26px);font-weight:700;color:var(--forest);line-height:1.3;margin-bottom:3px}
+.tck-pe__sec-sub{font-size:13px;color:var(--muted)}
+
+/* ── Body copy ── */
+.tck-pe__copy{font-size:14.5px;color:#111;line-height:1.9;margin-bottom:22px}
+.tck-pe__copy p{margin-bottom:13px}
+.tck-pe__copy p:last-child{margin-bottom:0}
+.tck-pe__copy em{font-style:normal;color:var(--forest);font-weight:500}
+
+/* ── Pain chips ── */
+.tck-pe__pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:18px 0 26px}
+.tck-pe__pain{background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:13px 15px;font-size:13px;color:#111;line-height:1.6;display:flex;align-items:flex-start;gap:9px}
+.tck-pe__pain-q{flex-shrink:0;margin-top:1px;width:18px;height:18px;border-radius:50%;background:var(--gold);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+/* ── Features list ── */
+.tck-pe__feats{list-style:none;display:flex;flex-direction:column;gap:9px;margin:14px 0 24px}
+.tck-pe__feats li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#111;line-height:1.65}
+.tck-pe__feats li strong{color:var(--forest)}
+.tck-pe__ck{flex-shrink:0;margin-top:3px;width:17px;height:17px;border-radius:50%;background:var(--sage-lt);display:flex;align-items:center;justify-content:center}
+.tck-pe__ck svg{width:9px;height:9px;stroke:var(--sage);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* ── Exam strategy box ── */
+.tck-pe__exambox{background:var(--sage-lt);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin:18px 0 26px}
+.tck-pe__exambox-head{font-size:12px;font-weight:700;color:var(--sage);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.tck-pe__exambox-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.tck-pe__exambox-item{background:#fff;border:1px solid var(--border);border-radius:8px;padding:12px 14px}
+.tck-pe__exambox-lbl{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.06em;margin-bottom:5px;text-transform:uppercase}
+.tck-pe__exambox-val{font-size:13.5px;color:var(--ink);line-height:1.65}
+
+/* ── Acceptance results grid ── */
+.tck-pe__schools{margin:18px 0 28px}
+.tck-pe__schools-head{font-size:11.5px;font-weight:600;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.tck-pe__schools-list{display:flex;flex-wrap:wrap;gap:8px}
+.tck-pe__school{font-size:13px;padding:6px 14px;border-radius:20px;background:#fff;border:1.5px solid var(--border);color:var(--ink);white-space:nowrap}
+.tck-pe__school--top{border-color:var(--gold);color:var(--forest);font-weight:600}
+
+/* ── Framing callout ── */
+.tck-pe__framing{background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin:4px 0 20px;font-size:13.5px;color:var(--forest);line-height:1.75}
+.tck-pe__framing strong{font-family:'Noto Serif SC',serif;font-size:15px}
+
+/* ── Timing callout ── */
+.tck-pe__timing{background:var(--gold-lt);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:16px 20px;margin:8px 0 24px;font-size:13.5px;color:#111;line-height:1.75}
+.tck-pe__timing-head{font-weight:600;font-size:14px;color:var(--forest);margin-bottom:6px}
+
+/* ── CTA ── */
+.tck-pe__cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center;margin-top:12px}
+.tck-pe__btn{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;border-radius:8px;font-family:'Noto Sans SC',sans-serif;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer;border:none;transition:background .2s,transform .15s}
+.tck-pe__btn:hover{transform:translateY(-1px)}
+.tck-pe .tck-pe__btn--primary{background:var(--pink);color:#fff;font-weight:700}
+.tck-pe .tck-pe__btn--primary:hover{background:var(--pink-dk)}
+.tck-pe__btn--ghost{background:transparent;color:var(--forest);border:1.5px solid var(--forest)}
+.tck-pe__btn--ghost:hover{background:var(--sage-lt)}
+
+/* ── Bottom CTA ── */
+.tck-pe__bottom{text-align:center;padding:52px 0 36px;border-top:1px solid var(--border)}
+.tck-pe__bottom p{font-size:14.5px;color:var(--muted);margin-bottom:22px;line-height:1.85;max-width:480px;margin-left:auto;margin-right:auto}
+.tck-pe__bottom-rule{width:40px;height:2px;background:linear-gradient(90deg,var(--sage),var(--gold));margin:0 auto 28px;border-radius:2px}
+
+/* ── Stats bar ── */
+.tck-pe__stats{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:32px;padding:20px 28px;background:var(--sage-lt);border:1px solid var(--border);border-radius:12px}
+.tck-pe__stat{text-align:center}
+.tck-pe__stat strong{font-family:'Noto Serif SC',serif;font-size:28px;font-weight:700;color:var(--forest);display:block;line-height:1}
+.tck-pe__stat span{font-size:12px;color:var(--muted);margin-top:5px;display:block}
+.tck-pe__stat-div{width:1px;background:var(--border);align-self:stretch;margin:4px 0}
+
+/* ── One-sub note ── */
+.tck-pe__onesub{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap}
+.tck-pe__onesub-dot{width:6px;height:6px;border-radius:50%;background:var(--sage);flex-shrink:0}
+</style>
+
+<div class="tck-pe">
+  <!-- sections go here -->
+</div>
