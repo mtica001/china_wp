@@ -109,30 +109,25 @@
 .tck-pe__onesub-dot{width:6px;height:6px;border-radius:50%;background:var(--sage);flex-shrink:0}
 
 /* ── 合格速報 Banner ── */
-.tck-pe__banner{border:2px dashed #e07a7a;border-radius:16px;overflow:hidden;margin:32px 0 8px;position:relative}
-.tck-pe__banner::before{content:'最新合格实绩！';position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--pink);color:#fff;font-size:11px;font-weight:700;padding:3px 18px;border-radius:0 0 8px 8px;letter-spacing:.08em;white-space:nowrap;z-index:1}
-.tck-pe__banner-inner{display:flex;min-height:200px}
-.tck-pe__banner-left{width:210px;flex-shrink:0;background:linear-gradient(150deg,#7a1a1a 0%,#b52b2b 60%,#c94040 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 18px;position:relative;overflow:hidden;gap:4px}
-.tck-pe__banner-left::before{content:'✿  ✿  ✿';position:absolute;top:14px;color:rgba(255,255,255,.18);font-size:16px;letter-spacing:4px}
-.tck-pe__banner-left::after{content:'✿  ✿  ✿';position:absolute;bottom:14px;color:rgba(255,255,255,.18);font-size:16px;letter-spacing:4px}
-.tck-pe__banner-iwai{font-size:30px;color:#ffd066;line-height:1}
-.tck-pe__banner-year{font-size:12.5px;color:rgba(255,255,255,.82);letter-spacing:.12em}
-.tck-pe__banner-title{font-family:'Noto Serif SC',serif;font-size:30px;font-weight:700;color:#fff;line-height:1.1;text-align:center}
-.tck-pe__banner-congrats{font-size:11px;color:rgba(255,255,255,.75);margin-top:6px;text-align:center;line-height:1.6;border-top:1px solid rgba(255,255,255,.2);padding-top:8px;width:100%}
-.tck-pe__banner-right{flex:1;padding:32px 28px 24px;background:#fffbfc;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
-.tck-pe__banner-headline{font-family:'Noto Serif SC',serif;font-size:16px;font-weight:700;color:#b52b2b;line-height:1.45}
-.tck-pe__banner-body{font-size:13px;color:var(--muted);line-height:1.8}
-.tck-pe__banner-nums{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end}
-.tck-pe__banner-num strong{font-family:'Noto Serif SC',serif;font-size:28px;font-weight:700;color:var(--forest);display:block;line-height:1}
-.tck-pe__banner-num span{font-size:11px;color:var(--muted);display:block;margin-top:3px}
-.tck-pe__banner-cta{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tck-pe__banner{border:2px solid #e8b4b4;border-radius:16px;overflow:hidden;margin:32px 0 8px;position:relative}
+.tck-pe__banner::before{content:'最新合格实绩！';position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--pink);color:#fff;font-size:11px;font-weight:700;padding:3px 18px;border-radius:0 0 8px 8px;letter-spacing:.08em;white-space:nowrap;z-index:2}
+.tck-pe__banner-img{display:block;width:100%;height:auto;max-height:300px;object-fit:cover;object-position:center 30%}
+.tck-pe__banner-bottom{background:#fffbfc;padding:22px 28px 20px;display:flex;align-items:center;gap:28px;flex-wrap:wrap;border-top:1px solid #f0d0d0}
+.tck-pe__banner-nums{display:flex;gap:0;flex-shrink:0}
+.tck-pe__banner-num{text-align:center;padding:0 20px;border-right:1px solid var(--border)}
+.tck-pe__banner-num:first-child{padding-left:0}
+.tck-pe__banner-num:last-child{border-right:none}
+.tck-pe__banner-num strong{font-family:'Noto Serif SC',serif;font-size:30px;font-weight:700;color:var(--forest);display:block;line-height:1}
+.tck-pe__banner-num span{font-size:11px;color:var(--muted);display:block;margin-top:4px;white-space:nowrap}
+.tck-pe__banner-actions{flex:1;min-width:180px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
 .tck-pe__banner-note{font-size:12px;color:var(--sage);font-weight:600}
+.tck-pe__banner-ps{font-size:11px;color:var(--muted)}
 @media(max-width:600px){
-  .tck-pe__banner-inner{flex-direction:column}
-  .tck-pe__banner-left{width:100%;flex-direction:row;flex-wrap:wrap;justify-content:center;min-height:auto;padding:22px 18px;gap:6px 14px}
-  .tck-pe__banner-left::before,.tck-pe__banner-left::after{display:none}
-  .tck-pe__banner-congrats{width:100%;margin-top:2px;padding-top:6px}
-  .tck-pe__banner-right{padding:20px 18px 18px}
+  .tck-pe__banner-bottom{flex-direction:column;align-items:stretch;padding:18px 16px 16px;gap:16px}
+  .tck-pe__banner-nums{justify-content:center}
+  .tck-pe__banner-num{padding:0 14px}
+  .tck-pe__banner-num strong{font-size:24px}
+  .tck-pe__banner-actions{align-items:center}
 }
 
 /* ── Case Slider ── */
@@ -200,35 +195,28 @@
     </div>
 
     <div class="tck-pe__banner">
-      <div class="tck-pe__banner-inner">
-        <div class="tck-pe__banner-left">
-          <div class="tck-pe__banner-iwai">祝</div>
-          <div class="tck-pe__banner-year">2026年度</div>
-          <div class="tck-pe__banner-title">合格速报</div>
-          <div class="tck-pe__banner-congrats">恭喜各位同学<br>达成志望校！</div>
+      <img class="tck-pe__banner-img"
+           src="https://www.tckwshop.com/images/f50eac879ff72c83b7bdd5841891c5be-1200x675.png"
+           alt="2026年度 合格速報">
+      <div class="tck-pe__banner-bottom">
+        <div class="tck-pe__banner-nums">
+          <div class="tck-pe__banner-num">
+            <strong>268名</strong>
+            <span>合格生总数（小学～大学）</span>
+          </div>
+          <div class="tck-pe__banner-num">
+            <strong>152名</strong>
+            <span>中学合格（含编入）</span>
+          </div>
+          <div class="tck-pe__banner-num">
+            <strong>77名</strong>
+            <span>高中合格（含编入）</span>
+          </div>
         </div>
-        <div class="tck-pe__banner-right">
-          <div class="tck-pe__banner-headline">今年又有许多学生成功合格！</div>
-          <p class="tck-pe__banner-body">中学到大学，众多在海外就读的孩子实现了志望校合格。欢迎查阅最新合格实绩。</p>
-          <div class="tck-pe__banner-nums">
-            <div class="tck-pe__banner-num">
-              <strong>268名</strong>
-              <span>合格生总数（小学～大学）</span>
-            </div>
-            <div class="tck-pe__banner-num">
-              <strong>152名</strong>
-              <span>中学合格（含编入）</span>
-            </div>
-            <div class="tck-pe__banner-num">
-              <strong>77名</strong>
-              <span>高中合格（含编入）</span>
-            </div>
-          </div>
-          <div class="tck-pe__banner-cta">
-            <a href="https://www.tckwshop.com/news/36341/" class="tck-pe__btn tck-pe__btn--primary" target="_blank">合格实绩详情 →</a>
-            <span class="tck-pe__banner-note">名校续续合格！</span>
-          </div>
-          <p style="font-size:11px;color:var(--muted);margin-top:4px">※ 2026年度，统计截至2026年2月27日</p>
+        <div class="tck-pe__banner-actions">
+          <a href="https://www.tckwshop.com/news/36341/" class="tck-pe__btn tck-pe__btn--primary" target="_blank">合格实绩详情 →</a>
+          <span class="tck-pe__banner-note">名校续续合格！</span>
+          <span class="tck-pe__banner-ps">※ 2026年度，统计截至2026年2月27日</span>
         </div>
       </div>
     </div>
