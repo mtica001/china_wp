@@ -115,7 +115,7 @@
 .tck-pe__cslider-wrap{overflow:hidden;border-radius:14px}
 .tck-pe__cslider-track{display:flex;transition:transform .38s cubic-bezier(.4,0,.2,1)}
 .tck-pe__cslider-slide{min-width:100%}
-.tck-pe__cslider-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px 32px;display:flex;flex-direction:row;gap:24px;align-items:flex-start}
+.tck-pe__cslider-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px 32px;display:flex;flex-direction:row;gap:24px;align-items:stretch}
 .tck-pe__cslider-content{flex:1;min-width:0;display:flex;flex-direction:column;gap:20px}
 .tck-pe__cslider-result-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .tck-pe__cslider-school{font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;color:var(--forest);line-height:1.3}
@@ -126,9 +126,10 @@
 .tck-pe__cslider-lbl{font-size:10.5px;font-weight:700;color:var(--sage);letter-spacing:.12em;text-transform:uppercase}
 .tck-pe__cslider-body{font-size:13.5px;color:var(--ink);line-height:1.8}
 .tck-pe__cslider-freq{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.6}
-.tck-pe__cslider-photo{width:88px;height:118px;border-radius:10px;object-fit:cover;object-position:top center;border:1px solid var(--border)}
-.tck-pe__cslider-instr-col{flex-shrink:0;width:88px;display:flex;flex-direction:column;align-items:center;gap:7px}
-.tck-pe__cslider-instr-name{font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:var(--forest);text-align:center;line-height:1.3}
+.tck-pe__cslider-instr-col{flex-shrink:0;width:180px;margin:-28px -32px -28px 0;border-radius:0 14px 14px 0;overflow:hidden;display:flex;flex-direction:column;gap:0}
+.tck-pe__cslider-photo{flex:1;width:100%;min-height:160px;object-fit:cover;object-position:top center;display:block;border:none;border-radius:0}
+.tck-pe__cslider-instr-footer{display:flex;align-items:center;gap:7px;padding:8px 12px;border-top:1px solid var(--border);background:#fff;flex-wrap:wrap}
+.tck-pe__cslider-instr-name{font-family:'Noto Serif SC',serif;font-size:12px;font-weight:700;color:var(--forest);line-height:1.3}
 .tck-pe__cslider-instr-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px;letter-spacing:.05em;white-space:nowrap}
 .tck-pe__cslider-instr-badge--sp{background:var(--forest);color:#fff}
 .tck-pe__cslider-instr-badge--pm{background:var(--gold-lt);color:#9a7a20;border:1px solid #e5cf8a}
@@ -138,7 +139,7 @@
 .tck-pe__cslider-dots{display:flex;gap:6px;align-items:center}
 .tck-pe__cslider-dot{width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;transition:background .2s,transform .2s;border:none;padding:0}
 .tck-pe__cslider-dot.active{background:var(--forest);transform:scale(1.35)}
-@media(max-width:500px){.tck-pe__cslider-card{padding:20px 18px;flex-direction:column}.tck-pe__cslider-instr-col{flex-direction:row;width:100%;align-items:center;padding-top:16px;border-top:1px solid var(--border)}.tck-pe__cslider-photo{width:60px;height:80px}.tck-pe__cslider-school{font-size:17px}}
+@media(max-width:500px){.tck-pe__cslider-card{padding:20px 18px;flex-direction:column;align-items:stretch}.tck-pe__cslider-instr-col{width:calc(100% + 40px);margin:0 -20px -20px;border-radius:0 0 14px 14px;flex-direction:row}.tck-pe__cslider-photo{flex:none;width:80px;height:106px;object-position:top center}.tck-pe__cslider-instr-footer{flex:1;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;border-top:none;border-left:1px solid var(--border);padding:10px 14px}.tck-pe__cslider-school{font-size:17px}}
 </style>
 
 <div class="tck-pe">
@@ -298,8 +299,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/mizutasaeko_profile.png" alt="水田 早枝子">
-                <span class="tck-pe__cslider-instr-name">水田 早枝子</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">水田 早枝子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span></div>
               </div>
             </div>
           </div>
@@ -329,8 +330,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/aiyoshikotaro_profile.png" alt="相吉 晃太朗">
-                <span class="tck-pe__cslider-instr-name">相吉 晃太朗</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">相吉 晃太朗</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span></div>
               </div>
             </div>
           </div>
@@ -360,8 +361,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/takizawamayu_profile.png" alt="瀧澤 真結">
-                <span class="tck-pe__cslider-instr-name">瀧澤 真結</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">瀧澤 真結</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span></div>
               </div>
             </div>
           </div>
@@ -391,8 +392,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/takizawamayu_profile.png" alt="瀧澤 真結">
-                <span class="tck-pe__cslider-instr-name">瀧澤 真結</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">瀧澤 真結</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span></div>
               </div>
             </div>
           </div>
@@ -540,8 +541,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/mizutasaeko_profile.png" alt="水田 早枝子">
-                <span class="tck-pe__cslider-instr-name">水田 早枝子</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">水田 早枝子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span></div>
               </div>
             </div>
           </div>
@@ -571,8 +572,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/mizutasaeko_profile.png" alt="水田 早枝子">
-                <span class="tck-pe__cslider-instr-name">水田 早枝子</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">水田 早枝子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span></div>
               </div>
             </div>
           </div>
@@ -602,8 +603,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/okadomesatoshi_profile.png" alt="岡留 智史">
-                <span class="tck-pe__cslider-instr-name">岡留 智史</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">岡留 智史</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span></div>
               </div>
             </div>
           </div>
@@ -633,8 +634,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/okadomesatoshi_profile.png" alt="岡留 智史">
-                <span class="tck-pe__cslider-instr-name">岡留 智史</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">岡留 智史</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span></div>
               </div>
             </div>
           </div>
@@ -801,8 +802,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/sample_profile.png" alt="岡村 京子">
-                <span class="tck-pe__cslider-instr-name">岡村 京子</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">岡村 京子</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--sp">特别讲师</span></div>
               </div>
             </div>
           </div>
@@ -832,8 +833,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/sample_profile.png" alt="田中 隆介">
-                <span class="tck-pe__cslider-instr-name">田中 隆介</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">田中 隆介</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span></div>
               </div>
             </div>
           </div>
@@ -863,8 +864,8 @@
               </div>
               <div class="tck-pe__cslider-instr-col">
                 <img class="tck-pe__cslider-photo" src="https://www.tckwshop.com/images/sample_profile.png" alt="田中 隆介">
-                <span class="tck-pe__cslider-instr-name">田中 隆介</span>
-                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span>
+                <div class="tck-pe__cslider-instr-footer"><span class="tck-pe__cslider-instr-name">田中 隆介</span>
+                <span class="tck-pe__cslider-instr-badge tck-pe__cslider-instr-badge--pm">优质讲师</span></div>
               </div>
             </div>
           </div>
