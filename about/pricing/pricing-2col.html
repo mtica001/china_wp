@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCK Workshop 服务套餐</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --forest:   #2d5016;
+    --sage:     #5a8a3c;
+    --sage-lt:  #7aab57;
+    --gold:     #c9a84c;
+    --gold-lt:  #e8c96a;
+    --cream:    #f9f6ef;
+    --ink:      #1a1a1a;
+    --mist:     #f0ede6;
+    --border:   #e0dbd0;
+    --check:    #5a8a3c;
+    --shadow:   0 4px 32px rgba(45,80,22,.10), 0 1px 6px rgba(0,0,0,.06);
+    --shadow-lg:0 12px 48px rgba(45,80,22,.18), 0 2px 12px rgba(0,0,0,.08);
+  }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+  }
+
+  /* ── Header ── */
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .header-eyebrow {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 13px;
+    letter-spacing: .25em;
+    color: var(--sage);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: clamp(26px, 5vw, 38px);
+    font-weight: 700;
+    color: var(--forest);
+    line-height: 1.25;
+    letter-spacing: .05em;
+  }
+  .header h1 span {
+    display: block;
+    font-size: .75em;
+    font-weight: 600;
+    color: var(--sage);
+    letter-spacing: .1em;
+    margin-top: 4px;
+  }
+  .header-rule {
+    width: 48px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--sage), var(--gold));
+    margin: 18px auto 0;
+    border-radius: 2px;
+  }
+
+  /* ── Cards grid ── */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 840px;
+    width: 100%;
+  }
+
+  /* ── Card ── */
+  .card {
+    background: #fff;
+    border-radius: 18px;
+    border: 1.5px solid var(--border);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform .25s, box-shadow .25s;
+    position: relative;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* featured card */
+  .card.featured {
+    border-color: var(--gold);
+    border-width: 2px;
+  }
+  .card.featured::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 17px;
+    background: linear-gradient(135deg, rgba(201,168,76,.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* ── Badge ── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: .06em;
+    border-radius: 20px;
+    padding: 4px 12px;
+    margin-bottom: 14px;
+    width: fit-content;
+  }
+  .badge.sage  { background: var(--sage);   color: #fff; }
+  .badge.gold  { background: var(--gold);   color: #fff; }
+  .badge.dark  { background: var(--forest); color: #fff; }
+  .badge svg   { width: 12px; height: 12px; fill: currentColor; flex-shrink: 0; }
+
+  /* ── Card body sections ── */
+  .card-head {
+    padding: 30px 28px 22px;
+    border-bottom: 1px solid var(--mist);
+  }
+  .plan-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 5px;
+  }
+  .plan-sub {
+    font-size: 12.5px;
+    color: #777;
+    line-height: 1.5;
+  }
+
+  .card-price {
+    padding: 22px 28px;
+    border-bottom: 1px solid var(--mist);
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .price-amount {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--forest);
+    letter-spacing: -.01em;
+  }
+  .price-unit {
+    font-size: 15px;
+    color: #888;
+    font-weight: 400;
+  }
+  .price-tax {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: 2px;
+  }
+
+  /* ── Specs ── */
+  .card-specs {
+    padding: 16px 28px;
+    border-bottom: 1px solid var(--mist);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  .spec-label { color: #888; }
+  .spec-value { font-weight: 600; color: var(--ink); }
+
+  /* ── Features ── */
+  .card-features {
+    padding: 20px 28px;
+    flex: 1;
+  }
+  .features-title {
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 12px;
+  }
+  .feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .feature-list li {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.5;
+  }
+  .feature-list li .chk {
+    flex-shrink: 0;
+    margin-top: 1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(90,138,60,.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feature-list li .chk svg {
+    width: 9px;
+    height: 9px;
+    stroke: var(--check);
+    stroke-width: 2.5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .feature-list li .note {
+    display: block;
+    font-size: 11.5px;
+    color: #999;
+    margin-top: 1px;
+  }
+
+  /* ── Discount badge ── */
+  .card-discount {
+    padding: 0 28px 16px;
+  }
+  .discount-pill {
+    display: inline-flex;
+    align-items: center;
+    background: var(--forest);
+    color: #fff;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    padding: 4px 14px;
+    border-radius: 20px;
+  }
+  .card.featured .discount-pill {
+    background: var(--gold);
+  }
+
+  /* ── CTA ── */
+  .card-cta {
+    padding: 0 28px 28px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .06em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: filter .2s, transform .15s;
+  }
+  .btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn-dark { background: var(--forest); color: #fff; }
+  .btn-gold { background: var(--gold);   color: #fff; }
+
+  /* ── Footer notes ── */
+  .footer-notes {
+    max-width: 840px;
+    width: 100%;
+    margin-top: 28px;
+    padding: 16px 20px;
+    background: rgba(90,138,60,.06);
+    border: 1px solid rgba(90,138,60,.15);
+    border-radius: 10px;
+    font-size: 11.5px;
+    color: #777;
+    line-height: 1.8;
+  }
+  .footer-notes strong {
+    color: var(--forest);
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <p class="header-eyebrow">高效 × 专业</p>
+  <h1>选你所需，享你所想！</h1>
+  <div class="header-rule"></div>
+</header>
+
+<!-- Cards -->
+<div class="cards">
+
+  <!-- Card 1: 咨询套餐 -->
+  <div class="card">
+    <div class="card-head">
+      <div class="badge sage">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        月度咨询
+      </div>
+      <div class="plan-name">咨询套餐</div>
+      <div class="plan-sub">从择校策略到入学全程持续支持</div>
+    </div>
+
+    <div class="card-price">
+      <span class="price-amount">¥10,000</span>
+      <span class="price-unit">/月</span>
+      <span class="price-tax">（含税）</span>
+    </div>
+
+    <div class="card-specs">
+      <div class="spec-row">
+        <span class="spec-label">服务周期</span>
+        <span class="spec-value">按月续费</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">咨询形式</span>
+        <span class="spec-value">深度面谈 + 全时段答疑</span>
+      </div>
+    </div>
+
+    <div class="card-features">
+      <div class="features-title">服务内容</div>
+      <ul class="feature-list">
+        <li>
+          <span class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span>
+          <span>每月 1 次深度面谈跟进</span>
+        </li>
+        <li>
+          <span class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span>
+          <span>匹配目标学校</span>
+        </li>
+        <li>
+          <span class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span>
+          <span>全天候微信 / 邮件答疑支持</span>
+        </li>
+        <li>
+          <span class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span>
+          <span>代为联络校方<span class="note">电话 / 邮件确认招生细则</span></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-cta">
+      <a href="#" class="btn btn-dark">咨询此方案 →</a>
+    </div>
+  </div>
+
+  <!-- Card 2: 能力测试 (featured) -->
+  <div class="card featured">
+    <div class="card-head">
+      <div class="badge gold">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        限时优惠
+      </div>
+      <div class="plan-name">能力测试</div>
+      <div class="plan-sub">专属诊断 · 一次性深度体验</div>
+    </div>
+
+    <div class="card-price">
+      <span class="price-amount">¥20,000</span>
+      <span class="price-unit">/次</span>
+      <span class="price-tax">（含税）</span>
+    </div>
+
+    <div class="card-specs">
+      <div class="spec-row">
+        <span class="spec-label">测试科目</span>
+        <span class="spec-value">语 · 数 · 英 三科</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">附加权益</span>
+        <span class="spec-value">免除 6 个月入会 &amp; 管理费</span>
+      </div>
+    </div>
+
+    <div class="card-features">
+      <div class="features-title">服务内容</div>
+      <ul class="feature-list">
+        <li>
+          <span class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span>
+          <span>综合能力测试与专属诊断报告<span class="note">涵盖语 · 数 · 英三科</span></span>
+        </li>
+        <li>
+          <span class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span>
+          <span>资深讲师 1V1 定制体验课<span class="note">60 分钟，针对薄弱科目</span></span>
+        </li>
+        <li>
+          <span class="chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span>
+          <span>涵盖首月完整升学规划与咨询服务</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-discount">
+      <span class="discount-pill">订购即免除 6 个月入会费</span>
+    </div>
+
+    <div class="card-cta">
+      <a href="#" class="btn btn-gold">咨询此方案 →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer notes -->
+<div class="footer-notes">
+  <strong>【财务细则】</strong>日本境内 +10% 消费税（境外免税）。订购能力测试即免除 6 个月入会费及管理费。<br>
+  <strong>【周期说明】</strong>正式上课后该咨询服务将持续免费提供；若体验后未转入正式课程，本服务即告终止。
+</div>
+
+</body>
+</html>

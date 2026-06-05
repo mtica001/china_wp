@@ -1,0 +1,218 @@
+<!-- TCK 私立入学 FAQ block — matches private-entrance-block.html tokens -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap">
+<style>
+.tck-pe-faq{
+  font-family:'Noto Sans SC',sans-serif;color:#111;line-height:1.7;
+  --forest:#006640;--sage:#2a9060;--sage-lt:#e8f5ee;
+  --gold:#c9a84c;--gold-lt:#fdf7e6;
+  --pink:#e91e63;--pink-dk:#c2185b;
+  --cream:#f5faf7;--ink:#111;--muted:#5a7a68;
+  --border:#c5dfd4
+}
+.tck-pe-faq *{box-sizing:border-box;margin:0;padding:0}
+.tck-pe-faq a{text-decoration:none;color:inherit}
+
+/* header — matches .tck-pe__intro style */
+.tck-pe-faq__head{text-align:center;padding:52px 0 44px}
+.tck-pe-faq__sup{font-size:11.5px;letter-spacing:.2em;color:var(--sage);text-transform:uppercase;display:block;margin-bottom:12px}
+.tck-pe-faq__title{font-family:'Noto Serif SC',serif;font-size:clamp(22px,3.4vw,32px);font-weight:700;color:var(--forest);line-height:1.35;margin-bottom:6px}
+.tck-pe-faq__rule{width:40px;height:2px;background:linear-gradient(90deg,var(--sage),var(--gold));margin:14px auto 0;border-radius:2px}
+
+/* section label chips — mirrors .tck-pe__sec-tag */
+.tck-pe-faq__tag{display:inline-block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);background:var(--sage-lt);border:1px solid var(--border);border-radius:20px;padding:4px 12px;margin-bottom:20px}
+
+/* accordion list */
+.tck-pe-faq__list{display:flex;flex-direction:column;gap:10px}
+
+/* item card — echoes .tck-pe__exambox-item structure */
+.tck-pe-faq__item{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.tck-pe-faq__item.is-open{border-color:var(--sage);box-shadow:0 4px 20px rgba(45,80,22,.09)}
+
+/* trigger */
+.tck-pe-faq__trigger{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:flex-start;gap:14px;padding:20px 22px;text-align:left;transition:background .18s}
+.tck-pe-faq__trigger:hover{background:var(--sage-lt)}
+.tck-pe-faq__item.is-open .tck-pe-faq__trigger{background:var(--sage-lt)}
+
+/* number badge — mirrors .tck-pe__jnum */
+.tck-pe-faq__num{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--cream);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:var(--forest);margin-top:1px;transition:background .2s,border-color .2s,color .2s}
+.tck-pe-faq__item.is-open .tck-pe-faq__num{background:var(--forest);border-color:var(--forest);color:#fff}
+
+.tck-pe-faq__q-wrap{flex:1;display:flex;flex-direction:column;gap:3px}
+.tck-pe-faq__q-cat{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tck-pe-faq__q{font-family:'Noto Serif SC',serif;font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.45;letter-spacing:.01em}
+
+.tck-pe-faq__chevron{flex-shrink:0;margin-top:5px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.tck-pe-faq__chevron svg{width:13px;height:13px;stroke:var(--muted);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .18s}
+.tck-pe-faq__item.is-open .tck-pe-faq__chevron{transform:rotate(180deg)}
+.tck-pe-faq__item.is-open .tck-pe-faq__chevron svg{stroke:var(--gold)}
+
+/* answer */
+.tck-pe-faq__panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s cubic-bezier(.4,0,.2,1)}
+.tck-pe-faq__item.is-open .tck-pe-faq__panel{grid-template-rows:1fr}
+.tck-pe-faq__panel-inner{overflow:hidden}
+.tck-pe-faq__a{padding:0 22px 22px 66px;font-size:14px;color:#333;line-height:1.9}
+.tck-pe-faq__a p{margin-bottom:11px}
+.tck-pe-faq__a p:last-child{margin-bottom:0}
+.tck-pe-faq__a strong{color:var(--forest);font-weight:600}
+.tck-pe-faq__a em{font-style:normal;color:var(--sage);font-weight:500}
+
+/* inline callout inside answer */
+.tck-pe-faq__aside{background:var(--gold-lt);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0 4px;font-size:13px;color:var(--ink);line-height:1.75}
+
+/* CTA footer */
+.tck-pe-faq__cta{margin-top:28px;text-align:center;padding:20px 22px;background:var(--cream);border:1px solid var(--border);border-radius:12px}
+.tck-pe-faq__cta p{font-size:13.5px;color:var(--muted);margin-bottom:14px;line-height:1.8}
+.tck-pe-faq__btn{display:inline-flex;align-items:center;gap:6px;padding:11px 26px;border-radius:8px;font-family:'Noto Sans SC',sans-serif;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer;border:none;background:var(--pink);color:#fff!important;transition:background .2s,transform .15s}
+.tck-pe-faq__btn:hover{background:var(--pink-dk);transform:translateY(-1px)}
+
+@media(max-width:500px){
+  .tck-pe-faq__a{padding-left:22px}
+  .tck-pe-faq__q{font-size:14px}
+}
+</style>
+
+<div class="tck-pe-faq">
+
+  <div class="tck-pe-faq__head">
+    <span class="tck-pe-faq__sup">常见问题</span>
+    <div class="tck-pe-faq__title">私立入学与编入<br>常见疑问解答</div>
+    <div class="tck-pe-faq__rule"></div>
+  </div>
+
+  <span class="tck-pe-faq__tag">中学入学 · 高中入学 · 编入转校</span>
+
+  <div class="tck-pe-faq__list">
+
+    <!-- Q1 -->
+    <div class="tck-pe-faq__item">
+      <button class="tck-pe-faq__trigger" aria-expanded="false">
+        <span class="tck-pe-faq__num">1</span>
+        <span class="tck-pe-faq__q-wrap">
+          <span class="tck-pe-faq__q-cat">日语能力 · 语言基础</span>
+          <span class="tck-pe-faq__q">孩子日语几乎不会，还能考私立学校吗？</span>
+        </span>
+        <span class="tck-pe-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-pe-faq__panel" role="region">
+        <div class="tck-pe-faq__panel-inner">
+          <div class="tck-pe-faq__a">
+            <p>取决于目标学校。<strong>广尾学园AG课程、ISAK、ICU高校</strong>等以英语为主要考试语言的学校，日语弱势影响相对有限，英语底子好的孩子胜算更高。但<strong>渋谷学園渋谷、东京学芸大附属国际</strong>等要求日语写作的学校，日语几乎是能否通过笔试的关键。</p>
+            <p>TCK的做法是先评估孩子目前的日语和英语程度，<em>帮你找到现实胜算最高的报考组合</em>，而不是一律叫你回头补日语。备考周期至少3–6个月，日语弱的情况建议更早启动。</p>
+            <div class="tck-pe-faq__aside">不确定孩子现在的程度能报哪些学校？先来做一次学力评估，我们帮你判断。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="tck-pe-faq__item">
+      <button class="tck-pe-faq__trigger" aria-expanded="false">
+        <span class="tck-pe-faq__num">2</span>
+        <span class="tck-pe-faq__q-wrap">
+          <span class="tck-pe-faq__q-cat">中学受験 vs 高校受験</span>
+          <span class="tck-pe-faq__q">私立中学和高中备考，最大的区别是什么？</span>
+        </span>
+        <span class="tck-pe-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-pe-faq__panel" role="region">
+        <div class="tck-pe-faq__panel-inner">
+          <div class="tck-pe-faq__a">
+            <p>备考内容上差异不大——两阶段都要求英语Essay、日语写作（部分校）和数学，形式上都有笔试＋面试＋志望理由書。核心区别在于<strong>战略意义不同</strong>：</p>
+            <p><strong>中学受験</strong>决定孩子在哪个学校环境里度过青春期，选择广尾AG或渋谷系这类直升体系，也间接决定了大学申请的通道。<strong>高校受験</strong>的选校则更直接影响三年后走<em>指定校推薦、一般入試还是海外大学申请</em>——高中选错了，大学那步会处处受限。</p>
+            <p>TCK在第一次咨询时就会把这条升学路线一起梳理，让你择校时就想清楚终点。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="tck-pe-faq__item">
+      <button class="tck-pe-faq__trigger" aria-expanded="false">
+        <span class="tck-pe-faq__num">3</span>
+        <span class="tck-pe-faq__q-wrap">
+          <span class="tck-pe-faq__q-cat">編入考試</span>
+          <span class="tck-pe-faq__q">编入考试是什么？准备一两个月来得及吗？</span>
+        </span>
+        <span class="tck-pe-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-pe-faq__panel" role="region">
+        <div class="tck-pe-faq__panel-inner">
+          <div class="tck-pe-faq__a">
+            <p>编入考试最大的难点是<strong>信息不透明</strong>——考试日期、考题范围、合格人数，学校官网几乎不公开。TCK从大量编入案例中积累了各校考题风格的一手资料，这是一般补习班无法提供的。</p>
+            <p>准备期方面：<em>最短1个月也可以启动</em>。我们有过从接到咨询到考试只有6周、最终合格的案例。重点不在"准备多久"，而在"把有限时间用对地方"——英语Essay集中突破往往是编入备考效益最高的选择。</p>
+            <div class="tck-pe-faq__aside">回国日期还没确定也可以先问。越早了解编入时间表，选择余地越大。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="tck-pe-faq__item">
+      <button class="tck-pe-faq__trigger" aria-expanded="false">
+        <span class="tck-pe-faq__num">4</span>
+        <span class="tck-pe-faq__q-wrap">
+          <span class="tck-pe-faq__q-cat">出愿手续 · 志望理由書</span>
+          <span class="tck-pe-faq__q">志望理由書和出愿手续，TCK会帮我们处理吗？</span>
+        </span>
+        <span class="tck-pe-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-pe-faq__panel" role="region">
+        <div class="tck-pe-faq__panel-inner">
+          <div class="tck-pe-faq__a">
+            <p>可以，这是TCK支援里被用得最多的服务之一。具体包含：</p>
+            <p><strong>志望理由書内容梳理</strong> — 引导孩子和家长整理出"为什么选这所学校"的真实理由，写成有说服力的日文文书（不是套模板）。</p>
+            <p><strong>出愿手续管理</strong> — 截止日期、提交文件清单（在籍证明、成绩单、推薦書等）、线上还是邮寄提交，每所学校要求不同，我们帮你逐一确认，不让你因为漏交一张纸而功亏一篑。</p>
+            <p><strong>校方联络</strong> — 需要电话或邮件向校方确认招生细则时，由TCK代为联络，减少在海外处理日文行政事务的障碍。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="tck-pe-faq__item">
+      <button class="tck-pe-faq__trigger" aria-expanded="false">
+        <span class="tck-pe-faq__num">5</span>
+        <span class="tck-pe-faq__q-wrap">
+          <span class="tck-pe-faq__q-cat">科目备考</span>
+          <span class="tck-pe-faq__q">英语强但数学从未练过，备考重心怎么定？</span>
+        </span>
+        <span class="tck-pe-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-pe-faq__panel" role="region">
+        <div class="tck-pe-faq__panel-inner">
+          <div class="tck-pe-faq__a">
+            <p>英语强是很大的优势——在大多数私立名校的配分里，英语权重最高。这种情况下，我们通常建议<em>把英语维持并精进到Essay满分水准</em>，再用剩余时间集中突破数学。</p>
+            <p>日本高中受験的数学和国际学校课程确实有差异——题目强调分步推理和特定解题格式，不是"会算就行"。TCK的数学老师专门针对<strong>目标校的考题风格</strong>设计训练，不是通用数学课，所以4–6周集中训练往往就能明显提分。</p>
+            <div class="tck-pe-faq__aside">三科同时备考、时间分配怎么定？在首次咨询时我们会根据孩子实际程度给出具体方案，不需要你自己先想好。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tck-pe-faq__cta">
+    <p>还有疑问？欢迎直接咨询——说出孩子目前的情况，我们给你一个清晰的下一步。</p>
+    <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-pe-faq__btn">免费学习咨询 →</a>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.tck-pe-faq__trigger').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.tck-pe-faq__item');
+      var isOpen=item.classList.contains('is-open');
+      document.querySelectorAll('.tck-pe-faq__item.is-open').forEach(function(el){
+        el.classList.remove('is-open');
+        el.querySelector('.tck-pe-faq__trigger').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('is-open');
+        this.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+})();
+</script>

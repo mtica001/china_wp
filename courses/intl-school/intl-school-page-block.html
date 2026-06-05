@@ -1,0 +1,675 @@
+<!-- TCK 国际学校课程 page block -->
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap">
+
+<style>
+/* === scope: tck-isc === */
+.tck-isc{font-family:'Noto Sans SC',sans-serif;color:#111;line-height:1.7}
+.tck-isc *{box-sizing:border-box;margin:0;padding:0}
+.tck-isc a{text-decoration:none;color:inherit}
+.tck-isc{
+  --forest:#006640;--sage:#2a9060;--sage-lt:#e8f5ee;
+  --gold:#c9a84c;--gold-lt:#fdf7e6;
+  --pink:#e91e63;--pink-dk:#c2185b;
+  --cream:#f5faf7;--ink:#111;--muted:#5a7a68;
+  --border:#c5dfd4
+}
+
+/* ── Intro hero ── */
+.tck-isc__intro{text-align:center;padding:52px 0 44px}
+.tck-isc__sup{font-size:11.5px;letter-spacing:.2em;color:var(--sage);text-transform:uppercase;display:block;margin-bottom:12px}
+.tck-isc__h1{font-family:'Noto Serif SC',serif!important;font-size:clamp(24px,3.8vw,36px)!important;font-weight:700!important;color:var(--forest)!important;line-height:1.35!important;margin:0 0 14px!important;padding:0!important}
+.tck-isc__lead{font-size:14.5px;color:var(--muted);max-width:540px;margin:0 auto 40px;line-height:1.85}
+
+/* ── Journey bar ── */
+.tck-isc__journey{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;gap:0;margin-bottom:4px}
+.tck-isc__jstep{display:flex;flex-direction:column;align-items:center;gap:9px;padding:18px 18px 16px;border-radius:14px;text-decoration:none;transition:background .18s,box-shadow .18s;flex:1;max-width:170px;min-width:110px}
+.tck-isc__jstep:hover{background:var(--sage-lt);box-shadow:0 2px 12px rgba(0,102,64,.09)}
+.tck-isc__jnum{width:36px;height:36px;border-radius:50%;background:var(--forest);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tck-isc__jtxt{font-size:13.5px;font-weight:600;color:var(--forest);text-align:center;line-height:1.35}
+.tck-isc__jage{font-size:11.5px;color:var(--muted);text-align:center;line-height:1.5;padding:0 4px}
+.tck-isc__jlink{font-size:11px;color:var(--sage);letter-spacing:.04em;margin-top:2px}
+.tck-isc__jarrow{width:28px;flex-shrink:0;align-self:center;height:1px;background:var(--border);margin:0 4px;position:relative}
+.tck-isc__jarrow::after{content:'›';position:absolute;right:-7px;top:-10px;color:var(--border);font-size:20px}
+
+/* ── Section ── */
+.tck-isc__section{padding:52px 0;border-top:1px solid var(--border)}
+.tck-isc__section:first-of-type{border-top:none}
+
+.tck-isc__sec-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:24px}
+.tck-isc__sec-n{font-family:'Noto Serif SC',serif;font-size:52px;font-weight:700;color:var(--border);line-height:.9;flex-shrink:0;user-select:none}
+.tck-isc__sec-meta{flex:1;padding-top:4px}
+.tck-isc__sec-tag{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);display:block;margin-bottom:5px}
+.tck-isc__sec-h2{font-family:'Noto Serif SC',serif;font-size:clamp(19px,2.8vw,26px);font-weight:700;color:var(--forest);line-height:1.3;margin-bottom:3px}
+.tck-isc__sec-sub{font-size:13px;color:var(--muted)}
+
+/* ── Body copy ── */
+.tck-isc__copy{font-size:14.5px;color:#111;line-height:1.9;margin-bottom:22px}
+.tck-isc__copy p{margin-bottom:13px}
+.tck-isc__copy p:last-child{margin-bottom:0}
+.tck-isc__copy em{font-style:normal;color:var(--forest);font-weight:500}
+
+/* ── Pain chips ── */
+.tck-isc__pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:18px 0 26px}
+.tck-isc__pain{background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:13px 15px;font-size:13px;color:#111;line-height:1.6;display:flex;align-items:flex-start;gap:9px}
+.tck-isc__pain-q{flex-shrink:0;margin-top:1px;width:18px;height:18px;border-radius:50%;background:var(--gold);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+/* ── Features list ── */
+.tck-isc__feats{list-style:none;display:flex;flex-direction:column;gap:9px;margin:14px 0 24px}
+.tck-isc__feats li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#111;line-height:1.65}
+.tck-isc__feats li strong{color:var(--forest)}
+.tck-isc__ck{flex-shrink:0;margin-top:3px;width:17px;height:17px;border-radius:50%;background:var(--sage-lt);display:flex;align-items:center;justify-content:center}
+.tck-isc__ck svg{width:9px;height:9px;stroke:var(--sage);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* ── Price band ── */
+.tck-isc__pricebar{background:var(--sage-lt);border:1px solid var(--border);border-radius:10px;padding:16px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:18px 0 26px;font-size:13px;color:var(--muted)}
+.tck-isc__pricebar strong{font-family:'Noto Serif SC',serif;font-size:22px;font-weight:700;color:var(--forest);display:block;line-height:1.1;margin-bottom:2px}
+.tck-isc__pricebar-sep{font-size:22px;color:var(--border)}
+.tck-isc__pricebar-note{font-size:12px;color:var(--muted);margin-top:2px}
+
+
+/* ── CTA ── */
+.tck-isc__cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:center;margin-top:12px}
+.tck-isc__btn{display:inline-flex;align-items:center;gap:6px;padding:12px 24px;border-radius:8px;font-family:'Noto Sans SC',sans-serif;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer;border:none;transition:background .2s,transform .15s}
+.tck-isc__btn:hover{transform:translateY(-1px)}
+.tck-isc .tck-isc__btn--primary{background:var(--pink);color:#fff;font-weight:700}
+.tck-isc .tck-isc__btn--primary:hover{background:var(--pink-dk)}
+.tck-isc__btn--ghost{background:transparent;color:var(--forest);border:1.5px solid var(--forest)}
+.tck-isc__btn--ghost:hover{background:var(--sage-lt)}
+
+/* ── Bottom CTA ── */
+.tck-isc__bottom{text-align:center;padding:52px 0 36px;border-top:1px solid var(--border)}
+.tck-isc__bottom p{font-size:14.5px;color:var(--muted);margin-bottom:22px;line-height:1.85;max-width:480px;margin-left:auto;margin-right:auto}
+.tck-isc__bottom-rule{width:40px;height:2px;background:linear-gradient(90deg,var(--sage),var(--gold));margin:0 auto 28px;border-radius:2px}
+
+/* ── Stats bar ── */
+.tck-isc__stats{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:32px;padding:20px 28px;background:var(--sage-lt);border:1px solid var(--border);border-radius:12px}
+.tck-isc__stat{text-align:center}
+.tck-isc__stat strong{font-family:'Noto Serif SC',serif;font-size:28px;font-weight:700;color:var(--forest);display:block;line-height:1}
+.tck-isc__stat span{font-size:12px;color:var(--muted);margin-top:5px;display:block}
+.tck-isc__stat-div{width:1px;background:var(--border);align-self:stretch;margin:4px 0}
+
+/* ── Subject chips ── */
+.tck-isc__chips-head{font-size:11.5px;font-weight:600;color:var(--sage);letter-spacing:.12em;text-transform:uppercase;margin:22px 0 10px}
+.tck-isc__chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tck-isc__chip{font-size:12.5px;padding:5px 13px;border-radius:20px;background:var(--sage-lt);border:1px solid var(--border);color:var(--forest);white-space:nowrap}
+.tck-isc__chip-groups{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.tck-isc__chip-group{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.tck-isc__chip-group-lbl{font-size:11px;color:var(--muted);padding-top:6px;min-width:64px;flex-shrink:0;line-height:1.3;font-weight:500}
+
+/* ── Instructor Slider ── */
+.tck-isc__islider{margin:24px 0 28px}
+.tck-isc__islider-head{font-size:11.5px;font-weight:600;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.tck-isc__islider-sub{font-size:12.5px;color:var(--muted);margin-bottom:14px}
+.tck-isc__islider-wrap{overflow:hidden;border-radius:14px}
+.tck-isc__islider-track{display:flex;transition:transform .38s cubic-bezier(.4,0,.2,1)}
+.tck-isc__islider-slide{min-width:100%}
+.tck-isc__islider-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:24px 28px;display:flex;gap:24px;align-items:flex-start}
+.tck-isc__islider-photo{width:130px;height:174px;border-radius:10px;object-fit:cover;object-position:top center;flex-shrink:0;border:1px solid var(--border)}
+@media(max-width:500px){.tck-isc__islider-photo{width:110px;height:147px}}
+.tck-isc__islider-info{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:space-between;align-self:stretch}
+.tck-isc__islider-top-block{flex-shrink:0}
+.tck-isc__islider-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.tck-isc__islider-name{font-family:'Noto Serif SC',serif;font-size:17px;font-weight:700;color:var(--forest)}
+.tck-isc__islider-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px;letter-spacing:.05em;white-space:nowrap}
+.tck-isc__islider-badge--sp{background:var(--forest);color:#fff}
+.tck-isc__islider-badge--pm{background:var(--gold-lt);color:#9a7a20;border:1px solid #e5cf8a}
+.tck-isc__islider-subj{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.6}
+.tck-isc__islider-bottom-block{flex-shrink:0}
+.tck-isc__islider-rlabel{font-size:10px;font-weight:600;color:var(--sage);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.tck-isc__islider-results{display:flex;gap:10px;flex-wrap:wrap}
+.tck-isc__islider-result{background:var(--sage-lt);border:1px solid var(--border);border-radius:10px;padding:10px 14px;text-align:center;min-width:80px}
+.tck-isc__islider-rsubj{font-size:11px;color:var(--muted);margin-bottom:6px;line-height:1.3;white-space:nowrap}
+.tck-isc__islider-rnums{display:flex;align-items:center;justify-content:center;gap:5px}
+.tck-isc__islider-rbefore{font-size:16px;font-weight:700;color:#ccc;font-family:'Noto Serif SC',serif}
+.tck-isc__islider-rarr{font-size:12px;color:var(--gold)}
+.tck-isc__islider-rafter{font-size:26px;font-weight:700;color:var(--forest);font-family:'Noto Serif SC',serif;line-height:1}
+.tck-isc__islider-rlbl{font-size:9.5px;color:var(--muted);margin-top:4px}
+.tck-isc__islider-rfreq{font-size:9.5px;color:var(--sage);font-weight:600;margin-top:5px;letter-spacing:.03em}
+.tck-isc__islider-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:14px}
+.tck-isc__islider-btn{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--border);background:#fff;color:var(--forest);font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .18s,border-color .18s;line-height:1}
+.tck-isc__islider-btn:hover{background:var(--sage-lt);border-color:var(--sage)}
+.tck-isc__islider-dots{display:flex;gap:6px;align-items:center}
+.tck-isc__islider-dot{width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;transition:background .2s,transform .2s;border:none;padding:0}
+.tck-isc__islider-dot.active{background:var(--forest);transform:scale(1.35)}
+@media(max-width:500px){
+  .tck-isc__islider-card{flex-direction:column;align-items:center;text-align:center;padding:20px 16px;gap:16px}
+  .tck-isc__islider-info{align-self:auto}
+  .tck-isc__islider-top{justify-content:center}
+  .tck-isc__islider-results{justify-content:center}
+}
+
+/* ── Timing callout ── */
+.tck-isc__timing{background:var(--gold-lt);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:16px 20px;margin:8px 0 24px;font-size:13.5px;color:#111;line-height:1.75}
+.tck-isc__timing-head{font-weight:600;font-size:14px;color:var(--forest);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+
+/* ── One subject note ── */
+.tck-isc__onesub{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap}
+.tck-isc__onesub-dot{width:6px;height:6px;border-radius:50%;background:var(--sage);flex-shrink:0}
+
+/* ── Framing callout ── */
+.tck-isc__framing{background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin:4px 0 20px;font-size:13.5px;color:var(--forest);line-height:1.75;font-style:normal}
+.tck-isc__framing strong{font-family:'Noto Serif SC',serif;font-size:15px}
+</style>
+
+<div class="tck-isc">
+
+  <!-- ── 页面标题 ── -->
+  <div class="tck-isc__intro">
+    <span class="tck-isc__sup">International School</span>
+    <div class="tck-isc__h1">国际学校课程</div>
+    <p class="tck-isc__lead">孩子进了国际学校，或者正打算进——这一路要跟的事比想象中多。学校怎么选？课程跟不上怎么办？A-Level和IB的压力怎么应对？TCK陪你从选校那一刻，一直走到毕业。</p>
+
+    <div class="tck-isc__journey">
+      <a href="#sec-school" class="tck-isc__jstep">
+        <div class="tck-isc__jnum">1</div>
+        <div class="tck-isc__jtxt">国际学校择校</div>
+        <div class="tck-isc__jage">幼小～G9<br>入学申请 · 转校</div>
+        <span class="tck-isc__jlink">了解详情 →</span>
+      </a>
+      <div class="tck-isc__jarrow"></div>
+      <a href="#sec-igcse" class="tck-isc__jstep">
+        <div class="tck-isc__jnum">2</div>
+        <div class="tck-isc__jtxt">IGCSE · IB MYP</div>
+        <div class="tck-isc__jage">G7–G11<br>12–16 岁</div>
+        <span class="tck-isc__jlink">了解详情 →</span>
+      </a>
+      <div class="tck-isc__jarrow"></div>
+      <a href="#sec-dp" class="tck-isc__jstep">
+        <div class="tck-isc__jnum">3</div>
+        <div class="tck-isc__jtxt">A-Level · IB DP</div>
+        <div class="tck-isc__jage">G12–G13<br>16–18 岁</div>
+        <span class="tck-isc__jlink">了解详情 →</span>
+      </a>
+    </div>
+
+    <div class="tck-isc__stats">
+      <div class="tck-isc__stat">
+        <strong>70+</strong>
+        <span>国家与地区</span>
+      </div>
+      <div class="tck-isc__stat-div"></div>
+      <div class="tck-isc__stat">
+        <strong>2,400+</strong>
+        <span>服务学生</span>
+      </div>
+      <div class="tck-isc__stat-div"></div>
+      <div class="tck-isc__stat">
+        <strong>10年</strong>
+        <span>国际学校专项支援</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 1：国际学校择校
+  ══════════════════════════════════════ -->
+  <div class="tck-isc__section" id="sec-school">
+    <div class="tck-isc__sec-head">
+      <div class="tck-isc__sec-n">01</div>
+      <div class="tck-isc__sec-meta">
+        <span class="tck-isc__sec-tag">School Selection</span>
+        <div class="tck-isc__sec-h2">国际学校择校咨询</div>
+        <div class="tck-isc__sec-sub">从"选哪所"到"入学了"，全程陪你走</div>
+      </div>
+    </div>
+
+    <div class="tck-isc__copy">
+      <p>选学校这件事，很多家长一开始靠"看排名"——但进了才发现，排名和孩子合不合得来，完全是两回事。IB、A-Level、AP，课程体系各有侧重；日本国内、英国、新加坡，升学路线也各不相同。光靠网上搜，信息越看越乱。</p>
+      <p>近年来日本的国际学校增势明显，马尔文学院东京、拉格比学校日本校相继开办，选项多了，<em>反而更难下决定</em>。东京都2030年计划吸引高度外籍人才5万人的目标，也让日本的国际教育环境正在快速变化。</p>
+      <p>TCK的顾问会认真研究每所学校的课程方向和升学路线，才给出建议——不是随手丢一份学校列表，而是真正帮你想清楚哪所适合你的孩子。</p>
+    </div>
+
+    <!-- 家长常见烦恼 -->
+    <div class="tck-isc__pains">
+      <div class="tck-isc__pain">
+        <div class="tck-isc__pain-q">?</div>
+        <span>IB、A-Level、AP……到底哪个适合我孩子？将来想去日本大学还是海外，路线差很多</span>
+      </div>
+      <div class="tck-isc__pain">
+        <div class="tck-isc__pain-q">?</div>
+        <span>出愿手续全是英文，自己工作已经够忙，根本没时间逐一整理</span>
+      </div>
+      <div class="tck-isc__pain">
+        <div class="tck-isc__pain-q">?</div>
+        <span>入学面试和笔试怎么准备？学校也没给太多指引，心里完全没底</span>
+      </div>
+    </div>
+
+    <!-- TCK支持内容 -->
+    <ul class="tck-isc__feats">
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>学校评估与选定</strong> — 按孩子的英语程度、学科强项和将来升学方向，比较各校课程体系和校风</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>出愿手续全程支持</strong> — 英文申请书、Essay撰写、必要文件翻译、代为联络校方，省去繁琐的事务性工作</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>面试 &amp; 笔试备考</strong> — CAT4、MAP、UKiset等入学考试辅导，亲子面试模拟训练</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>入学后持续跟进</strong> — 录取不是终点。入学后的学习进度管理、转校咨询，也在支持范围内</span></li>
+    </ul>
+
+    <div class="tck-isc__cta-row">
+      <a href="#pricing" class="tck-isc__btn tck-isc__btn--primary">学校咨询 →</a>
+      <a href="#pricing" class="tck-isc__btn tck-isc__btn--ghost">出愿代办 →</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 2：IGCSE · IB MYP
+  ══════════════════════════════════════ -->
+  <div class="tck-isc__section" id="sec-igcse">
+    <div class="tck-isc__sec-head">
+      <div class="tck-isc__sec-n">02</div>
+      <div class="tck-isc__sec-meta">
+        <span class="tck-isc__sec-tag">Middle School Curriculum</span>
+        <div class="tck-isc__sec-h2">IGCSE · IB MYP 课程辅导</div>
+        <div class="tck-isc__sec-sub">中文理解 × 英文表达，帮孩子打通双重关卡</div>
+      </div>
+    </div>
+
+    <div class="tck-isc__copy">
+      <p>IGCSE是英国GCSE课程的国际版本，在亚洲各地的国际学校里几乎随处可见；IB MYP则是国际文凭组织为11至16岁学生设计的综合课程体系。两者都强调批判性思维和跨学科学习，<em>对中文背景的孩子来说，挑战不只是学科本身</em>。</p>
+      <p>难就难在：要用英文理解，还要用英文表达。数学推导、化学反应、历史论文，换到全英文环境，理解的成本一下子就上去了。我们遇到过不少孩子，在国内学得很好，进了国际学校之后卡在语言表达上——不是不懂，是说不出来、写不准确。</p>
+      <p>TCK的老师可以用中文解释、用英文练习，按孩子的节奏灵活切换。不是把学生教懂为止——而是帮他们真正能在课堂上、在考试里把掌握的东西表达出来。</p>
+    </div>
+
+    <div class="tck-isc__framing">
+      <strong>IGCSE是跳板，不是终点。</strong> 这里的选科和成绩，直接决定了孩子后来能走A-Level还是IBDP、能选哪些科目组合——在中学阶段打好基础，比单纯追成绩更重要。
+    </div>
+
+    <ul class="tck-isc__feats">
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>全科目日常辅导</strong> — 数学、理科（物理/化学/生物）、英语、人文学科，按孩子的学校课表来</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>Mock Test / Final Exam 考前冲刺</strong> — 真题演练 + 考点梳理，针对薄弱科目集中突破</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>IA 内部评估写作辅导</strong> — IGCSE课题报告、MYP个人项目，从选题到写作全流程支持</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>中英双语讲解</strong> — 卡在哪里就在哪里用中文打通，目标是让孩子真正理解、不只是应付考试</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>学科选择咨询</strong> — IGCSE选科直接影响A-Level或IBDP的路线，提前规划更从容</span></li>
+    </ul>
+
+    <div class="tck-isc__chips-head">可辅导科目 · IGCSE</div>
+    <div class="tck-isc__chips">
+      <span class="tck-isc__chip">English Language</span>
+      <span class="tck-isc__chip">English as a Second Language</span>
+      <span class="tck-isc__chip">First Language Japanese</span>
+      <span class="tck-isc__chip">Mathematics</span>
+      <span class="tck-isc__chip">Additional Mathematics</span>
+      <span class="tck-isc__chip">Further Mathematics</span>
+      <span class="tck-isc__chip">Physics</span>
+      <span class="tck-isc__chip">Chemistry</span>
+      <span class="tck-isc__chip">Biology</span>
+      <span class="tck-isc__chip">Combined Science</span>
+      <span class="tck-isc__chip">Co-ordinated Science</span>
+      <span class="tck-isc__chip">Business Studies</span>
+      <span class="tck-isc__chip">Economics</span>
+      <span class="tck-isc__chip">Geography</span>
+    </div>
+
+    <!-- IGCSE Instructor Slider -->
+    <div class="tck-isc__islider">
+      <div class="tck-isc__islider-head">指导实绩 · 担当讲师</div>
+      <div class="tck-isc__islider-sub">每一个 A* 背后，都有一位真实陪伴的老师</div>
+
+      <div class="tck-isc__islider-wrap">
+        <div class="tck-isc__islider-track" id="tck-igcse-track">
+
+          <!-- Slide 1: 水田 早枝子 — English A* + Economics A* -->
+          <div class="tck-isc__islider-slide">
+            <div class="tck-isc__islider-card">
+              <img class="tck-isc__islider-photo"
+                   src="https://www.tckwshop.com/images/mizutasaeko_profile.png"
+                   alt="水田 早枝子">
+              <div class="tck-isc__islider-info">
+                <div class="tck-isc__islider-top-block">
+                  <div class="tck-isc__islider-top">
+                    <span class="tck-isc__islider-name">水田 早枝子</span>
+                    <span class="tck-isc__islider-badge tck-isc__islider-badge--sp">特别讲师</span>
+                  </div>
+                  <div class="tck-isc__islider-subj">IGCSE First Language English · Economics 担当｜东京大学→哈佛商学院</div>
+                </div>
+                <div class="tck-isc__islider-bottom-block">
+                  <div class="tck-isc__islider-rlabel">指导成绩</div>
+                  <div class="tck-isc__islider-results">
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">First Language English</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rafter">A*</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">最终成绩</div>
+                      <div class="tck-isc__islider-rfreq">每周1次 · 每次90分</div>
+                    </div>
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">Economics</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rafter">A*</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">最终成绩</div>
+                      <div class="tck-isc__islider-rfreq">每周2次 · 每次60分</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: 真下 太史 — Science A* -->
+          <div class="tck-isc__islider-slide">
+            <div class="tck-isc__islider-card">
+              <img class="tck-isc__islider-photo"
+                   src="https://www.tckwshop.com/images/mashimotaishi_profile.png"
+                   alt="真下 太史">
+              <div class="tck-isc__islider-info">
+                <div class="tck-isc__islider-top-block">
+                  <div class="tck-isc__islider-top">
+                    <span class="tck-isc__islider-name">真下 太史</span>
+                    <span class="tck-isc__islider-badge tck-isc__islider-badge--pm">优质讲师</span>
+                  </div>
+                  <div class="tck-isc__islider-subj">IGCSE 生物 · 物理 · 化学（Combined Science）担当｜英国本地执教二十余年</div>
+                </div>
+                <div class="tck-isc__islider-bottom-block">
+                  <div class="tck-isc__islider-rlabel">指导成绩</div>
+                  <div class="tck-isc__islider-results">
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">Combined Science</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rafter">A*</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">最终成绩</div>
+                      <div class="tck-isc__islider-rfreq">每周2次 · 每次60分</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: 岡留 智史 — Additional Math A* -->
+          <div class="tck-isc__islider-slide">
+            <div class="tck-isc__islider-card">
+              <img class="tck-isc__islider-photo"
+                   src="https://www.tckwshop.com/images/okadomesatoshi_profile.png"
+                   alt="岡留 智史">
+              <div class="tck-isc__islider-info">
+                <div class="tck-isc__islider-top-block">
+                  <div class="tck-isc__islider-top">
+                    <span class="tck-isc__islider-name">岡留 智史</span>
+                    <span class="tck-isc__islider-badge tck-isc__islider-badge--sp">特别讲师</span>
+                  </div>
+                  <div class="tck-isc__islider-subj">IGCSE 数学 · Additional Math · 物理 · 化学 · 生物 全科担当</div>
+                </div>
+                <div class="tck-isc__islider-bottom-block">
+                  <div class="tck-isc__islider-rlabel">指导成绩</div>
+                  <div class="tck-isc__islider-results">
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">Additional Math</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rafter">A*</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">最终成绩</div>
+                      <div class="tck-isc__islider-rfreq">每周1次 · 每次90分</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tck-isc__islider-nav">
+        <button class="tck-isc__islider-btn" id="tck-igcse-prev" aria-label="Previous">&#8592;</button>
+        <div class="tck-isc__islider-dots">
+          <button class="tck-isc__islider-dot active" data-i="0"></button>
+          <button class="tck-isc__islider-dot" data-i="1"></button>
+          <button class="tck-isc__islider-dot" data-i="2"></button>
+        </div>
+        <button class="tck-isc__islider-btn" id="tck-igcse-next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+    <script>(function(){
+      var track=document.getElementById('tck-igcse-track');
+      var nav=track.closest('.tck-isc__islider').querySelector('.tck-isc__islider-nav');
+      var dots=nav.querySelectorAll('.tck-isc__islider-dot');
+      var total=3,cur=0;
+      function go(n){
+        cur=(n+total)%total;
+        track.style.transform='translateX(-'+(cur*100)+'%)';
+        dots.forEach(function(d,i){d.classList.toggle('active',i===cur);});
+      }
+      document.getElementById('tck-igcse-prev').addEventListener('click',function(){go(cur-1);});
+      document.getElementById('tck-igcse-next').addEventListener('click',function(){go(cur+1);});
+      dots.forEach(function(d){d.addEventListener('click',function(){go(+this.dataset.i);});});
+    })();</script>
+
+    <div class="tck-isc__cta-row">
+      <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-isc__btn tck-isc__btn--primary">免费体验课 →</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SECTION 3：A-Level · IB DP
+  ══════════════════════════════════════ -->
+  <div class="tck-isc__section" id="sec-dp">
+    <div class="tck-isc__sec-head">
+      <div class="tck-isc__sec-n">03</div>
+      <div class="tck-isc__sec-meta">
+        <span class="tck-isc__sec-tag">Senior School Curriculum</span>
+        <div class="tck-isc__sec-h2">A-Level · IB DP 升学备考</div>
+        <div class="tck-isc__sec-sub">决定大学去向的那几年，不能靠运气</div>
+      </div>
+    </div>
+
+    <div class="tck-isc__copy">
+      <p>A-Level和IB DP是国际高中阶段最主流的两套体系，也是直接决定大学申请结果的关键所在。A-Level选科灵活，按科目报考；IB DP则要同时完成6门科目、一篇4000字的EE拓展论文、TOK知识理论，外加CAS项目——<em>每一项都不轻松</em>，叠在一起的压力更是显而易见。</p>
+      <p>英国顶尖大学对A-Level成绩精确到每一个等级；IB满分45分，全球平均分在30分左右，竞争相当激烈。不少孩子进入DP阶段才发现，学校课堂的内容能给到的往往只是大框架，IA怎么做、EE选什么题、TOK怎么写——这些"上课很少讲清楚"的部分，反而是拿分的关键。</p>
+      <p>我们的老师在A-Level和IB DP各科都有实际辅导经验，EE论文从选题到最终稿、IA从实验设计到报告写作，都可以完整支持。</p>
+    </div>
+
+    <ul class="tck-isc__feats">
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>HL / SL 各科目辅导</strong> — 数学、物理、化学、生物、经济、英语文学等主流科目，按孩子的选科来安排</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>IB EE 拓展论文</strong> — 从研究问题的确立，到论据整理、结构搭建、语言润色，全流程陪写</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>IB TOK 论文与演讲</strong> — 理解TOK的底层逻辑，掌握论文评分标准，演讲思路有人帮你理顺</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>IA 内部评估</strong> — 各学科IA的研究设计、数据分析与报告撰写，不让IA拖累总分</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>Mock &amp; Final Exam 考前冲刺</strong> — 真题分析、重点章节强化，考前6-8周集中突破</span></li>
+      <li><span class="tck-isc__ck"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span><strong>选科 &amp; 大学申请策略</strong> — A-Level选科和IB HL选择直接影响目标大学的申请条件，提前想清楚</span></li>
+    </ul>
+
+    <div class="tck-isc__chips-head">可辅导科目 · IB DP</div>
+    <div class="tck-isc__chip-groups">
+      <div class="tck-isc__chip-group">
+        <span class="tck-isc__chip-group-lbl">Group 1</span>
+        <span class="tck-isc__chip">English A</span>
+        <span class="tck-isc__chip">Japanese A</span>
+      </div>
+      <div class="tck-isc__chip-group">
+        <span class="tck-isc__chip-group-lbl">Group 2</span>
+        <span class="tck-isc__chip">English B</span>
+        <span class="tck-isc__chip">Japanese B</span>
+      </div>
+      <div class="tck-isc__chip-group">
+        <span class="tck-isc__chip-group-lbl">Group 3</span>
+        <span class="tck-isc__chip">Business &amp; Management</span>
+        <span class="tck-isc__chip">Economics</span>
+        <span class="tck-isc__chip">Geography</span>
+        <span class="tck-isc__chip">Psychology</span>
+      </div>
+      <div class="tck-isc__chip-group">
+        <span class="tck-isc__chip-group-lbl">Group 4</span>
+        <span class="tck-isc__chip">Physics</span>
+        <span class="tck-isc__chip">Chemistry</span>
+        <span class="tck-isc__chip">Biology</span>
+      </div>
+      <div class="tck-isc__chip-group">
+        <span class="tck-isc__chip-group-lbl">Group 5</span>
+        <span class="tck-isc__chip">Maths AA (Analysis &amp; Approaches)</span>
+        <span class="tck-isc__chip">Maths AI (Applications &amp; Interpretation)</span>
+      </div>
+    </div>
+
+    <!-- Instructor Slider -->
+    <div class="tck-isc__islider">
+      <div class="tck-isc__islider-head">指导实绩 · 担当讲师</div>
+      <div class="tck-isc__islider-sub">每一个成绩背后，都有一位真实陪伴的老师</div>
+
+      <div class="tck-isc__islider-wrap">
+        <div class="tck-isc__islider-track" id="tck-islider-track">
+
+          <!-- Slide 1: 岡留 智史 -->
+          <div class="tck-isc__islider-slide">
+            <div class="tck-isc__islider-card">
+              <img class="tck-isc__islider-photo"
+                   src="https://www.tckwshop.com/images/okadomesatoshi_profile.png"
+                   alt="岡留 智史">
+              <div class="tck-isc__islider-info">
+                <div class="tck-isc__islider-top-block">
+                  <div class="tck-isc__islider-top">
+                    <span class="tck-isc__islider-name">岡留 智史</span>
+                    <span class="tck-isc__islider-badge tck-isc__islider-badge--sp">特别讲师</span>
+                  </div>
+                  <div class="tck-isc__islider-subj">IB 数学 AA/AI · 物理 · 化学 · IGCSE 理科数学全科担当</div>
+                </div>
+                <div class="tck-isc__islider-bottom-block">
+                  <div class="tck-isc__islider-rlabel">指导成绩</div>
+                  <div class="tck-isc__islider-results">
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">Math AI HL</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rbefore">4</span>
+                        <span class="tck-isc__islider-rarr">→</span>
+                        <span class="tck-isc__islider-rafter">6</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">预测分 → 最终分</div>
+                      <div class="tck-isc__islider-rfreq">每周2次 · 每次60分</div>
+                    </div>
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">Physics HL</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rafter">7</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">最终成绩</div>
+                      <div class="tck-isc__islider-rfreq">每周1次 · 每次60分</div>
+                    </div>
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">Chemistry HL</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rbefore">3</span>
+                        <span class="tck-isc__islider-rarr">→</span>
+                        <span class="tck-isc__islider-rafter">6</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">预测分 → 最终分</div>
+                      <div class="tck-isc__islider-rfreq">每周2次 · 每次60分</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: 真下 太史 -->
+          <div class="tck-isc__islider-slide">
+            <div class="tck-isc__islider-card">
+              <img class="tck-isc__islider-photo"
+                   src="https://www.tckwshop.com/images/mashimotaishi_profile.png"
+                   alt="真下 太史">
+              <div class="tck-isc__islider-info">
+                <div class="tck-isc__islider-top-block">
+                  <div class="tck-isc__islider-top">
+                    <span class="tck-isc__islider-name">真下 太史</span>
+                    <span class="tck-isc__islider-badge tck-isc__islider-badge--pm">优质讲师</span>
+                  </div>
+                  <div class="tck-isc__islider-subj">IB DP 生物 · 心理学 · A-Level 生物 · IGCSE 理科担当｜英国本地执教二十余年</div>
+                </div>
+                <div class="tck-isc__islider-bottom-block">
+                  <div class="tck-isc__islider-rlabel">指导成绩</div>
+                  <div class="tck-isc__islider-results">
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">Biology</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rafter">7</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">最终成绩</div>
+                      <div class="tck-isc__islider-rfreq">每周1次 · 每次90分</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: 水田 早枝子 -->
+          <div class="tck-isc__islider-slide">
+            <div class="tck-isc__islider-card">
+              <img class="tck-isc__islider-photo"
+                   src="https://www.tckwshop.com/images/mizutasaeko_profile.png"
+                   alt="水田 早枝子">
+              <div class="tck-isc__islider-info">
+                <div class="tck-isc__islider-top-block">
+                  <div class="tck-isc__islider-top">
+                    <span class="tck-isc__islider-name">水田 早枝子</span>
+                    <span class="tck-isc__islider-badge tck-isc__islider-badge--sp">特别讲师</span>
+                  </div>
+                  <div class="tck-isc__islider-subj">IB English A 语言与文学 · 英语资格考试（TOEFL · SAT · 英检）｜东京大学→哈佛商学院</div>
+                </div>
+                <div class="tck-isc__islider-bottom-block">
+                  <div class="tck-isc__islider-rlabel">指导成绩</div>
+                  <div class="tck-isc__islider-results">
+                    <div class="tck-isc__islider-result">
+                      <div class="tck-isc__islider-rsubj">English A Lang &amp; Lit</div>
+                      <div class="tck-isc__islider-rnums">
+                        <span class="tck-isc__islider-rafter">6</span>
+                      </div>
+                      <div class="tck-isc__islider-rlbl">最终成绩</div>
+                      <div class="tck-isc__islider-rfreq">每周1次 · 每次60分</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tck-isc__islider-nav">
+        <button class="tck-isc__islider-btn" id="tck-islider-prev" aria-label="Previous">&#8592;</button>
+        <div class="tck-isc__islider-dots">
+          <button class="tck-isc__islider-dot active" data-i="0"></button>
+          <button class="tck-isc__islider-dot" data-i="1"></button>
+          <button class="tck-isc__islider-dot" data-i="2"></button>
+        </div>
+        <button class="tck-isc__islider-btn" id="tck-islider-next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+
+    <script>(function(){
+      var track=document.getElementById('tck-islider-track');
+      var nav=track.closest('.tck-isc__islider').querySelector('.tck-isc__islider-nav');
+      var dots=nav.querySelectorAll('.tck-isc__islider-dot');
+      var total=3,cur=0;
+      function go(n){
+        cur=(n+total)%total;
+        track.style.transform='translateX(-'+(cur*100)+'%)';
+        dots.forEach(function(d,i){d.classList.toggle('active',i===cur);});
+      }
+      document.getElementById('tck-islider-prev').addEventListener('click',function(){go(cur-1);});
+      document.getElementById('tck-islider-next').addEventListener('click',function(){go(cur+1);});
+      dots.forEach(function(d){d.addEventListener('click',function(){go(+this.dataset.i);});});
+    })();</script>
+
+    <div class="tck-isc__timing">
+      <div class="tck-isc__timing-head">什么时候开始最合适？</div>
+      最理想是<strong>G10暑假结束数学基础</strong>，进入DP前完成核心章节。以物理为例：G10 12月开始系统学习，G12开学前全部内容学完，剩余时间专攻 Past Papers——时间刚刚好。IB是2年多的马拉松，越早起跑，越从容。
+    </div>
+
+    <div class="tck-isc__cta-row">
+      <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-isc__btn tck-isc__btn--primary">免费体验课 →</a>
+    </div>
+    <div class="tck-isc__onesub">
+      <div class="tck-isc__onesub-dot"></div>
+      一科也可以 &nbsp;·&nbsp; 假期短期集中课也OK &nbsp;·&nbsp; 先从孩子最需要的科目开始，没有门槛
+    </div>
+  </div>
+
+  <!-- ── 底部 CTA ── -->
+  <div class="tck-isc__bottom">
+    <div class="tck-isc__bottom-rule"></div>
+    <p>择校、中学课程、高中冲刺——每个阶段都有它的难关。<br>不管孩子现在在哪个阶段，都欢迎先来聊聊。</p>
+    <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-isc__btn tck-isc__btn--primary" style="font-size:15px;padding:14px 32px">免费学习咨询 →</a>
+  </div>
+
+</div>

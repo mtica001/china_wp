@@ -1,0 +1,161 @@
+<!-- TCK Pricing FAQ block — matches pricing-2col-block.html tokens -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500&display=swap">
+<style>
+.tck-faq{font-family:'Noto Sans SC',sans-serif;padding:32px 0;color:#111}
+.tck-faq *{box-sizing:border-box;margin:0;padding:0}
+
+/* header */
+.tck-faq__head{text-align:center;margin-bottom:44px}
+.tck-faq__eyebrow{font-size:14px;letter-spacing:.22em;color:#2a9060;margin-bottom:10px}
+.tck-faq__title{font-family:'Noto Serif SC',serif;font-size:clamp(26px,4vw,40px);font-weight:700;color:#006640;line-height:1.3;letter-spacing:.04em;margin:0;padding:0}
+.tck-faq__rule{width:44px;height:2px;background:linear-gradient(90deg,#2a9060,#c9a84c);margin:16px auto 0;border-radius:2px}
+
+/* list */
+.tck-faq__list{display:flex;flex-direction:column;gap:0;border:1.5px solid #c5dfd4;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 4px 24px rgba(0,102,64,.08),0 1px 4px rgba(0,0,0,.05)}
+
+/* item */
+.tck-faq__item{border-bottom:1px solid #c5dfd4}
+.tck-faq__item:last-child{border-bottom:none}
+
+/* trigger */
+.tck-faq__trigger{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px 26px;text-align:left;transition:background .18s}
+.tck-faq__trigger:hover{background:#f5faf7}
+.tck-faq__item.is-open .tck-faq__trigger{background:#f0f8f4}
+
+.tck-faq__num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:#e8f5ee;border:1.5px solid #c5dfd4;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:#006640;transition:background .18s,border-color .18s,color .18s}
+.tck-faq__item.is-open .tck-faq__num{background:#006640;border-color:#006640;color:#fff}
+
+.tck-faq__q{flex:1;font-family:'Noto Serif SC',serif;font-size:16px;font-weight:600;color:#111;line-height:1.5;letter-spacing:.02em}
+
+.tck-faq__chevron{flex-shrink:0;width:20px;height:20px;display:flex;align-items:center;justify-content:center;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.tck-faq__chevron svg{width:14px;height:14px;stroke:#5a7a68;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .18s}
+.tck-faq__item.is-open .tck-faq__chevron{transform:rotate(180deg)}
+.tck-faq__item.is-open .tck-faq__chevron svg{stroke:#c9a84c}
+
+/* answer panel */
+.tck-faq__panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s cubic-bezier(.4,0,.2,1)}
+.tck-faq__item.is-open .tck-faq__panel{grid-template-rows:1fr}
+.tck-faq__panel-inner{overflow:hidden}
+.tck-faq__a{padding:0 26px 22px 70px;font-size:14.5px;color:#3a5a48;line-height:1.8}
+.tck-faq__a strong{color:#006640;font-weight:600}
+.tck-faq__a em{color:#c9a84c;font-style:normal;font-weight:600}
+
+/* footer note */
+.tck-faq__cta{margin-top:24px;padding:16px 20px;background:#f5faf7;border:1px solid #c5dfd4;border-radius:10px;font-size:13px;color:#5a7a68;line-height:1.8;text-align:center}
+.tck-faq__cta strong{color:#006640;font-weight:500}
+.tck-faq__cta a{color:#006640;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+@media(max-width:500px){
+  .tck-faq__q{font-size:14.5px}
+  .tck-faq__a{padding-left:26px}
+}
+</style>
+
+<div class="tck-faq" id="faq">
+
+  <div class="tck-faq__head">
+    <p class="tck-faq__eyebrow">常见问题</p>
+    <div class="tck-faq__title">收费与服务说明</div>
+    <div class="tck-faq__rule"></div>
+  </div>
+
+  <div class="tck-faq__list">
+
+    <!-- Q1 -->
+    <div class="tck-faq__item">
+      <button class="tck-faq__trigger" aria-expanded="false">
+        <span class="tck-faq__num">1</span>
+        <span class="tck-faq__q">咨询套餐与能力测试可以同时购买吗？</span>
+        <span class="tck-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-faq__panel" role="region">
+        <div class="tck-faq__panel-inner">
+          <p class="tck-faq__a">可以。两项服务定位不同，<strong>能力测试</strong>属于一次性诊断评估，<strong>咨询套餐</strong>则提供持续的升学陪伴服务。建议先完成能力测试，根据诊断报告明确薄弱科目后，再开始按月咨询，效率更高。购买能力测试后，首月咨询已涵盖在套餐内，<em>无需重复计费</em>。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="tck-faq__item">
+      <button class="tck-faq__trigger" aria-expanded="false">
+        <span class="tck-faq__num">2</span>
+        <span class="tck-faq__q">购买能力测试后，"免除 6 个月入会费及管理费"具体包含哪些费用？</span>
+        <span class="tck-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-faq__panel" role="region">
+        <div class="tck-faq__panel-inner">
+          <p class="tck-faq__a">正式加入 TCK Workshop 课程体系时，通常需缴纳<strong>入会手续费</strong>与<strong>月度管理费</strong>（账号维护、学习系统使用等）。购买能力测试后，上述两项费用将在<em>正式入学后连续 6 个月内全额豁免</em>，为您节省可观的固定成本。具体金额请联系顾问确认。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="tck-faq__item">
+      <button class="tck-faq__trigger" aria-expanded="false">
+        <span class="tck-faq__num">3</span>
+        <span class="tck-faq__q">境外客户需要缴纳消费税吗？如何付款？</span>
+        <span class="tck-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-faq__panel" role="region">
+        <div class="tck-faq__panel-inner">
+          <p class="tck-faq__a">所有标价均为<strong>含税价</strong>（已含日本 10% 消费税）。<em>日本境外客户依法享受消费税豁免</em>，实际应付金额以扣除税额后为准。付款方式支持银行转账及主流在线支付渠道，具体请与顾问沟通确认。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="tck-faq__item">
+      <button class="tck-faq__trigger" aria-expanded="false">
+        <span class="tck-faq__num">4</span>
+        <span class="tck-faq__q">咨询套餐的"全天候答疑"如何运作？响应时间是多久？</span>
+        <span class="tck-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-faq__panel" role="region">
+        <div class="tck-faq__panel-inner">
+          <p class="tck-faq__a">答疑渠道为<strong>微信 / 邮件</strong>，您可随时发送问题，顾问将在工作时段内尽快回复，<em>一般不超过 24 小时</em>。紧急事项（如临近截止日期的材料确认）可在微信备注"紧急"，优先处理。每月 1 次深度面谈建议提前预约，通常以视频通话形式进行。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="tck-faq__item">
+      <button class="tck-faq__trigger" aria-expanded="false">
+        <span class="tck-faq__num">5</span>
+        <span class="tck-faq__q">定制服务中"专人陪同访校/面试"¥20,000 起，具体包含哪些内容？</span>
+        <span class="tck-faq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-faq__panel" role="region">
+        <div class="tck-faq__panel-inner">
+          <p class="tck-faq__a">此服务由<strong>资深顾问全程随行</strong>，包含：行前模拟演练与注意事项指导、现场陪同参观校园或参加面试、事后总结反馈报告。起价 <em>¥20,000</em> 适用于关西地区一日行程；跨城市或多校访问因差旅成本不同，最终报价请与顾问单独确认。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tck-faq__cta">
+    <strong>还有其他问题？</strong> 欢迎随时<a href="https://www.tckwshop.com/zh-cn/contact_consultation/">联系我们的升学顾问</a>，我们将在 24 小时内回复。
+  </div>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.tck-faq__trigger').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.tck-faq__item');
+      var isOpen=item.classList.contains('is-open');
+      // close all
+      document.querySelectorAll('.tck-faq__item.is-open').forEach(function(el){
+        el.classList.remove('is-open');
+        el.querySelector('.tck-faq__trigger').setAttribute('aria-expanded','false');
+      });
+      // open clicked if it was closed
+      if(!isOpen){
+        item.classList.add('is-open');
+        this.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+})();
+</script>

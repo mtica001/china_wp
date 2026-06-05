@@ -1,0 +1,1102 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e6]:
+      - heading "海外･帰国子女向けオンライン家庭教師 TCK Workshop" [level=1] [ref=e9]:
+        - link "海外･帰国子女向けオンライン家庭教師 TCK Workshop" [ref=e10] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/
+          - img "海外･帰国子女向けオンライン家庭教師 TCK Workshop" [ref=e11]
+      - navigation [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "TCK Workshopとは About" [ref=e17] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/aboutus/
+              - generic [ref=e18]: TCK Workshopとは
+              - generic [ref=e19]: About
+          - listitem [ref=e20]:
+            - link "お客様の声 Voice" [ref=e21] [cursor=pointer]:
+              - /url: /voice/
+              - generic [ref=e22]: お客様の声
+              - generic [ref=e23]: Voice
+          - listitem [ref=e24]:
+            - link "個別指導 Personal Lesson" [ref=e25] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/course/
+              - generic [ref=e26]: 個別指導
+              - generic [ref=e27]: Personal Lesson
+          - listitem [ref=e28]:
+            - link "お役立ち情報 Webinar & Blog" [ref=e29] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e30]: お役立ち情報
+              - generic [ref=e31]: Webinar & Blog
+          - listitem [ref=e32]:
+            - link "特別講座一覧 🌻 夏期講習 受付中！" [ref=e33] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/51640-2/
+              - generic [ref=e34]: 特別講座一覧
+              - generic [ref=e35]: 🌻 夏期講習 受付中！
+          - listitem [ref=e36]:
+            - link "中文咨询 Chinese" [ref=e37] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/zh/lp1/
+              - generic [ref=e38]: 中文咨询
+              - generic [ref=e39]: Chinese
+          - listitem [ref=e40]:
+            - link "無料相談はこちら" [ref=e41] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/contact_consultation/
+              - generic [ref=e42]: 無料相談はこちら
+      - generic [ref=e45]:
+        - link "スイッチ オフ" [ref=e46] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e48]: 
+        - text: 
+    - generic [ref=e52]:
+      - link [ref=e56] [cursor=pointer]:
+        - /url: https://www.tckwshop.com/
+        - img [ref=e57]
+      - navigation [ref=e60]:
+        - list [ref=e61]:
+          - listitem [ref=e62]:
+            - link [ref=e63] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/aboutus/
+              - generic [ref=e64]: TCK Workshopとは
+              - generic [ref=e65]: About
+          - listitem [ref=e66]:
+            - link [ref=e67] [cursor=pointer]:
+              - /url: /voice/
+              - generic [ref=e68]: お客様の声
+              - generic [ref=e69]: Voice
+          - listitem [ref=e70]:
+            - link [ref=e71] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/course/
+              - generic [ref=e72]: 個別指導
+              - generic [ref=e73]: Personal Lesson
+          - listitem [ref=e74]:
+            - link [ref=e75] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e76]: お役立ち情報
+              - generic [ref=e77]: Webinar & Blog
+          - listitem [ref=e78]:
+            - link [ref=e79] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/51640-2/
+              - generic [ref=e80]: 特別講座一覧
+              - generic [ref=e81]: 🌻 夏期講習 受付中！
+          - listitem [ref=e82]:
+            - link [ref=e83] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/zh/lp1/
+              - generic [ref=e84]: 中文咨询
+              - generic [ref=e85]: Chinese
+          - listitem [ref=e86]:
+            - link [ref=e87] [cursor=pointer]:
+              - /url: https://www.tckwshop.com/contact_consultation/
+              - generic [ref=e88]: 無料相談はこちら
+      - generic [ref=e91]:
+        - link [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e94]: 
+        - text: 
+  - generic [ref=e95]:
+    - generic [ref=e98]:
+      - paragraph
+      - region "Slider" [ref=e99]:
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e165]:
+              - button [ref=e166] [cursor=pointer]:
+                - note [ref=e167]: 夏期講習２０２６サムネ
+              - button [ref=e169] [cursor=pointer]:
+                - note [ref=e170]: TCK Reps サムネ
+              - button [ref=e172] [cursor=pointer]:
+                - note [ref=e173]: Slide
+                - link [ref=e179]:
+                  - /url: https://www.tckwshop.com/48281-2/
+              - button [ref=e180] [cursor=pointer]:
+                - note [ref=e181]: 新規講座サムネイル (19)
+              - button [ref=e183] [cursor=pointer]:
+                - note [ref=e184]: 合格速報
+              - button [ref=e186] [cursor=pointer]:
+                - note [ref=e187]: 新規講座サムネイル (13)
+              - button [ref=e189] [cursor=pointer]:
+                - note [ref=e190]: 中高模擬面接講座
+              - button [ref=e192] [cursor=pointer]:
+                - note [ref=e193]: Slide
+                - link [ref=e199]:
+                  - /url: https://www.tckwshop.com/news/50701/
+              - generic [ref=e200]:
+                - note [ref=e201]: 2026年夏 国内インターナショナルスクール説明会
+                - link [ref=e207] [cursor=pointer]:
+                  - /url: https://www.tckwshop.com/news/51620/
+              - button [ref=e208] [cursor=pointer]:
+                - note [ref=e209]: Slide
+                - link [ref=e215]:
+                  - /url: https://www.tckwshop.com/news/49986/
+              - button [ref=e216] [cursor=pointer]:
+                - note [ref=e217]: 受験報告会
+              - button [ref=e219] [cursor=pointer]:
+                - note [ref=e220]: webinar
+              - button [ref=e226] [cursor=pointer]:
+                - note [ref=e227]: CRE event thumbnail (13)
+              - button [ref=e229] [cursor=pointer]:
+                - note [ref=e230]: Slide
+              - generic [ref=e236]:
+                - note [ref=e237]: Slide
+                - link [ref=e243] [cursor=pointer]:
+                  - /url: https://www.tckwshop.com/news/49560/
+              - generic [ref=e244]:
+                - note [ref=e245]: Slide
+                - link [ref=e251] [cursor=pointer]:
+                  - /url: https://www.tckwshop.com/news/49565/
+              - button [ref=e252] [cursor=pointer]:
+                - note [ref=e253]: インターコンサルサービス資料 (1)
+              - button [ref=e255] [cursor=pointer]:
+                - note [ref=e256]: グレー ピンク ビジネス グラデーション 女性 転職 facebook 投稿 (YouTubeサムネイル)
+            - button "previous arrow" [ref=e258] [cursor=pointer]:
+              - img "previous arrow" [ref=e259]
+            - button "next arrow" [ref=e260] [cursor=pointer]:
+              - img "next arrow" [ref=e261]
+          - generic [ref=e263]:
+            - generic [ref=e265]:
+              - button "夏期講習２０２６サムネ" [ref=e266] [cursor=pointer]:
+                - img "夏期講習２０２６サムネ" [ref=e268]
+              - button "TCK Reps サムネ" [ref=e269] [cursor=pointer]:
+                - img "TCK Reps サムネ" [ref=e271]
+              - button "Slide" [ref=e272] [cursor=pointer]:
+                - img "Slide" [ref=e274]
+              - button "新規講座サムネイル (19)" [ref=e275] [cursor=pointer]:
+                - img "新規講座サムネイル (19)" [ref=e277]
+              - button "合格速報" [ref=e278] [cursor=pointer]:
+                - img "合格速報" [ref=e280]
+              - button "新規講座サムネイル (13)" [ref=e281] [cursor=pointer]:
+                - img "新規講座サムネイル (13)" [ref=e283]
+              - button "中高模擬面接講座" [ref=e284] [cursor=pointer]:
+                - img "中高模擬面接講座" [ref=e286]
+              - button "Slide" [ref=e287] [cursor=pointer]:
+                - img "Slide" [ref=e289]
+              - button "2026年夏 国内インターナショナルスクール説明会" [ref=e290] [cursor=pointer]:
+                - img "2026年夏 国内インターナショナルスクール説明会" [ref=e292]
+              - button "Slide" [ref=e293] [cursor=pointer]:
+                - img "Slide" [ref=e295]
+              - button "受験報告会" [ref=e296] [cursor=pointer]:
+                - img "受験報告会" [ref=e298]
+              - button "webinar" [ref=e299] [cursor=pointer]:
+                - img "webinar" [ref=e301]
+              - button "CRE event thumbnail (13)" [ref=e302] [cursor=pointer]:
+                - img "CRE event thumbnail (13)" [ref=e304]
+              - button "Slide" [ref=e305] [cursor=pointer]:
+                - img "Slide" [ref=e307]
+              - button "Slide" [ref=e308] [cursor=pointer]:
+                - img "Slide" [ref=e310]
+              - button "Slide" [ref=e311] [cursor=pointer]:
+                - img "Slide" [ref=e313]
+              - button "インターコンサルサービス資料 (1)" [ref=e314] [cursor=pointer]:
+                - img "インターコンサルサービス資料 (1)" [ref=e316]
+              - button "グレー ピンク ビジネス グラデーション 女性 転職 facebook 投稿 (YouTubeサムネイル)" [ref=e317] [cursor=pointer]:
+                - img "グレー ピンク ビジネス グラデーション 女性 転職 facebook 投稿 (YouTubeサムネイル)" [ref=e319]
+            - img "previous arrow" [ref=e320] [cursor=pointer]
+            - img "next arrow" [ref=e321] [cursor=pointer]
+      - paragraph
+    - generic [ref=e325]:
+      - img [ref=e327]
+      - generic [ref=e330]:
+        - heading "このようなお悩みは ございませんか？" [level=2] [ref=e333]:
+          - text: このようなお悩みは
+          - text: ございませんか？
+        - generic [ref=e334]:
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - figure [ref=e338]:
+                - img [ref=e339]
+              - paragraph [ref=e342]:
+                - strong [ref=e343]: 高校生の子供に現地校やインターの勉強を教えられる講師が見つからない…日本語でも相談ができれば最高なんだけど…
+            - generic [ref=e346]:
+              - figure [ref=e348]:
+                - img [ref=e349]
+              - paragraph [ref=e352]:
+                - strong [ref=e353]: IBのサポートをしてくれる先生はいないかなぁ…
+            - generic [ref=e356]:
+              - figure [ref=e358]:
+                - img [ref=e359]
+              - paragraph [ref=e362]:
+                - strong [ref=e363]: A-levelを教えられる日本人の先生いなのかな…
+          - generic [ref=e366]:
+            - generic [ref=e367]:
+              - figure [ref=e369]:
+                - img [ref=e370]
+              - paragraph [ref=e373]:
+                - strong [ref=e374]: 英語に特化した受験対策をしたいけど、集団塾では扱っていないみたい…
+            - generic [ref=e377]:
+              - figure [ref=e379]:
+                - img [ref=e380]
+              - paragraph [ref=e383]:
+                - strong [ref=e384]: 子供がもはや英語の方が強くて…英語で教えてくれないかしら…でも私は日本語相談したい…
+            - generic [ref=e387]:
+              - figure [ref=e389]:
+                - img [ref=e390]
+              - paragraph [ref=e393]:
+                - strong [ref=e394]: 英検準1級以上の取得はもはや家庭では面倒が見られない…
+    - heading "海外･帰国子女向けオンライン家庭教師 TCK Workshop ならすべて解決できます！" [level=2] [ref=e402]:
+      - text: 海外･帰国子女向けオンライン家庭教師
+      - strong [ref=e403]: TCK Workshop
+      - text: ならすべて解決できます！
+    - generic [ref=e409]:
+      - img "none" [ref=e411]
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - heading "世界70か国から2400名以上の学習相談と指導の実績" [level=2] [ref=e414]
+          - generic [ref=e415]: 受験対策からSAT/IBなど専門性の高い科目を日英両言語で指導可能
+          - generic [ref=e416]: 帰国受験だけでなく、長期滞在、永住やボーディングなど海外現地校やインターのサポートも強いんです。帰国受験、編入受験、高校生AP、IB、A-levels、SAT、英検、TOEFL、IELTS…世界中どこでも何年生でもサポートができます。
+        - link "学習コースはこちら" [ref=e419] [cursor=pointer]:
+          - /url: /course/
+          - text: 学習コースはこちら
+          - generic [ref=e420]: 
+    - generic [ref=e426]:
+      - img "none" [ref=e428]
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - heading "プロ講師と相談員がご家庭をサポート" [level=2] [ref=e431]
+          - generic [ref=e432]: お子様の目標達成をしっかりとサポート
+          - generic [ref=e433]:
+            - text: 高い合格実績や帰国生に特化した様々なご要望に応えられる理由はプロの講師陣の存在。
+            - text: プロ講師や常時相談ができる相談員が20名以上在籍。1対1の個別指導だから、目標達成に向けて必要な対策をピンポイントで指導します。特に、英語力向上、Academic Essay Writing、志望理由書、苦手教科の克服などは、TCK Workshopは最も強いです。
+        - link "お客様の声はこちら" [ref=e436] [cursor=pointer]:
+          - /url: /voice/
+          - text: お客様の声はこちら
+          - generic [ref=e437]: 
+    - generic [ref=e443]:
+      - img "none" [ref=e445]
+      - generic [ref=e446]:
+        - generic [ref=e447]:
+          - heading "世界中どこでも1日からでもオンラインで受講可能" [level=2] [ref=e448]
+          - generic [ref=e449]: 全世界にいる海外子女・帰国子女のための設立された家庭教師サービス
+          - generic [ref=e450]: 突然決まった帰国。短期間の受験対策。資格試験の準備のためのスポット対策。完全1対1の個別対応となりますので、さまざまな状況に合わせて短期間でもご利用いただけます。
+        - link "授業について" [ref=e453] [cursor=pointer]:
+          - /url: /aboutlesson/
+          - text: 授業について
+          - generic [ref=e454]: 
+    - img [ref=e457]
+    - generic [ref=e460]:
+      - generic [ref=e463]:
+        - heading "お客様の声" [level=2] [ref=e464]
+        - generic [ref=e465]: TCK Workshopの授業を受講した方の実際のお声と評価になります。
+      - generic [ref=e467]:
+        - generic [ref=e469]:
+          - generic [ref=e470]:
+            - generic [ref=e471]:
+              - img [ref=e473]
+              - heading [level=3] [ref=e474]: Tさま(中学編入試験)
+              - paragraph [ref=e475]: ICU高校合格
+            - generic [ref=e476]:
+              - generic [ref=e477]: 
+              - generic [ref=e478]: 
+              - generic [ref=e479]: 
+              - generic [ref=e480]: 
+              - generic [ref=e481]: 
+            - generic [ref=e483]: 自己PRカードで私の意見を尊重しながらアドバイスをしてくださったので自分に合った方針で授業を進める事が出来ました。本番も準備万全で面接もスムーズに終わりました。
+          - generic [ref=e484]:
+            - generic [ref=e485]:
+              - img [ref=e487]
+              - heading [level=3] [ref=e488]: Iさま(IGCSE対策)
+              - paragraph [ref=e489]: 指導科目でA*評価
+            - generic [ref=e490]:
+              - generic [ref=e491]: 
+              - generic [ref=e492]: 
+              - generic [ref=e493]: 
+              - generic [ref=e494]: 
+              - generic [ref=e495]: 
+            - generic [ref=e497]: 分からないところや、気になることがあると、素早く的確に答えてくださり、分かりやすかったです。結果、目標だった全科目A*も達成することが出来ました。
+          - generic [ref=e498]:
+            - generic [ref=e499]:
+              - img [ref=e501]
+              - heading [level=3] [ref=e502]: Kさま(帰国子女大学受験)
+              - paragraph [ref=e503]: 早稲田大学SILS合格
+            - generic [ref=e504]:
+              - generic [ref=e505]: 
+              - generic [ref=e506]: 
+              - generic [ref=e507]: 
+              - generic [ref=e508]: 
+              - generic [ref=e509]: 
+            - generic [ref=e511]: 本人の希望に沿って授業をフレキシブルにデザインでき、先生たちの専門性や指導力の高さに惹かれ、指導をお願いすることを決め、第一志望に合格することができました。
+          - tabpanel [ref=e512]:
+            - generic [ref=e513]:
+              - img "Sさま(現地校サポート)" [ref=e515]
+              - heading "Sさま(現地校サポート)" [level=3] [ref=e516]
+              - paragraph [ref=e517]: 現地校の成績A*
+            - generic [ref=e518]:
+              - generic [ref=e519]: 
+              - generic [ref=e520]: 
+              - generic [ref=e521]: 
+              - generic [ref=e522]: 
+              - generic [ref=e523]: 
+            - generic [ref=e525]: Math AdditionalでもYear9の最終グレードを目標のＡ*に上げることができました。TCKで得たものは多く、今後の人生に活かしてくれることと思います。本当に感謝の気持ちでいっぱいです。
+          - tabpanel [ref=e526]:
+            - generic [ref=e527]:
+              - img "Oさま(英検対策)" [ref=e529]
+              - heading "Oさま(英検対策)" [level=3] [ref=e530]
+              - paragraph [ref=e531]: ICUHS合格
+            - generic [ref=e532]:
+              - generic [ref=e533]: 
+              - generic [ref=e534]: 
+              - generic [ref=e535]: 
+              - generic [ref=e536]: 
+              - generic [ref=e537]: 
+            - generic [ref=e539]: 一年以上英語のご指導を受けたおかげで、学校の英語の成績(特にwriting)がさらに伸びました。海外からの受験は不安になることばかりでしたが、都度、先生方が相談に乗ってくださり、大変感謝しております。
+          - tabpanel [ref=e540]:
+            - generic [ref=e541]:
+              - img "Nさま(SAT対策)" [ref=e543]
+              - heading "Nさま(SAT対策)" [level=3] [ref=e544]
+              - paragraph [ref=e545]: 慶応SFC合格
+            - generic [ref=e546]:
+              - generic [ref=e547]: 
+              - generic [ref=e548]: 
+              - generic [ref=e549]: 
+              - generic [ref=e550]: 
+              - generic [ref=e551]: 
+            - generic [ref=e553]: 今まで苦手だった数学が徐々に得意になり、SATの試験は結果的に1390点を取得できました。急な質問でも先生はいつも答えてくれたので、毎回その知識量に驚かされていました。
+          - tabpanel [ref=e554]:
+            - generic [ref=e555]:
+              - img [ref=e557]
+              - heading [level=3] [ref=e558]: Tさま(中学編入試験)
+              - paragraph [ref=e559]: ICU高校合格
+            - generic [ref=e560]:
+              - generic [ref=e561]: 
+              - generic [ref=e562]: 
+              - generic [ref=e563]: 
+              - generic [ref=e564]: 
+              - generic [ref=e565]: 
+            - generic [ref=e567]: 自己PRカードで私の意見を尊重しながらアドバイスをしてくださったので自分に合った方針で授業を進める事が出来ました。本番も準備万全で面接もスムーズに終わりました。
+          - tabpanel [ref=e568]:
+            - generic [ref=e569]:
+              - img [ref=e571]
+              - heading [level=3] [ref=e572]: Iさま(IGCSE対策)
+              - paragraph [ref=e573]: 指導科目でA*評価
+            - generic [ref=e574]:
+              - generic [ref=e575]: 
+              - generic [ref=e576]: 
+              - generic [ref=e577]: 
+              - generic [ref=e578]: 
+              - generic [ref=e579]: 
+            - generic [ref=e581]: 分からないところや、気になることがあると、素早く的確に答えてくださり、分かりやすかったです。結果、目標だった全科目A*も達成することが出来ました。
+          - tabpanel [ref=e582]:
+            - generic [ref=e583]:
+              - img [ref=e585]
+              - heading [level=3] [ref=e586]: Kさま(帰国子女大学受験)
+              - paragraph [ref=e587]: 早稲田大学SILS合格
+            - generic [ref=e588]:
+              - generic [ref=e589]: 
+              - generic [ref=e590]: 
+              - generic [ref=e591]: 
+              - generic [ref=e592]: 
+              - generic [ref=e593]: 
+            - generic [ref=e595]: 本人の希望に沿って授業をフレキシブルにデザインでき、先生たちの専門性や指導力の高さに惹かれ、指導をお願いすることを決め、第一志望に合格することができました。
+          - generic [ref=e596]:
+            - generic [ref=e597]:
+              - img [ref=e599]
+              - heading [level=3] [ref=e600]: Sさま(現地校サポート)
+              - paragraph [ref=e601]: 現地校の成績A*
+            - generic [ref=e602]:
+              - generic [ref=e603]: 
+              - generic [ref=e604]: 
+              - generic [ref=e605]: 
+              - generic [ref=e606]: 
+              - generic [ref=e607]: 
+            - generic [ref=e609]: Math AdditionalでもYear9の最終グレードを目標のＡ*に上げることができました。TCKで得たものは多く、今後の人生に活かしてくれることと思います。本当に感謝の気持ちでいっぱいです。
+          - generic [ref=e610]:
+            - generic [ref=e611]:
+              - img [ref=e613]
+              - heading [level=3] [ref=e614]: Oさま(英検対策)
+              - paragraph [ref=e615]: ICUHS合格
+            - generic [ref=e616]:
+              - generic [ref=e617]: 
+              - generic [ref=e618]: 
+              - generic [ref=e619]: 
+              - generic [ref=e620]: 
+              - generic [ref=e621]: 
+            - generic [ref=e623]: 一年以上英語のご指導を受けたおかげで、学校の英語の成績(特にwriting)がさらに伸びました。海外からの受験は不安になることばかりでしたが、都度、先生方が相談に乗ってくださり、大変感謝しております。
+          - generic [ref=e624]:
+            - generic [ref=e625]:
+              - img [ref=e627]
+              - heading [level=3] [ref=e628]: Nさま(SAT対策)
+              - paragraph [ref=e629]: 慶応SFC合格
+            - generic [ref=e630]:
+              - generic [ref=e631]: 
+              - generic [ref=e632]: 
+              - generic [ref=e633]: 
+              - generic [ref=e634]: 
+              - generic [ref=e635]: 
+            - generic [ref=e637]: 今まで苦手だった数学が徐々に得意になり、SATの試験は結果的に1390点を取得できました。急な質問でも先生はいつも答えてくれたので、毎回その知識量に驚かされていました。
+          - generic [ref=e638]:
+            - generic [ref=e639]:
+              - img [ref=e641]
+              - heading [level=3] [ref=e642]: Tさま(中学編入試験)
+              - paragraph [ref=e643]: ICU高校合格
+            - generic [ref=e644]:
+              - generic [ref=e645]: 
+              - generic [ref=e646]: 
+              - generic [ref=e647]: 
+              - generic [ref=e648]: 
+              - generic [ref=e649]: 
+            - generic [ref=e651]: 自己PRカードで私の意見を尊重しながらアドバイスをしてくださったので自分に合った方針で授業を進める事が出来ました。本番も準備万全で面接もスムーズに終わりました。
+          - generic [ref=e652]:
+            - generic [ref=e653]:
+              - img [ref=e655]
+              - heading [level=3] [ref=e656]: Iさま(IGCSE対策)
+              - paragraph [ref=e657]: 指導科目でA*評価
+            - generic [ref=e658]:
+              - generic [ref=e659]: 
+              - generic [ref=e660]: 
+              - generic [ref=e661]: 
+              - generic [ref=e662]: 
+              - generic [ref=e663]: 
+            - generic [ref=e665]: 分からないところや、気になることがあると、素早く的確に答えてくださり、分かりやすかったです。結果、目標だった全科目A*も達成することが出来ました。
+          - generic [ref=e666]:
+            - generic [ref=e667]:
+              - img [ref=e669]
+              - heading [level=3] [ref=e670]: Kさま(帰国子女大学受験)
+              - paragraph [ref=e671]: 早稲田大学SILS合格
+            - generic [ref=e672]:
+              - generic [ref=e673]: 
+              - generic [ref=e674]: 
+              - generic [ref=e675]: 
+              - generic [ref=e676]: 
+              - generic [ref=e677]: 
+            - generic [ref=e679]: 本人の希望に沿って授業をフレキシブルにデザインでき、先生たちの専門性や指導力の高さに惹かれ、指導をお願いすることを決め、第一志望に合格することができました。
+        - tablist [ref=e680]:
+          - tab "1 of 2" [selected] [ref=e681] [cursor=pointer]: • 1
+          - tab "2 of 2" [ref=e682] [cursor=pointer]: • 2
+          - tab "3 of 2" [ref=e683] [cursor=pointer]: • 3
+          - tab "4 of 2" [ref=e684] [cursor=pointer]: • 4
+          - tab "5 of 2" [ref=e685] [cursor=pointer]: • 5
+          - tab "6 of 2" [ref=e686] [cursor=pointer]: • 6
+      - link "お客様の声一覧はこちら" [ref=e689] [cursor=pointer]:
+        - /url: /voice/
+    - img [ref=e692]
+    - generic [ref=e698]:
+      - heading "学習コース" [level=2] [ref=e699]
+      - strong [ref=e702]: ご要望に合わせて様々な科目・カリキュラムにご対応いたします！
+    - generic [ref=e706]:
+      - generic [ref=e708]:
+        - generic [ref=e709]:
+          - text: 
+          - strong [ref=e710]: 海外カリキュラム
+        - list [ref=e712]:
+          - listitem [ref=e713]:
+            - text: 
+            - strong [ref=e714]:
+              - link "IB(国際バカロレア)対策" [ref=e715] [cursor=pointer]:
+                - /url: /course/ib/
+          - listitem [ref=e716]:
+            - text: 
+            - strong [ref=e717]:
+              - link "IGCSE対策" [ref=e718] [cursor=pointer]:
+                - /url: /course/igcse/
+          - listitem [ref=e719]:
+            - text: 
+            - strong [ref=e720]:
+              - link "AP対策" [ref=e721] [cursor=pointer]:
+                - /url: /course/ap/
+          - listitem [ref=e722]:
+            - text: 
+            - strong [ref=e723]:
+              - link "海外大学進学サポート" [ref=e724] [cursor=pointer]:
+                - /url: /course/foreigncollege/
+      - generic [ref=e726]:
+        - generic [ref=e727]:
+          - text: 
+          - strong [ref=e728]: 資格試験サポート
+        - list [ref=e730]:
+          - listitem [ref=e731]:
+            - text: 
+            - strong [ref=e732]:
+              - link "SAT対策" [ref=e733] [cursor=pointer]:
+                - /url: /course/sat/
+          - listitem [ref=e734]:
+            - text: 
+            - strong [ref=e735]:
+              - link "TOEFL対策" [ref=e736] [cursor=pointer]:
+                - /url: /course/toefl/
+          - listitem [ref=e737]:
+            - text: 
+            - strong [ref=e738]:
+              - link "IELTS対策" [ref=e739] [cursor=pointer]:
+                - /url: /course/ielts/
+          - listitem [ref=e740]:
+            - text: 
+            - strong [ref=e741]:
+              - link "英検対策" [ref=e742] [cursor=pointer]:
+                - /url: /course/eiken/
+      - generic [ref=e744]:
+        - generic [ref=e745]:
+          - text: 
+          - strong [ref=e746]: 帰国子女受験
+        - list [ref=e748]:
+          - listitem [ref=e749]:
+            - text: 
+            - strong [ref=e750]:
+              - link "帰国子女中学受験対策" [ref=e751] [cursor=pointer]:
+                - /url: /course/entranceexam/juniorhigh/
+          - listitem [ref=e752]:
+            - text: 
+            - strong [ref=e753]:
+              - link "帰国子女高校受験対策" [ref=e754] [cursor=pointer]:
+                - /url: /course/entranceexam/highschool/
+          - listitem [ref=e755]:
+            - text: 
+            - strong [ref=e756]:
+              - link "帰国子女大学受験対策" [ref=e757] [cursor=pointer]:
+                - /url: /course/entranceexam/college/
+          - listitem [ref=e758]:
+            - text: 
+            - strong [ref=e759]:
+              - link "編入試験対策" [ref=e760] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/transferexam/
+      - generic [ref=e762]:
+        - generic [ref=e763]:
+          - text: 
+          - strong [ref=e764]: その他
+        - list [ref=e766]:
+          - listitem [ref=e767]:
+            - text: 
+            - strong [ref=e768]:
+              - link "SAT Math 25回ﾋﾞﾃﾞｵ講座" [ref=e769] [cursor=pointer]:
+                - /url: /course/sat/satmath_videolesson/
+          - listitem [ref=e770]:
+            - text: 
+            - strong [ref=e771]:
+              - link "SAT Math ﾋﾞﾃﾞｵ講座 Lite" [ref=e772] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/sat/satmath_videolesson_lite/
+          - listitem [ref=e773]:
+            - text: 
+            - strong [ref=e774]:
+              - link "英検ﾗｲﾃｨﾝｸﾞ添削" [ref=e775] [cursor=pointer]:
+                - /url: /course/eiken/eiken_writing/
+          - listitem [ref=e776]:
+            - text: 
+            - strong [ref=e777]:
+              - link "TOEFLﾗｲﾃｨﾝｸﾞ添削講座" [ref=e778] [cursor=pointer]:
+                - /url: /course/toefl/toeflwriting/
+          - listitem [ref=e779]:
+            - text: 
+            - strong [ref=e780]:
+              - link "TOEFLｽﾋﾟｰｷﾝｸﾞ添削講座" [ref=e781] [cursor=pointer]:
+                - /url: /course/toefl/toeflspeaking/
+    - generic [ref=e786]:
+      - heading "受講料について" [level=2] [ref=e787]
+      - strong [ref=e790]: コースではなく講師ランクによって受講料が変わるのでわかりやすい！
+    - generic [ref=e794]:
+      - generic [ref=e796]:
+        - strong [ref=e799]: 講師
+        - generic [ref=e801]: 1時間あたり
+        - generic [ref=e802]:
+          - generic [ref=e803]: 9,000
+          - generic [ref=e804]: 円
+          - text: （税別）
+          - generic [ref=e805]: 税込 9,900円
+        - paragraph [ref=e807]: 時期による変動あり
+      - generic [ref=e809]:
+        - strong [ref=e812]: アドバンス講師
+        - generic [ref=e814]: 1時間あたり
+        - generic [ref=e815]:
+          - generic [ref=e816]: 11,000
+          - text: 円（税別）
+          - generic [ref=e817]: 税込 12,100円
+        - paragraph [ref=e819]: 時期による変動あり
+      - generic [ref=e821]:
+        - strong [ref=e824]: プロ講師
+        - generic [ref=e826]: 1時間あたり
+        - generic [ref=e827]:
+          - generic [ref=e828]: 12,500
+          - text: 円（税別）
+          - generic [ref=e829]: 税込 13,750円
+        - paragraph [ref=e831]: 時期による変動あり
+      - generic [ref=e833]:
+        - strong [ref=e836]: トッププロ講師
+        - generic [ref=e838]: 1時間あたり
+        - generic [ref=e839]:
+          - generic [ref=e840]: 17,000
+          - generic [ref=e841]: 円
+          - text: （税別）
+          - generic [ref=e842]: 税込 18,700円
+        - paragraph [ref=e844]: 時期による変動あり
+      - generic [ref=e846]:
+        - strong [ref=e849]: プレミアム講師
+        - generic [ref=e851]: 1時間あたり
+        - generic [ref=e852]:
+          - generic [ref=e853]: 21,000
+          - generic [ref=e854]: 円
+          - text: （税別）
+          - generic [ref=e855]: 税込 23,100円
+        - paragraph [ref=e857]: 時期による変動あり
+    - link "料金について" [ref=e867] [cursor=pointer]:
+      - /url: https://www.tckwshop.com/lessonfee/
+    - generic [ref=e875]:
+      - img [ref=e876]
+      - generic [ref=e879]:
+        - generic [ref=e881]:
+          - heading "お知らせ・キャンペーン" [level=2] [ref=e882]
+          - strong [ref=e885]: 新講座やキャンペーンなどの情報はこちらから！
+        - generic [ref=e892]:
+          - link [ref=e894] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/49666/
+            - img [ref=e896]
+            - heading [level=2] [ref=e898]: 【2026年度編入】東京学芸国際グループ面接対策特別講座 開講！
+          - link [ref=e900] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48960/
+            - img [ref=e902]
+            - heading [level=2] [ref=e904]: 【3/21開催】日本の高校受験・徹底攻略ウェビナー
+          - link [ref=e906] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48363/
+            - img [ref=e908]
+            - heading [level=2] [ref=e910]:
+              - generic [ref=e911]: 
+              - text: 保護中： 夏休みもやります、第6回開催決定！読解力No.1決定戦！5日間連続Reading Contes...
+          - link [ref=e913] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48359/
+            - img [ref=e915]
+            - heading [level=2] [ref=e917]: TCK WORKSHOP英単語コンテスト第17回開催！
+          - link [ref=e919] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/47941/
+            - img [ref=e921]
+            - heading [level=2] [ref=e923]: TCK WORKSHOP 第1回 エッセイコンテスト 2026
+          - link "【TCK夏期講習2026】サレジアン国際学園（赤羽）対策講座 【TCK夏期講習2026】サレジアン国際学園（赤羽）対策講座" [ref=e925] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/40453/
+            - img "【TCK夏期講習2026】サレジアン国際学園（赤羽）対策講座" [ref=e927]
+            - heading "【TCK夏期講習2026】サレジアン国際学園（赤羽）対策講座" [level=2] [ref=e929]
+          - link "サレジアン国際世田谷ディスカッション講座 夏期講習開催！ サレジアン国際世田谷ディスカッション講座 夏期講習開催！" [ref=e931] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/45525/
+            - img "サレジアン国際世田谷ディスカッション講座 夏期講習開催！" [ref=e933]
+            - heading "サレジアン国際世田谷ディスカッション講座 夏期講習開催！" [level=2] [ref=e935]
+          - link "【TCK夏期講習2026】広尾学園中学校AG Math対策夏期講習もやります！ 【TCK夏期講習2026】広尾学園中学校AG Math対策夏期講習もやります！" [ref=e937] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/40431/
+            - img "【TCK夏期講習2026】広尾学園中学校AG Math対策夏期講習もやります！" [ref=e939]
+            - heading "【TCK夏期講習2026】広尾学園中学校AG Math対策夏期講習もやります！" [level=2] [ref=e941]
+          - link "【2026年度編入】東京学芸国際グループ面接対策特別講座 開講！ 【2026年度編入】東京学芸国際グループ面接対策特別講座 開講！" [ref=e943] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/49666/
+            - img "【2026年度編入】東京学芸国際グループ面接対策特別講座 開講！" [ref=e945]
+            - heading "【2026年度編入】東京学芸国際グループ面接対策特別講座 開講！" [level=2] [ref=e947]
+          - link "【3/21開催】日本の高校受験・徹底攻略ウェビナー 【3/21開催】日本の高校受験・徹底攻略ウェビナー" [ref=e949] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48960/
+            - img "【3/21開催】日本の高校受験・徹底攻略ウェビナー" [ref=e951]
+            - heading "【3/21開催】日本の高校受験・徹底攻略ウェビナー" [level=2] [ref=e953]
+          - link [ref=e955] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48363/
+            - img [ref=e957]
+            - heading [level=2] [ref=e959]:
+              - generic [ref=e960]: 
+              - text: 保護中： 夏休みもやります、第6回開催決定！読解力No.1決定戦！5日間連続Reading Contes...
+          - link [ref=e962] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48359/
+            - img [ref=e964]
+            - heading [level=2] [ref=e966]: TCK WORKSHOP英単語コンテスト第17回開催！
+          - link [ref=e968] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/47941/
+            - img [ref=e970]
+            - heading [level=2] [ref=e972]: TCK WORKSHOP 第1回 エッセイコンテスト 2026
+          - link [ref=e974] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/40453/
+            - img [ref=e976]
+            - heading [level=2] [ref=e978]: 【TCK夏期講習2026】サレジアン国際学園（赤羽）対策講座
+          - link [ref=e980] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/45525/
+            - img [ref=e982]
+            - heading [level=2] [ref=e984]: サレジアン国際世田谷ディスカッション講座 夏期講習開催！
+          - link [ref=e986] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/40431/
+            - img [ref=e988]
+            - heading [level=2] [ref=e990]: 【TCK夏期講習2026】広尾学園中学校AG Math対策夏期講習もやります！
+          - link [ref=e992] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/49666/
+            - img [ref=e994]
+            - heading [level=2] [ref=e996]: 【2026年度編入】東京学芸国際グループ面接対策特別講座 開講！
+          - link [ref=e998] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48960/
+            - img [ref=e1000]
+            - heading [level=2] [ref=e1002]: 【3/21開催】日本の高校受験・徹底攻略ウェビナー
+          - link [ref=e1004] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48363/
+            - img [ref=e1006]
+            - heading [level=2] [ref=e1008]:
+              - generic [ref=e1009]: 
+              - text: 保護中： 夏休みもやります、第6回開催決定！読解力No.1決定戦！5日間連続Reading Contes...
+          - link [ref=e1011] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/48359/
+            - img [ref=e1013]
+            - heading [level=2] [ref=e1015]: TCK WORKSHOP英単語コンテスト第17回開催！
+          - link [ref=e1017] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/news/47941/
+            - img [ref=e1019]
+            - heading [level=2] [ref=e1021]: TCK WORKSHOP 第1回 エッセイコンテスト 2026
+    - generic [ref=e1027]:
+      - img [ref=e1029]
+      - generic [ref=e1031]:
+        - generic [ref=e1033]:
+          - heading "お気軽にご相談ください" [level=2] [ref=e1034]
+          - strong [ref=e1037]:
+            - text: お悩みを解決するプランを考えましょう。
+            - text: どんなご相談にもプロ講師がお答えします。
+            - text: 面談の日程調整をいたします。
+        - generic [ref=e1038]:
+          - generic [ref=e1041]:
+            - generic [ref=e1042]: 無料ウェビナーや学校説明会など
+            - link "メルマガ登録はこちら" [ref=e1043] [cursor=pointer]:
+              - /url: /newsletter_subscribe/
+          - generic [ref=e1046]:
+            - generic [ref=e1047]: ＼ お気軽にどうぞ ／
+            - link "無料相談はこちら" [ref=e1048] [cursor=pointer]:
+              - /url: /contact_consultation/
+          - generic [ref=e1051]:
+            - generic [ref=e1052]: 最新情報を簡単チェック
+            - link "友だち追加" [ref=e1053] [cursor=pointer]:
+              - /url: https://lin.ee/qwq9ECW
+  - generic [ref=e1057]:
+    - img [ref=e1059]
+    - generic [ref=e1062]:
+      - heading "まずはお気軽にご相談下さい！無料で学習相談を承ります" [level=2] [ref=e1065]
+      - generic [ref=e1069]:
+        - figure [ref=e1070]
+        - paragraph [ref=e1071]: オンラインにて45分の面談で直接プロ講師相談員に相談ができます。
+        - paragraph [ref=e1072]: どの相談員も帰国受験、編入受験、高校生AP、IB、A-levels、SAT、英検、TOEFL、IELTS…など小学1年生～高校3年生まで様々なご依頼の解決を担当してきたプロ講師相談員です。
+        - paragraph [ref=e1073]:
+          - strong [ref=e1074]:
+            - text: 「何から始めたらよいのかわからない…」
+            - text: 「こんな内容でも対応してもらえるのだろうか…」
+            - text: 「子供が日本語が喋れないんだけど大丈夫なのかしら…」
+            - text: 「英語以外の科目も教えてもらえるの…？」
+            - text: 「時差対応はしてもらえるのだろうか？」
+        - paragraph [ref=e1075]: 世界70か国2400以上の生徒達を指導して参りましたので、きっとお力になれると思います。どのようなご相談でも私たちが全力でサポートいたします。
+  - generic [ref=e1079]:
+    - heading "よくある質問" [level=2] [ref=e1083]
+    - generic [ref=e1086]:
+      - generic [ref=e1087]:
+        - term [ref=e1088] [cursor=pointer]:
+          - generic [ref=e1089]:
+            - generic [ref=e1090]: Q
+            - text: 授業は英語で可能ですか？
+        - term [ref=e1094] [cursor=pointer]:
+          - generic [ref=e1095]:
+            - generic [ref=e1096]: Q
+            - text: 体験授業は最短でどのくらいで受講できますか？
+      - generic [ref=e1100]:
+        - term [ref=e1101] [cursor=pointer]:
+          - generic [ref=e1102]:
+            - generic [ref=e1103]: Q
+            - text: どのような教材を利用しますか？
+        - term [ref=e1107] [cursor=pointer]:
+          - generic [ref=e1108]:
+            - generic [ref=e1109]: Q
+            - text: 授業時間は何分からですか？
+    - link "よくある質問一覧" [ref=e1115] [cursor=pointer]:
+      - /url: https://www.tckwshop.com/faq/
+  - contentinfo [ref=e1116]:
+    - complementary [ref=e1118]:
+      - generic [ref=e1120]:
+        - navigation "メニュー" [ref=e1123]:
+          - list [ref=e1124]:
+            - listitem [ref=e1125]:
+              - link "TCK Workshopとは" [ref=e1126] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/aboutus/
+            - listitem [ref=e1127]:
+              - link "TCK Workshopの強み" [ref=e1128] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/feature/
+            - listitem [ref=e1129]:
+              - link "優秀な講師陣" [ref=e1130] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/teacher/
+            - listitem [ref=e1131]:
+              - link "お客様の声" [ref=e1132] [cursor=pointer]:
+                - /url: /voice/
+            - listitem [ref=e1133]:
+              - link "料金について" [ref=e1134] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/lessonfee/
+            - listitem [ref=e1135]:
+              - link "学習コース一覧" [ref=e1136] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/
+            - listitem [ref=e1137]:
+              - link "よくある質問" [ref=e1138] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/faq/
+            - listitem [ref=e1139]:
+              - link "TCK教育通信" [ref=e1140] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/tckblog/
+        - navigation "メニュー" [ref=e1143]:
+          - list [ref=e1144]:
+            - listitem [ref=e1145]:
+              - link "帰国子女中学受験対策" [ref=e1146] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/entranceexam/juniorhigh/
+              - list [ref=e1147]:
+                - listitem [ref=e1148]:
+                  - link "┗ 広尾AG Mathﾋﾞﾃﾞｵ講座" [ref=e1149] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/entranceexam/juniorhigh/hiroo-jhs/agmath_videolesson/
+                - listitem [ref=e1150]:
+                  - link "┗ 三田国際算数ﾋﾞﾃﾞｵ講座" [ref=e1151] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/entranceexam/juniorhigh/mita-international-jhs/mathreasoning_videolesson/
+            - listitem [ref=e1152]:
+              - link "帰国子女高校受験対策" [ref=e1153] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/entranceexam/highschool/
+            - listitem [ref=e1154]:
+              - link "帰国子女大学受験対策" [ref=e1155] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/entranceexam/college/
+            - listitem [ref=e1156]:
+              - link "編入試験対策" [ref=e1157] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/transferexam/
+            - listitem [ref=e1158]:
+              - link "IB(国際バカロレア)対策" [ref=e1159] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/ib/
+            - listitem [ref=e1160]:
+              - link "SAT対策" [ref=e1161] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/sat/
+              - list [ref=e1162]:
+                - listitem [ref=e1163]:
+                  - link "┗ SAT Math 25回ﾋﾞﾃﾞｵ講座" [ref=e1164] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/sat/satmath_videolesson/
+                - listitem [ref=e1165]:
+                  - link "┗ SAT Math ビデオ講座 Lite" [ref=e1166] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/sat/satmath_videolesson_lite/
+                - listitem [ref=e1167]:
+                  - link "┗ SATコーチングコース" [ref=e1168] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/sat/satcoaching/
+        - navigation "メニュー" [ref=e1171]:
+          - list [ref=e1172]:
+            - listitem [ref=e1173]:
+              - link "TOEFL対策" [ref=e1174] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/toefl/
+            - listitem [ref=e1175]:
+              - link "英検対策" [ref=e1176] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/eiken/
+              - list [ref=e1177]:
+                - listitem [ref=e1178]:
+                  - link "┗ ライティング添削講座" [ref=e1179] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/eiken/eiken_writing/
+            - listitem [ref=e1180]:
+              - link "IGCSE対策" [ref=e1181] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/igcse/
+            - listitem [ref=e1182]:
+              - link "A-level対策" [ref=e1183] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/a-level/
+            - listitem [ref=e1184]:
+              - link "AP対策" [ref=e1185] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/ap/
+            - listitem [ref=e1186]:
+              - link "IELTS対策" [ref=e1187] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/ielts/
+            - listitem [ref=e1188]:
+              - link "海外大学進学サポート" [ref=e1189] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/foreigncollege/
+            - listitem [ref=e1190]:
+              - link "ICU高校生向け数学補習講座" [ref=e1191] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/entranceexam/highschool/mathsupportlesson/
+        - generic [ref=e1192]:
+          - figure [ref=e1194]
+          - generic [ref=e1196]:
+            - paragraph [ref=e1197]:
+              - strong [ref=e1198]:
+                - text: 海外･帰国子女向けオンライン家庭教師
+                - text: 株式会社 TCK Workshop
+            - paragraph [ref=e1199]:
+              - strong [ref=e1200]: 本社
+              - generic [ref=e1201]: 東京都千代田区丸の内1-5-1 新丸ビル
+              - text: 10階
+              - generic [ref=e1202]:
+                - strong [ref=e1203]: 自由が丘支社
+                - text: 東京都目黒区自由が丘2-17-11 丸元ビル201
+          - list [ref=e1208]:
+            - listitem [ref=e1209]:
+              - link "Facebookでフォロー" [ref=e1210] [cursor=pointer]:
+                - /url: https://www.facebook.com/tckworkshop/
+                - generic [ref=e1211]: 
+            - listitem [ref=e1212]:
+              - link "Twitterでフォロー" [ref=e1213] [cursor=pointer]:
+                - /url: https://twitter.com/tck_workshop
+                - generic [ref=e1214]: 
+            - listitem [ref=e1215]:
+              - link "Instagramでフォロー" [ref=e1216] [cursor=pointer]:
+                - /url: https://www.instagram.com/tckworkshop/?hl=ja
+                - generic [ref=e1217]: 
+            - listitem [ref=e1218]:
+              - link "youTubeでフォロー" [ref=e1219] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UCzcCQyjG49O78_xPqr_jw8g
+                - generic [ref=e1220]: 
+            - listitem [ref=e1221]:
+              - link "LINEでフォロー" [ref=e1222] [cursor=pointer]:
+                - /url: https://lin.ee/8AgKGy1
+                - generic [ref=e1223]: 
+    - generic [ref=e1225]:
+      - generic [ref=e1228]:
+        - link "会社概要 " [ref=e1232] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/company/
+          - generic [ref=e1233]:
+            - generic [ref=e1234]: 会社概要
+            - generic [ref=e1236]: 
+        - link "特定商取引法について " [ref=e1240] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/sctl/
+          - generic [ref=e1241]:
+            - generic [ref=e1242]: 特定商取引法について
+            - generic [ref=e1244]: 
+        - link "個人情報保護方針 " [ref=e1248] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/privacypolicy/
+          - generic [ref=e1249]:
+            - generic [ref=e1250]: 個人情報保護方針
+            - generic [ref=e1252]: 
+        - link "ご利用規約 " [ref=e1256] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/terms-of-use/
+          - generic [ref=e1257]:
+            - generic [ref=e1258]: ご利用規約
+            - generic [ref=e1260]: 
+        - link "よくあるご質問 " [ref=e1264] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/faq/
+          - generic [ref=e1265]:
+            - generic [ref=e1266]: よくあるご質問
+            - generic [ref=e1268]: 
+        - link "講師募集要項 " [ref=e1272] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/contact_teacher/
+          - generic [ref=e1273]:
+            - generic [ref=e1274]: 講師募集要項
+            - generic [ref=e1276]: 
+      - generic [ref=e1277]:
+        - text: © 2018−2026
+        - link "海外･帰国子女向けオンライン家庭教師 TCK Workshop" [ref=e1278] [cursor=pointer]:
+          - /url: https://www.tckwshop.com/
+  - generic [ref=e1280]:
+    - button "ドロワーメニューを閉じる" [ref=e1282] [cursor=pointer]
+    - navigation:            
+    - navigation [ref=e1286]:
+      - list [ref=e1287]:
+        - listitem [ref=e1288]:
+          - link " TCK WorkshopとはAbout" [ref=e1289] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/aboutus/
+          - button "サブメニューを開閉する" [ref=e1290] [cursor=pointer]: 
+          - list [ref=e1291]:
+            - listitem [ref=e1292]:
+              - link "創業者あいさつ" [ref=e1293] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/philosophy/
+            - listitem [ref=e1294]:
+              - link "TCK Workshopの強み" [ref=e1295] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/feature/
+            - listitem [ref=e1296]:
+              - link "授業開始までの流れ" [ref=e1297] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/howtostart/
+            - listitem [ref=e1298]:
+              - link "料金について" [ref=e1299] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/lessonfee/
+            - listitem [ref=e1300]:
+              - link "オンライン授業について" [ref=e1301] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/aboutlesson/
+            - listitem [ref=e1302]:
+              - link "よくある質問" [ref=e1303] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/faq/
+        - listitem [ref=e1304]:
+          - link " お客様の声Voice" [ref=e1305] [cursor=pointer]:
+            - /url: /voice/
+        - listitem [ref=e1306]:
+          - link " 個別指導Personal Lesson" [ref=e1307] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/course/
+          - button "サブメニューを開閉する" [ref=e1308] [cursor=pointer]: 
+          - list [ref=e1309]:
+            - listitem [ref=e1310]:
+              - link "優秀な講師陣" [ref=e1311] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/teacher/
+            - listitem [ref=e1312]:
+              - generic [ref=e1313]: 帰国子女受験
+              - button "サブメニューを開閉する" [ref=e1314] [cursor=pointer]: 
+              - list [ref=e1315]:
+                - listitem [ref=e1316]:
+                  - link "帰国子女中学受験対策" [ref=e1317] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/entranceexam/juniorhigh/
+                - listitem [ref=e1318]:
+                  - link "帰国子女高校受験対策" [ref=e1319] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/entranceexam/highschool/
+                - listitem [ref=e1320]:
+                  - link "帰国子女大学受験対策" [ref=e1321] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/entranceexam/college/
+                - listitem [ref=e1322]:
+                  - link "編入試験対策" [ref=e1323] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/transferexam/
+            - listitem [ref=e1324]:
+              - link "IB(国際バカロレア)対策" [ref=e1325] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/ib/
+            - listitem [ref=e1326]:
+              - link "AP対策" [ref=e1327] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/ap/
+            - listitem [ref=e1328]:
+              - generic [ref=e1329]: SAT対策
+              - button "サブメニューを開閉する" [ref=e1330] [cursor=pointer]: 
+              - list [ref=e1331]:
+                - listitem [ref=e1332]:
+                  - link "SAT対策" [ref=e1333] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/sat/
+                - listitem [ref=e1334]:
+                  - link "SATコーチングコース" [ref=e1335] [cursor=pointer]:
+                    - /url: https://www.tckwshop.com/course/sat/satcoaching/
+            - listitem [ref=e1336]:
+              - link "ACT対策" [ref=e1337] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/act/
+            - listitem [ref=e1338]:
+              - link "IGCSE対策" [ref=e1339] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/igcse/
+            - listitem [ref=e1340]:
+              - link "A-level対策" [ref=e1341] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/a-level/
+            - listitem [ref=e1342]:
+              - link "TOEFL対策" [ref=e1343] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/toefl/
+            - listitem [ref=e1344]:
+              - link "英検対策" [ref=e1345] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/eiken/
+            - listitem [ref=e1346]:
+              - link "IELTS対策" [ref=e1347] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/ielts/
+            - listitem [ref=e1348]:
+              - link "海外大学進学サポート" [ref=e1349] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/foreigncollege/
+            - listitem [ref=e1350]:
+              - link "北米ボーディングスクールサポート" [ref=e1351] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/japaneseboardingstudentssupport/
+            - listitem [ref=e1352]:
+              - link "日本のインターナショナルスクールへの受験をサポート！" [ref=e1353] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/course/internationalschoolconsultation/
+        - listitem [ref=e1354]:
+          - link " お役立ち情報Webinar & Blog" [ref=e1355] [cursor=pointer]:
+            - /url: "#"
+          - button "サブメニューを開閉する" [ref=e1356] [cursor=pointer]: 
+          - list [ref=e1357]:
+            - listitem [ref=e1358]:
+              - link "学習/受験に役立つウェビナー情報" [ref=e1359] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/33317-2/
+            - listitem [ref=e1360]:
+              - link "学習/受験に役立つブログ記事" [ref=e1361] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/tckblog/
+            - listitem [ref=e1362]:
+              - link "SDGs Lab @TCK" [ref=e1363] [cursor=pointer]:
+                - /url: https://www.tckwshop.com/49841-2/
+        - listitem [ref=e1364]:
+          - link " 特別講座一覧🌻 夏期講習 受付中！" [ref=e1365] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/51640-2/
+        - listitem [ref=e1366]:
+          - link " 中文咨询Chinese" [ref=e1367] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/zh/lp1/
+        - listitem [ref=e1368]:
+          - link " 無料相談はこちら" [ref=e1369] [cursor=pointer]:
+            - /url: https://www.tckwshop.com/contact_consultation/
+    - generic [ref=e1374]:
+      - generic [ref=e1375]: ＼ お気軽にどうぞ ／
+      - link "無料相談はこちら" [ref=e1376] [cursor=pointer]:
+        - /url: https://www.tckwshop.com/contact_consultation/
+    - list [ref=e1381]:
+      - listitem [ref=e1382]:
+        - link "Facebookでフォロー" [ref=e1383] [cursor=pointer]:
+          - /url: https://www.facebook.com/tckworkshop/
+          - generic [ref=e1384]: 
+      - listitem [ref=e1385]:
+        - link "Twitterでフォロー" [ref=e1386] [cursor=pointer]:
+          - /url: https://twitter.com/tck_workshop
+          - generic [ref=e1387]: 
+      - listitem [ref=e1388]:
+        - link "Instagramでフォロー" [ref=e1389] [cursor=pointer]:
+          - /url: https://www.instagram.com/tckworkshop/?hl=ja
+          - generic [ref=e1390]: 
+      - listitem [ref=e1391]:
+        - link "youTubeでフォロー" [ref=e1392] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCzcCQyjG49O78_xPqr_jw8g
+          - generic [ref=e1393]: 
+      - listitem [ref=e1394]:
+        - link "LINEでフォロー" [ref=e1395] [cursor=pointer]:
+          - /url: https://lin.ee/8AgKGy1
+          - generic [ref=e1396]: 
+    - heading "FOLLOW US" [level=2] [ref=e1402]:
+      - strong [ref=e1403]: FOLLOW US
+    - paragraph [ref=e1405]:
+      - strong [ref=e1406]: LINE公式アカウントを友だち追加して最新情報やキャンペーンをチェック！
+    - generic [ref=e1410] [cursor=pointer]: 友だち追加

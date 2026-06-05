@@ -1,0 +1,366 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: International School
+    - generic [ref=e5]: 国际学校课程
+    - paragraph [ref=e6]: 孩子进了国际学校，或者正打算进——这一路要跟的事比想象中多。学校怎么选？课程跟不上怎么办？A-Level和IB的压力怎么应对？TCK陪你从选校那一刻，一直走到毕业。
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: "1"
+        - generic [ref=e10]: 国际学校择校
+      - generic [ref=e11]: ›
+      - generic [ref=e12]:
+        - generic [ref=e13]: "2"
+        - generic [ref=e14]: IGCSE · IB MYP
+      - generic [ref=e15]: ›
+      - generic [ref=e16]:
+        - generic [ref=e17]: "3"
+        - generic [ref=e18]: A-Level · IB DP
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - strong [ref=e21]: 70+
+        - generic [ref=e22]: 国家与地区
+      - generic [ref=e24]:
+        - strong [ref=e25]: 2,400+
+        - generic [ref=e26]: 服务学生
+      - generic [ref=e28]:
+        - strong [ref=e29]: 10年
+        - generic [ref=e30]: 国际学校专项支援
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - generic [ref=e33]: "01"
+      - generic [ref=e34]:
+        - generic [ref=e35]: School Selection
+        - generic [ref=e36]: 国际学校择校咨询
+        - generic [ref=e37]: 从"选哪所"到"入学了"，全程陪你走
+    - generic [ref=e38]:
+      - paragraph [ref=e39]: 选学校这件事，很多家长一开始靠"看排名"——但进了才发现，排名和孩子合不合得来，完全是两回事。IB、A-Level、AP，课程体系各有侧重；日本国内、英国、新加坡，升学路线也各不相同。光靠网上搜，信息越看越乱。
+      - paragraph [ref=e40]:
+        - text: 近年来日本的国际学校增势明显，马尔文学院东京、拉格比学校日本校相继开办，选项多了，
+        - emphasis [ref=e41]: 反而更难下决定
+        - text: 。东京都2030年计划吸引高度外籍人才5万人的目标，也让日本的国际教育环境正在快速变化。
+      - paragraph [ref=e42]: TCK的顾问会认真研究每所学校的课程方向和升学路线，才给出建议——不是随手丢一份学校列表，而是真正帮你想清楚哪所适合你的孩子。
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e45]: "?"
+        - generic [ref=e46]: IB、A-Level、AP……到底哪个适合我孩子？将来想去日本大学还是海外，路线差很多
+      - generic [ref=e47]:
+        - generic [ref=e48]: "?"
+        - generic [ref=e49]: 出愿手续全是英文，自己工作已经够忙，根本没时间逐一整理
+      - generic [ref=e50]:
+        - generic [ref=e51]: "?"
+        - generic [ref=e52]: 入学面试和笔试怎么准备？学校也没给太多指引，心里完全没底
+    - list [ref=e53]:
+      - listitem [ref=e54]:
+        - img [ref=e56]
+        - generic [ref=e58]:
+          - strong [ref=e59]: 学校评估与选定
+          - text: — 按孩子的英语程度、学科强项和将来升学方向，比较各校课程体系和校风
+      - listitem [ref=e60]:
+        - img [ref=e62]
+        - generic [ref=e64]:
+          - strong [ref=e65]: 出愿手续全程支持
+          - text: — 英文申请书、Essay撰写、必要文件翻译、代为联络校方，省去繁琐的事务性工作
+      - listitem [ref=e66]:
+        - img [ref=e68]
+        - generic [ref=e70]:
+          - strong [ref=e71]: 面试 & 笔试备考
+          - text: — CAT4、MAP、UKiset等入学考试辅导，亲子面试模拟训练
+      - listitem [ref=e72]:
+        - img [ref=e74]
+        - generic [ref=e76]:
+          - strong [ref=e77]: 入学后持续跟进
+          - text: — 录取不是终点。入学后的学习进度管理、转校咨询，也在支持范围内
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - strong [ref=e80]: ¥50,000
+        - generic [ref=e81]: 入学决定前 / 月额（税别）
+      - generic [ref=e82]: →
+      - generic [ref=e83]:
+        - strong [ref=e84]: ¥30,000
+        - generic [ref=e85]: 入学决定后 / 月额（税别）
+      - generic [ref=e86]: 入学后希望继续咨询支持的家庭，可以优惠月额继续使用。初次免费咨询，欢迎先聊聊孩子的情况。
+    - generic [ref=e87]:
+      - link "免费择校咨询 →" [ref=e88] [cursor=pointer]:
+        - /url: https://www.tckwshop.com/zh-cn/contact_consultation/
+      - link "了解收费详情" [ref=e89] [cursor=pointer]:
+        - /url: "#"
+  - generic [ref=e90]:
+    - generic [ref=e91]:
+      - generic [ref=e92]: "02"
+      - generic [ref=e93]:
+        - generic [ref=e94]: Middle School Curriculum
+        - generic [ref=e95]: IGCSE · IB MYP 课程辅导
+        - generic [ref=e96]: 中文理解 × 英文表达，帮孩子打通双重关卡
+    - generic [ref=e97]:
+      - paragraph [ref=e98]:
+        - text: IGCSE是英国GCSE课程的国际版本，在亚洲各地的国际学校里几乎随处可见；IB MYP则是国际文凭组织为11至16岁学生设计的综合课程体系。两者都强调批判性思维和跨学科学习，
+        - emphasis [ref=e99]: 对中文背景的孩子来说，挑战不只是学科本身
+        - text: 。
+      - paragraph [ref=e100]: 难就难在：要用英文理解，还要用英文表达。数学推导、化学反应、历史论文，换到全英文环境，理解的成本一下子就上去了。我们遇到过不少孩子，在国内学得很好，进了国际学校之后卡在语言表达上——不是不懂，是说不出来、写不准确。
+      - paragraph [ref=e101]: TCK的老师可以用中文解释、用英文练习，按孩子的节奏灵活切换。不是把学生教懂为止——而是帮他们真正能在课堂上、在考试里把掌握的东西表达出来。
+    - generic [ref=e102]:
+      - strong [ref=e103]: IGCSE是跳板，不是终点。
+      - text: 这里的选科和成绩，直接决定了孩子后来能走A-Level还是IBDP、能选哪些科目组合——在中学阶段打好基础，比单纯追成绩更重要。
+    - list [ref=e104]:
+      - listitem [ref=e105]:
+        - img [ref=e107]
+        - generic [ref=e109]:
+          - strong [ref=e110]: 全科目日常辅导
+          - text: — 数学、理科（物理/化学/生物）、英语、人文学科，按孩子的学校课表来
+      - listitem [ref=e111]:
+        - img [ref=e113]
+        - generic [ref=e115]:
+          - strong [ref=e116]: Mock Test / Final Exam 考前冲刺
+          - text: — 真题演练 + 考点梳理，针对薄弱科目集中突破
+      - listitem [ref=e117]:
+        - img [ref=e119]
+        - generic [ref=e121]:
+          - strong [ref=e122]: IA 内部评估写作辅导
+          - text: — IGCSE课题报告、MYP个人项目，从选题到写作全流程支持
+      - listitem [ref=e123]:
+        - img [ref=e125]
+        - generic [ref=e127]:
+          - strong [ref=e128]: 中英双语讲解
+          - text: — 卡在哪里就在哪里用中文打通，目标是让孩子真正理解、不只是应付考试
+      - listitem [ref=e129]:
+        - img [ref=e131]
+        - generic [ref=e133]:
+          - strong [ref=e134]: 学科选择咨询
+          - text: — IGCSE选科直接影响A-Level或IBDP的路线，提前规划更从容
+    - generic [ref=e135]: 可辅导科目 · IGCSE
+    - generic [ref=e136]:
+      - generic [ref=e137]: English Language
+      - generic [ref=e138]: English as a Second Language
+      - generic [ref=e139]: First Language Japanese
+      - generic [ref=e140]: Mathematics
+      - generic [ref=e141]: Additional Mathematics
+      - generic [ref=e142]: Further Mathematics
+      - generic [ref=e143]: Physics
+      - generic [ref=e144]: Chemistry
+      - generic [ref=e145]: Biology
+      - generic [ref=e146]: Combined Science
+      - generic [ref=e147]: Co-ordinated Science
+      - generic [ref=e148]: Business Studies
+      - generic [ref=e149]: Economics
+      - generic [ref=e150]: Geography
+    - generic [ref=e151]:
+      - generic [ref=e152]: 指导实绩 · 担当讲师
+      - generic [ref=e153]: 每一个 A* 背后，都有一位真实陪伴的老师
+      - generic [ref=e155]:
+        - generic [ref=e157]:
+          - img "岡留 智史" [ref=e158]
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162]: 岡留 智史
+                - generic [ref=e163]: 特别讲师
+              - generic [ref=e164]: IGCSE 数学 · Additional Math · 物理 · 化学 · 生物 全科担当
+            - generic [ref=e165]:
+              - generic [ref=e166]: 指导成绩
+              - generic [ref=e168]:
+                - generic [ref=e169]: Additional Math
+                - generic [ref=e171]: A*
+                - generic [ref=e172]: 最终成绩
+                - generic [ref=e173]: 每周1次 · 每次90分
+        - generic [ref=e175]:
+          - img "真下 太史" [ref=e176]
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - generic [ref=e180]: 真下 太史
+                - generic [ref=e181]: 优质讲师
+              - generic [ref=e182]: IGCSE 生物 · 物理 · 化学（Combined Science）担当｜英国本地执教二十余年
+            - generic [ref=e183]:
+              - generic [ref=e184]: 指导成绩
+              - generic [ref=e186]:
+                - generic [ref=e187]: Combined Science
+                - generic [ref=e189]: A*
+                - generic [ref=e190]: 最终成绩
+                - generic [ref=e191]: 每周2次 · 每次60分
+        - generic [ref=e193]:
+          - img "水田 早枝子" [ref=e194]
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: 水田 早枝子
+                - generic [ref=e199]: 特别讲师
+              - generic [ref=e200]: IGCSE First Language English · Economics 担当｜东京大学→哈佛商学院
+            - generic [ref=e201]:
+              - generic [ref=e202]: 指导成绩
+              - generic [ref=e203]:
+                - generic [ref=e204]:
+                  - generic [ref=e205]: First Language English
+                  - generic [ref=e207]: A*
+                  - generic [ref=e208]: 最终成绩
+                  - generic [ref=e209]: 每周1次 · 每次90分
+                - generic [ref=e210]:
+                  - generic [ref=e211]: Economics
+                  - generic [ref=e213]: A*
+                  - generic [ref=e214]: 最终成绩
+                  - generic [ref=e215]: 每周2次 · 每次60分
+      - generic [ref=e216]:
+        - button "Previous" [ref=e217] [cursor=pointer]: ←
+        - generic [ref=e218]:
+          - button [ref=e219] [cursor=pointer]
+          - button [ref=e220] [cursor=pointer]
+          - button [ref=e221] [cursor=pointer]
+        - button "Next" [ref=e222] [cursor=pointer]: →
+    - link "免费体验课 →" [ref=e224] [cursor=pointer]:
+      - /url: https://www.tckwshop.com/zh-cn/contact_consultation/
+  - generic [ref=e225]:
+    - generic [ref=e226]:
+      - generic [ref=e227]: "03"
+      - generic [ref=e228]:
+        - generic [ref=e229]: Senior School Curriculum
+        - generic [ref=e230]: A-Level · IB DP 升学备考
+        - generic [ref=e231]: 决定大学去向的那几年，不能靠运气
+    - generic [ref=e232]:
+      - paragraph [ref=e233]:
+        - text: A-Level和IB DP是国际高中阶段最主流的两套体系，也是直接决定大学申请结果的关键所在。A-Level选科灵活，按科目报考；IB DP则要同时完成6门科目、一篇4000字的EE拓展论文、TOK知识理论，外加CAS项目——
+        - emphasis [ref=e234]: 每一项都不轻松
+        - text: ，叠在一起的压力更是显而易见。
+      - paragraph [ref=e235]: 英国顶尖大学对A-Level成绩精确到每一个等级；IB满分45分，全球平均分在30分左右，竞争相当激烈。不少孩子进入DP阶段才发现，学校课堂的内容能给到的往往只是大框架，IA怎么做、EE选什么题、TOK怎么写——这些"上课很少讲清楚"的部分，反而是拿分的关键。
+      - paragraph [ref=e236]: 我们的老师在A-Level和IB DP各科都有实际辅导经验，EE论文从选题到最终稿、IA从实验设计到报告写作，都可以完整支持。
+    - list [ref=e237]:
+      - listitem [ref=e238]:
+        - img [ref=e240]
+        - generic [ref=e242]:
+          - strong [ref=e243]: HL / SL 各科目辅导
+          - text: — 数学、物理、化学、生物、经济、英语文学等主流科目，按孩子的选科来安排
+      - listitem [ref=e244]:
+        - img [ref=e246]
+        - generic [ref=e248]:
+          - strong [ref=e249]: IB EE 拓展论文
+          - text: — 从研究问题的确立，到论据整理、结构搭建、语言润色，全流程陪写
+      - listitem [ref=e250]:
+        - img [ref=e252]
+        - generic [ref=e254]:
+          - strong [ref=e255]: IB TOK 论文与演讲
+          - text: — 理解TOK的底层逻辑，掌握论文评分标准，演讲思路有人帮你理顺
+      - listitem [ref=e256]:
+        - img [ref=e258]
+        - generic [ref=e260]:
+          - strong [ref=e261]: IA 内部评估
+          - text: — 各学科IA的研究设计、数据分析与报告撰写，不让IA拖累总分
+      - listitem [ref=e262]:
+        - img [ref=e264]
+        - generic [ref=e266]:
+          - strong [ref=e267]: Mock & Final Exam 考前冲刺
+          - text: — 真题分析、重点章节强化，考前6-8周集中突破
+      - listitem [ref=e268]:
+        - img [ref=e270]
+        - generic [ref=e272]:
+          - strong [ref=e273]: 选科 & 大学申请策略
+          - text: — A-Level选科和IB HL选择直接影响目标大学的申请条件，提前想清楚
+    - generic [ref=e274]: 可辅导科目 · IB DP
+    - generic [ref=e275]:
+      - generic [ref=e276]:
+        - generic [ref=e277]: Group 1
+        - generic [ref=e278]: English A
+        - generic [ref=e279]: Japanese A
+      - generic [ref=e280]:
+        - generic [ref=e281]: Group 2
+        - generic [ref=e282]: English B
+        - generic [ref=e283]: Japanese B
+      - generic [ref=e284]:
+        - generic [ref=e285]: Group 3
+        - generic [ref=e286]: Business & Management
+        - generic [ref=e287]: Economics
+        - generic [ref=e288]: Geography
+        - generic [ref=e289]: Psychology
+      - generic [ref=e290]:
+        - generic [ref=e291]: Group 4
+        - generic [ref=e292]: Physics
+        - generic [ref=e293]: Chemistry
+        - generic [ref=e294]: Biology
+      - generic [ref=e295]:
+        - generic [ref=e296]: Group 5
+        - generic [ref=e297]: Maths AA (Analysis & Approaches)
+        - generic [ref=e298]: Maths AI (Applications & Interpretation)
+    - generic [ref=e299]:
+      - generic [ref=e300]: 指导实绩 · 担当讲师
+      - generic [ref=e301]: 每一个成绩背后，都有一位真实陪伴的老师
+      - generic [ref=e303]:
+        - generic [ref=e305]:
+          - img "岡留 智史" [ref=e306]
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - generic [ref=e309]:
+                - generic [ref=e310]: 岡留 智史
+                - generic [ref=e311]: 特别讲师
+              - generic [ref=e312]: IB 数学 AA/AI · 物理 · 化学 · IGCSE 理科数学全科担当
+            - generic [ref=e313]:
+              - generic [ref=e314]: 指导成绩
+              - generic [ref=e315]:
+                - generic [ref=e316]:
+                  - generic [ref=e317]: Math AI HL
+                  - generic [ref=e318]:
+                    - generic [ref=e319]: "4"
+                    - generic [ref=e320]: →
+                    - generic [ref=e321]: "6"
+                  - generic [ref=e322]: 预测分 → 最终分
+                  - generic [ref=e323]: 每周2次 · 每次60分
+                - generic [ref=e324]:
+                  - generic [ref=e325]: Physics HL
+                  - generic [ref=e327]: "7"
+                  - generic [ref=e328]: 最终成绩
+                  - generic [ref=e329]: 每周1次 · 每次60分
+                - generic [ref=e330]:
+                  - generic [ref=e331]: Chemistry HL
+                  - generic [ref=e332]:
+                    - generic [ref=e333]: "3"
+                    - generic [ref=e334]: →
+                    - generic [ref=e335]: "6"
+                  - generic [ref=e336]: 预测分 → 最终分
+                  - generic [ref=e337]: 每周2次 · 每次60分
+        - generic [ref=e339]:
+          - img "真下 太史" [ref=e340]
+          - generic [ref=e341]:
+            - generic [ref=e342]:
+              - generic [ref=e343]:
+                - generic [ref=e344]: 真下 太史
+                - generic [ref=e345]: 优质讲师
+              - generic [ref=e346]: IB DP 生物 · 心理学 · A-Level 生物 · IGCSE 理科担当｜英国本地执教二十余年
+            - generic [ref=e347]:
+              - generic [ref=e348]: 指导成绩
+              - generic [ref=e350]:
+                - generic [ref=e351]: Biology
+                - generic [ref=e353]: "7"
+                - generic [ref=e354]: 最终成绩
+                - generic [ref=e355]: 每周1次 · 每次90分
+        - generic [ref=e357]:
+          - img "水田 早枝子" [ref=e358]
+          - generic [ref=e359]:
+            - generic [ref=e360]:
+              - generic [ref=e361]:
+                - generic [ref=e362]: 水田 早枝子
+                - generic [ref=e363]: 特别讲师
+              - generic [ref=e364]: IB English A 语言与文学 · 英语资格考试（TOEFL · SAT · 英检）｜东京大学→哈佛商学院
+            - generic [ref=e365]:
+              - generic [ref=e366]: 指导成绩
+              - generic [ref=e368]:
+                - generic [ref=e369]: English A Lang & Lit
+                - generic [ref=e371]: "6"
+                - generic [ref=e372]: 最终成绩
+                - generic [ref=e373]: 每周1次 · 每次60分
+      - generic [ref=e374]:
+        - button "Previous" [ref=e375] [cursor=pointer]: ←
+        - generic [ref=e376]:
+          - button [ref=e377] [cursor=pointer]
+          - button [ref=e378] [cursor=pointer]
+          - button [ref=e379] [cursor=pointer]
+        - button "Next" [ref=e380] [cursor=pointer]: →
+    - generic [ref=e381]:
+      - generic [ref=e382]: 什么时候开始最合适？
+      - text: 最理想是
+      - strong [ref=e383]: G10暑假结束数学基础
+      - text: ，进入DP前完成核心章节。以物理为例：G10 12月开始系统学习，G12开学前全部内容学完，剩余时间专攻 Past Papers——时间刚刚好。IB是2年多的马拉松，越早起跑，越从容。
+    - link "免费体验课 →" [ref=e385] [cursor=pointer]:
+      - /url: https://www.tckwshop.com/zh-cn/contact_consultation/
+    - generic [ref=e386]: 一科也可以 · 假期短期集中课也OK · 先从孩子最需要的科目开始，没有门槛
+  - generic [ref=e388]:
+    - paragraph [ref=e390]:
+      - text: 择校、中学课程、高中冲刺——每个阶段都有它的难关。
+      - text: 不管孩子现在在哪个阶段，都欢迎先来聊聊。
+    - link "免费学习咨询 →" [ref=e391] [cursor=pointer]:
+      - /url: https://www.tckwshop.com/zh-cn/contact_consultation/

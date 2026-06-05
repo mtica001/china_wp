@@ -1,0 +1,205 @@
+<!-- TCK Pricing 2-col block -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500&display=swap">
+<style>
+.tck-pricing{font-family:'Noto Sans SC',sans-serif;padding:32px 0;color:#111}
+.tck-pricing *{box-sizing:border-box;margin:0;padding:0}
+.tck-pricing a{text-decoration:none}
+
+/* header */
+.tck-pricing__head{text-align:center;margin-bottom:44px}
+.tck-pricing__eyebrow{font-size:14px;letter-spacing:.22em;color:#2a9060;margin-bottom:10px}
+.tck-pricing__title{font-family:'Noto Serif SC',serif!important;font-size:clamp(28px,4vw,42px)!important;font-weight:700!important;color:#006640!important;line-height:1.3!important;letter-spacing:.04em;margin:0!important;padding:0!important}
+.tck-pricing__rule{width:44px;height:2px;background:linear-gradient(90deg,#2a9060,#c9a84c);margin:16px auto 0;border-radius:2px}
+
+/* grid */
+.tck-pricing__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;width:100%}
+@media(max-width:760px){.tck-pricing__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.tck-pricing__grid{grid-template-columns:1fr}}
+
+/* card — identical for both */
+.tck-card{background:#fff;border-radius:16px;border:1.5px solid #c5dfd4;box-shadow:0 4px 24px rgba(0,102,64,.08),0 1px 4px rgba(0,0,0,.05);display:flex;flex-direction:column;position:relative;transition:transform .22s,box-shadow .22s,border-color .22s,border-width .22s}
+.tck-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,102,64,.16),0 2px 10px rgba(0,0,0,.07);border-color:#c9a84c;border-width:2px}
+
+/* badge */
+.tck-badge{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:500;letter-spacing:.06em;border-radius:20px;padding:4px 13px;margin-bottom:14px;background:#2a9060;color:#fff;transition:background .22s}
+.tck-card:hover .tck-badge{background:#c9a84c}
+
+/* sections */
+.tck-card__head{padding:28px 26px 20px;border-bottom:1px solid #c5dfd4}
+.tck-card__name{font-family:'Noto Serif SC',serif;font-size:24px;font-weight:700;color:#111;margin-bottom:5px}
+.tck-card__sub{font-size:14px;color:#5a7a68;line-height:1.5}
+
+.tck-card__price{padding:20px 26px;border-bottom:1px solid #c5dfd4}
+.tck-card__price-row{display:flex;align-items:baseline;flex-wrap:nowrap;gap:5px;white-space:nowrap}
+.tck-card__amount{font-family:'Noto Serif SC',serif;font-size:36px;font-weight:700;color:#006640;line-height:1;white-space:nowrap}
+.tck-card__unit{font-size:17px;color:#5a7a68;flex-shrink:0;white-space:nowrap}
+.tck-card__tax{font-size:13px;color:#5a7a68;margin-left:3px;flex-shrink:0;white-space:nowrap;opacity:.7}
+
+.tck-card__specs{padding:16px 26px;border-bottom:1px solid #c5dfd4;display:flex;flex-direction:column;gap:9px}
+.tck-spec{display:flex;justify-content:space-between;font-size:14px}
+.tck-spec__label{color:#5a7a68}
+.tck-spec__value{font-weight:600;color:#111;text-align:right}
+
+.tck-card__features{padding:20px 26px;flex:1}
+.tck-features-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#5a7a68;margin-bottom:12px;opacity:.7}
+.tck-features{list-style:none;display:flex;flex-direction:column;gap:10px}
+.tck-features li{display:flex;gap:10px;font-size:14px;color:#111;line-height:1.55}
+.tck-features__chk{flex-shrink:0;margin-top:3px;width:17px;height:17px;border-radius:50%;background:#e8f5ee;display:flex;align-items:center;justify-content:center}
+.tck-features__chk svg{width:9px;height:9px;stroke:#2a9060;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tck-features__note{display:block;font-size:12px;color:#5a7a68;margin-top:2px;opacity:.8}
+
+.tck-card__pill{position:absolute;top:-15px;right:20px;z-index:3}
+.tck-pill{display:inline-flex;align-items:center;background:#006640;color:#fff;font-size:12.5px;font-weight:500;letter-spacing:.04em;padding:7px 16px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.18);transform:rotate(2deg);transition:background .22s,transform .22s}
+.tck-card:hover .tck-pill{background:#c9a84c;transform:rotate(0deg)}
+
+.tck-card__cta{padding:0 26px 26px}
+.tck-btn{display:block;width:100%;padding:15px;border:none;border-radius:9px;font-family:'Noto Sans SC',sans-serif;font-size:15px;font-weight:500;letter-spacing:.07em;cursor:pointer;text-align:center;background:#006640;color:#fff;transition:background .22s,transform .15s}
+.tck-card:hover .tck-btn{background:#c9a84c;transform:translateY(-1px)}
+
+/* service rows (3rd card) */
+.tck-card__svcs{flex:1;display:flex;flex-direction:column}
+.tck-svc{display:flex;justify-content:space-between;align-items:center;padding:13px 26px;border-bottom:1px solid #c5dfd4;gap:12px}
+.tck-svc:last-child{border-bottom:none}
+.tck-svc__name{font-size:13.5px;font-weight:600;color:#111;line-height:1.4}
+.tck-svc__right{text-align:right;flex-shrink:0}
+.tck-svc__amount{font-family:'Noto Serif SC',serif;font-size:17px;font-weight:700;color:#006640;white-space:nowrap}
+.tck-svc__unit{font-size:12px;color:#5a7a68;white-space:nowrap;display:block;margin-top:1px}
+
+/* footer */
+.tck-pricing__notes{width:100%;margin:24px 0 0;padding:16px 20px;background:#f5faf7;border:1px solid #c5dfd4;border-radius:10px;font-size:13px;color:#5a7a68;line-height:1.8}
+.tck-pricing__notes strong{color:#006640;font-weight:500}
+</style>
+
+<div class="tck-pricing" id="pricing">
+
+  <div class="tck-pricing__head">
+    <p class="tck-pricing__eyebrow">高效 × 专业</p>
+    <div class="tck-pricing__title">选你所需，享你所想！</div>
+    <div class="tck-pricing__rule"></div>
+  </div>
+
+  <div class="tck-pricing__grid">
+
+    <!-- 咨询套餐 -->
+    <div class="tck-card">
+      <div class="tck-card__head">
+        <span class="tck-badge">月度咨询</span>
+        <div class="tck-card__name">咨询套餐</div>
+        <div class="tck-card__sub">从择校策略到入学全程持续支持</div>
+      </div>
+      <div class="tck-card__price">
+        <div class="tck-card__price-row">
+          <span class="tck-card__amount">¥10,000</span>
+          <span class="tck-card__unit">/月</span>
+          <span class="tck-card__tax">（含税）</span>
+        </div>
+      </div>
+      <div class="tck-card__specs">
+        <div class="tck-spec"><span class="tck-spec__label">服务周期</span><span class="tck-spec__value">按月续费</span></div>
+        <div class="tck-spec"><span class="tck-spec__label">咨询形式</span><span class="tck-spec__value">深度面谈 + 全时段答疑</span></div>
+      </div>
+      <div class="tck-card__features">
+        <div class="tck-features-label">服务内容</div>
+        <ul class="tck-features">
+          <li><span class="tck-features__chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>每月 1 次深度面谈跟进</span></li>
+          <li><span class="tck-features__chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>匹配目标学校</span></li>
+          <li><span class="tck-features__chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>全天候微信 / 邮件答疑支持</span></li>
+          <li><span class="tck-features__chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>代为联络校方<span class="tck-features__note">电话 / 邮件确认招生细则</span></span></li>
+        </ul>
+      </div>
+      <div class="tck-card__cta">
+        <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-btn">咨询此方案 →</a>
+      </div>
+    </div>
+
+    <!-- 能力测试 -->
+    <div class="tck-card">
+      <div class="tck-card__head">
+        <span class="tck-badge">★ 限时优惠</span>
+        <div class="tck-card__name">能力测试</div>
+        <div class="tck-card__sub">专属诊断 · 一次性深度体验</div>
+      </div>
+      <div class="tck-card__price">
+        <div class="tck-card__price-row">
+          <span class="tck-card__amount">¥20,000</span>
+          <span class="tck-card__unit">/次</span>
+          <span class="tck-card__tax">（含税）</span>
+        </div>
+      </div>
+      <div class="tck-card__specs">
+        <div class="tck-spec"><span class="tck-spec__label">测试科目</span><span class="tck-spec__value">语 · 数 · 英 三科</span></div>
+        <div class="tck-spec"><span class="tck-spec__label">附加权益</span><span class="tck-spec__value">免除 6 个月入会 &amp; 管理费</span></div>
+      </div>
+      <div class="tck-card__features">
+        <div class="tck-features-label">服务内容</div>
+        <ul class="tck-features">
+          <li><span class="tck-features__chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>综合能力测试与专属诊断报告<span class="tck-features__note">涵盖语 · 数 · 英三科</span></span></li>
+          <li><span class="tck-features__chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>资深讲师 1V1 定制体验课<span class="tck-features__note">60 分钟，针对薄弱科目</span></span></li>
+          <li><span class="tck-features__chk"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></span><span>涵盖首月完整升学规划与咨询服务</span></li>
+        </ul>
+      </div>
+      <div class="tck-card__pill">
+        <span class="tck-pill">订购即免除 6 个月入会费</span>
+      </div>
+      <div class="tck-card__cta">
+        <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-btn">咨询此方案 →</a>
+      </div>
+    </div>
+
+    <!-- 定制服务 -->
+    <div class="tck-card">
+      <div class="tck-card__head">
+        <span class="tck-badge">定制服务</span>
+        <div class="tck-card__name">按需定制</div>
+        <div class="tck-card__sub">专项服务，按项目单独计费</div>
+      </div>
+      <div class="tck-card__svcs">
+        <div class="tck-svc">
+          <span class="tck-svc__name">国际学校出愿代办</span>
+          <div class="tck-svc__right">
+            <span class="tck-svc__amount">¥30,000</span>
+            <span class="tck-svc__unit">/所</span>
+          </div>
+        </div>
+        <div class="tck-svc">
+          <span class="tck-svc__name">1对1全真模拟面试</span>
+          <div class="tck-svc__right">
+            <span class="tck-svc__amount">¥8,000</span>
+            <span class="tck-svc__unit">/30分钟</span>
+          </div>
+        </div>
+        <div class="tck-svc">
+          <span class="tck-svc__name">专人陪同访校/面试</span>
+          <div class="tck-svc__right">
+            <span class="tck-svc__amount">¥20,000起</span>
+            <span class="tck-svc__unit">/次</span>
+          </div>
+        </div>
+        <div class="tck-svc">
+          <span class="tck-svc__name">志望理由书精修指导</span>
+          <div class="tck-svc__right">
+            <span class="tck-svc__amount">¥20,000</span>
+            <span class="tck-svc__unit">/篇</span>
+          </div>
+        </div>
+        <div class="tck-svc">
+          <span class="tck-svc__name">目标校模拟题</span>
+          <div class="tck-svc__right">
+            <span class="tck-svc__amount">¥3,000</span>
+            <span class="tck-svc__unit">/套</span>
+          </div>
+        </div>
+      </div>
+      <div class="tck-card__cta">
+        <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-btn">咨询此方案 →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tck-pricing__notes">
+    <strong>【财务细则】</strong>日本境内 +10% 消费税（境外免税）。订购能力测试即免除 6 个月入会费及管理费。<br>
+    <strong>【周期说明】</strong>正式上课后该咨询服务将持续免费提供；若体验后未转入正式课程，本服务即告终止。
+  </div>
+
+</div>

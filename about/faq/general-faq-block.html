@@ -1,0 +1,720 @@
+<!-- TCK 一般常见问题 FAQ block — design tokens match private-entrance-faq-block.html -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap">
+<style>
+.tck-gfaq{
+  font-family:'Noto Sans SC',sans-serif;color:#111;line-height:1.7;
+  --forest:#006640;--sage:#2a9060;--sage-lt:#e8f5ee;
+  --gold:#c9a84c;--gold-lt:#fdf7e6;
+  --pink:#e91e63;--pink-dk:#c2185b;
+  --cream:#f5faf7;--ink:#111;--muted:#5a7a68;
+  --border:#c5dfd4
+}
+.tck-gfaq *{box-sizing:border-box;margin:0;padding:0}
+.tck-gfaq a{text-decoration:none;color:inherit}
+
+/* header */
+.tck-gfaq__head{text-align:center;padding:52px 0 44px}
+.tck-gfaq__sup{font-size:11.5px;letter-spacing:.2em;color:var(--sage);text-transform:uppercase;display:block;margin-bottom:12px}
+.tck-gfaq__title{font-family:'Noto Serif SC',serif;font-size:clamp(22px,3.4vw,32px);font-weight:700;color:var(--forest);line-height:1.35;margin-bottom:6px}
+.tck-gfaq__rule{width:40px;height:2px;background:linear-gradient(90deg,var(--sage),var(--gold));margin:14px auto 0;border-radius:2px}
+
+/* section divider */
+.tck-gfaq__sec{display:flex;align-items:center;gap:12px;margin:28px 0 12px}
+.tck-gfaq__sec-tag{display:inline-block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);background:var(--sage-lt);border:1px solid var(--border);border-radius:20px;padding:4px 12px;white-space:nowrap}
+.tck-gfaq__sec-line{flex:1;height:1px;background:var(--border)}
+
+/* accordion list */
+.tck-gfaq__list{display:flex;flex-direction:column;gap:10px}
+
+/* item card */
+.tck-gfaq__item{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.tck-gfaq__item.is-open{border-color:var(--sage);box-shadow:0 4px 20px rgba(45,80,22,.09)}
+
+/* trigger */
+.tck-gfaq__trigger{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:flex-start;gap:14px;padding:20px 22px;text-align:left;transition:background .18s}
+.tck-gfaq__trigger:hover{background:var(--sage-lt)}
+.tck-gfaq__item.is-open .tck-gfaq__trigger{background:var(--sage-lt)}
+
+/* number badge */
+.tck-gfaq__num{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--cream);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:13px;font-weight:700;color:var(--forest);margin-top:1px;transition:background .2s,border-color .2s,color .2s}
+.tck-gfaq__item.is-open .tck-gfaq__num{background:var(--forest);border-color:var(--forest);color:#fff}
+
+.tck-gfaq__q-wrap{flex:1;display:flex;flex-direction:column;gap:3px}
+.tck-gfaq__q-cat{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tck-gfaq__q{font-family:'Noto Serif SC',serif;font-size:15.5px;font-weight:600;color:var(--ink);line-height:1.45;letter-spacing:.01em}
+
+.tck-gfaq__chevron{flex-shrink:0;margin-top:5px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.tck-gfaq__chevron svg{width:13px;height:13px;stroke:var(--muted);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .18s}
+.tck-gfaq__item.is-open .tck-gfaq__chevron{transform:rotate(180deg)}
+.tck-gfaq__item.is-open .tck-gfaq__chevron svg{stroke:var(--gold)}
+
+/* answer panel */
+.tck-gfaq__panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s cubic-bezier(.4,0,.2,1)}
+.tck-gfaq__item.is-open .tck-gfaq__panel{grid-template-rows:1fr}
+.tck-gfaq__panel-inner{overflow:hidden}
+.tck-gfaq__a{padding:0 22px 22px 66px;font-size:14px;color:#333;line-height:1.9}
+.tck-gfaq__a p{margin-bottom:11px}
+.tck-gfaq__a p:last-child{margin-bottom:0}
+.tck-gfaq__a strong{color:var(--forest);font-weight:600}
+.tck-gfaq__a em{font-style:normal;color:var(--sage);font-weight:500}
+
+/* inline callout */
+.tck-gfaq__aside{background:var(--gold-lt);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:11px 15px;margin:10px 0 4px;font-size:13px;color:var(--ink);line-height:1.75}
+
+/* CTA footer */
+.tck-gfaq__cta{margin-top:28px;text-align:center;padding:20px 22px;background:var(--cream);border:1px solid var(--border);border-radius:12px}
+.tck-gfaq__cta p{font-size:13.5px;color:var(--muted);margin-bottom:14px;line-height:1.8}
+.tck-gfaq__btn{display:inline-flex;align-items:center;gap:6px;padding:11px 26px;border-radius:8px;font-family:'Noto Sans SC',sans-serif;font-size:14px;font-weight:500;letter-spacing:.04em;cursor:pointer;border:none;background:var(--pink);color:#fff!important;transition:background .2s,transform .15s}
+.tck-gfaq__btn:hover{background:var(--pink-dk);transform:translateY(-1px)}
+
+@media(max-width:500px){
+  .tck-gfaq__a{padding-left:22px}
+  .tck-gfaq__q{font-size:14px}
+}
+</style>
+
+<div class="tck-gfaq">
+
+  <div class="tck-gfaq__head">
+    <span class="tck-gfaq__sup">常见问题</span>
+    <div class="tck-gfaq__title">TCK Workshop<br>服务常见疑问解答</div>
+    <div class="tck-gfaq__rule"></div>
+  </div>
+
+  <div class="tck-gfaq__list">
+
+    <!-- ── 营业时间 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">营业时间</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">1</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">营业时间 · 咨询受理</span>
+          <span class="tck-gfaq__q">营业时间是几点？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>营业时间为每天 <strong>9:00～22:00（日本时间）</strong>。请注意，营业时间与可授课时间不同，具体上课时段请与负责顾问商议确定。</p>
+            <p><em>邮件咨询 24 小时接受</em>，随时欢迎联系。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">2</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">营业时间 · 海外时差</span>
+          <span class="tck-gfaq__q">各国时差不同，有没有无法上课的时段？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>讲师原则上在日本，<strong>深夜 0:00～早上 7:00（日本时间）</strong>期间能承接的讲师较少，这个时段较难安排。其余时间均可上课。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">3</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">营业时间 · 夏令时</span>
+          <span class="tck-gfaq__q">实行夏令时的国家该如何处理？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>因讲师在日本同时也有国内学生，<em>夏令时期间的时间调整请居住在夏令时国家的家庭自行对应</em>。当然，也可以直接与讲师商量协调。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 关于课程内容 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">关于课程内容</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">4</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程内容 · 体验课</span>
+          <span class="tck-gfaq__q">体验课最快几天可以安排？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>讲师面试和匹配流程大约需要<strong>一周</strong>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">5</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程内容 · 授课语言</span>
+          <span class="tck-gfaq__q">可以用英语上课吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以。我们的讲师中<em>有很多归日子女，英语达到母语水平</em>，能够全英语授课。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">6</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程内容 · 教材</span>
+          <span class="tck-gfaq__q">使用什么教材？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>根据指导内容<strong>灵活定制</strong>，教材会以扫描文件等方式共享。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">7</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程内容 · 作业共享</span>
+          <span class="tck-gfaq__q">学校布置的作业，教材怎么共享？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>用手机或扫描仪拍成图片或扫描后发送即可。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">8</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程内容 · 暂停</span>
+          <span class="tck-gfaq__q">可以暂停课程吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以暂停。<em>暂停期间不产生课费，也不收运营维护管理费。</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">9</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程内容 · 回国期间</span>
+          <span class="tck-gfaq__q">短暂回国期间可以上课吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>当然可以。<strong>有电脑和网络，在哪里都能上课。</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 预约与变更 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">预约与变更</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">10</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">预约 · 课程安排</span>
+          <span class="tck-gfaq__q">如何预约课程？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>直接与讲师协调时间，<em>通过邮件或 Google Classroom 沟通为主</em>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">11</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">预约 · 临时变更</span>
+          <span class="tck-gfaq__q">可以在课前临时变更时间吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以变更，但如果<strong>未在课程开始前 3 小时内通知</strong>，将收取该次课费。详情请参阅入学时的使用条款。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">12</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">预约 · 临时增课</span>
+          <span class="tck-gfaq__q">考试前可以临时增加课时吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以，但不保证所有希望的时段都能安排，<em>敬请提前告知</em>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">13</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">预约 · 取消</span>
+          <span class="tck-gfaq__q">如何取消课程？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>请在课程开始前 <strong>3 小时内</strong>告知讲师或负责顾问。3 小时内未通知者将收取课费。详情请参阅使用条款。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 关于讲师 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">关于讲师</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">14</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">讲师 · 背景资质</span>
+          <span class="tck-gfaq__q">讲师是什么背景？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>讲师普遍拥有<strong>海外生活或归日子女的背景</strong>，能切身理解孩子的感受，认真投入。无论是归日生入试、SAT、AP、IB、IGCSE 等高难度内容，都能用<em>英语和日语双语授课</em>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">15</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">讲师 · 指定</span>
+          <span class="tck-gfaq__q">可以指定讲师吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>我们会先了解您的需求，由顾问进行匹配。可以提出指名请求，但<em>讲师档期有限，不能保证一定满足</em>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">16</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">讲师 · 更换</span>
+          <span class="tck-gfaq__q">可以更换讲师吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以。请告知负责顾问更换原因即可，<strong>不收取任何手续费</strong>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">17</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">讲师 · 代课</span>
+          <span class="tck-gfaq__q">可以安排代课吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以，但通常以<em>和原讲师调补课</em>为主要方式处理。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 关于课程类型 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">关于课程类型</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">18</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程类型 · 小论文</span>
+          <span class="tck-gfaq__q">备考课程包括小论文指导吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>包括。小论文对归日生入试来说不可或缺，<em>英语和日语均可辅导</em>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">19</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">课程类型 · 短期强化</span>
+          <span class="tck-gfaq__q">面试对策、英检、SAT 等短期课程可以上吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以。面试对策、英检、SAT 等均可安排短期强化课程。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 关于费用 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">课费 · 上课费用</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">20</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">费用 · 兄弟姐妹优惠</span>
+          <span class="tck-gfaq__q">有兄弟姐妹优惠吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>有。满足条件后，被介绍人从入学当月起的 <strong>3 个月内，课费享受 75 折优惠</strong>。家庭入学金为一户一次，兄弟姐妹入学不再另收入学金。</p>
+            <div class="tck-gfaq__aside">申请方式：在合同表单中，①"得知 TCK Workshop 的渠道"填写"介绍"，②在"介绍人姓名"填写在学学生全名，系统确认匹配后自动生效。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">21</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">费用 · 结算货币</span>
+          <span class="tck-gfaq__q">支持当地货币信用卡付款吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>结算货币<strong>仅限日元和美元</strong>。若学生为海外居住，课费免消费税。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">22</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">费用 · 结算周期</span>
+          <span class="tck-gfaq__q">课费如何结算？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>当月产生的课费合计，将于<em>次月 15 日前结清</em>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">23</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">费用 · 发票</span>
+          <span class="tck-gfaq__q">公司有补贴，可以开发票吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以。但<strong>仅支持电子 PDF 发票</strong>，通过邮件发送，不提供纸质邮寄。如需发票，请联系负责顾问。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">24</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">费用 · 付款方式</span>
+          <span class="tck-gfaq__q">支持预付（押金）或分期付款吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>不支持预付或分期付款。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 关于设备 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">关于设备</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">25</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">设备 · 网络画质</span>
+          <span class="tck-gfaq__q">Google Meet 音质或画质较差时怎么办？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>如果家庭网络状况影响到正常上课，建议考虑更换网络运营商。此外，<em>换一个屋内信号较好的位置上课、使用专用耳机</em>等，也能改善效果，欢迎咨询顾问。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">26</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">设备 · 耳机</span>
+          <span class="tck-gfaq__q">需要耳机吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p><strong>建议使用耳机或耳麦</strong>，以减少环境噪音干扰，提升音质。没有耳机的话，在安静的房间上课也可以。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">27</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">设备 · 手写板</span>
+          <span class="tck-gfaq__q">需要手写板（ペンタブ）吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>视课程内容而定。<em>大多数学生不使用手写板也能顺利上课</em>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">28</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">设备 · 摄像头</span>
+          <span class="tck-gfaq__q">需要摄像头吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>摄像头是<strong>必须的</strong>。如果电脑没有内置摄像头，需要自备外接网络摄像头。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 退学与其他 ── -->
+    <div class="tck-gfaq__sec">
+      <span class="tck-gfaq__sec-tag">入会 · 退会</span>
+      <span class="tck-gfaq__sec-line"></span>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">29</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">退学 · 流程</span>
+          <span class="tck-gfaq__q">如何退学？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>请在退学前<strong>一个月</strong>告知负责顾问。如遇工作或家庭突发情况，也可弹性处理。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">30</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">退学 · 违约金</span>
+          <span class="tck-gfaq__q">退学有违约金吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p><strong>没有</strong>。退学、暂停均不收费，再次入学也不收入学金。退学时只结算最后一个月的课费。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tck-gfaq__item">
+      <button class="tck-gfaq__trigger" aria-expanded="false">
+        <span class="tck-gfaq__num">31</span>
+        <span class="tck-gfaq__q-wrap">
+          <span class="tck-gfaq__q-cat">其他 · 一对一面谈</span>
+          <span class="tck-gfaq__q">想和讲师或顾问谈一谈，可以预约面谈吗？</span>
+        </span>
+        <span class="tck-gfaq__chevron"><svg viewBox="0 0 16 16"><polyline points="3,5 8,11 13,5"/></svg></span>
+      </button>
+      <div class="tck-gfaq__panel" role="region">
+        <div class="tck-gfaq__panel-inner">
+          <div class="tck-gfaq__a">
+            <p>可以。这正是 TCK Workshop 的优势所在——<em>入学后任何时候都可以申请一对一面谈</em>，随时沟通孩子的学习情况和目标。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tck-gfaq__cta">
+    <p>还有其他疑问？欢迎直接咨询——我们会给你一个清晰的下一步。</p>
+    <a href="https://www.tckwshop.com/zh-cn/contact_consultation/" class="tck-gfaq__btn">免费学习咨询 →</a>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.tck-gfaq__trigger').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.closest('.tck-gfaq__item');
+      var isOpen=item.classList.contains('is-open');
+      document.querySelectorAll('.tck-gfaq__item.is-open').forEach(function(el){
+        el.classList.remove('is-open');
+        el.querySelector('.tck-gfaq__trigger').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('is-open');
+        this.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+})();
+</script>
